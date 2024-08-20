@@ -30,7 +30,7 @@ const Header = () => {
           }}
           className="d-block d-lg-none text-end fw-bold"
         >
-          <div className="position-relative me-3 zoomIt">
+          <div className="position-relative me-5 zoomIt">
             <span
               className={
                 clicked === true
@@ -38,16 +38,16 @@ const Header = () => {
                   : "rotate-in-center position-absolute"
               }
             >
-              X
+              <span className="fs-2">X</span>
             </span>
             <span
               className={
                 clicked === false
                   ? "rotate-out-ver position-absolute"
-                  : "rotate-in-center position-absolute"
+                  : "rotate-in-center2 position-absolute"
               }
             >
-              =
+              <span className="fs-2 rotate-90">lll</span>
             </span>
           </div>
         </Col>
