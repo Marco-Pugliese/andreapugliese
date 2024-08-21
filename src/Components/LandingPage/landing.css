@@ -1,0 +1,142 @@
+#generalHero {
+  height: 65vh;
+  background: url("../public/assets/andreapugliese/andreap.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#generalHero > div {
+  backdrop-filter: brightness(70%);
+}
+#heroLine {
+  color: white;
+  text-shadow: 0px 0px 20px rgb(131, 118, 118);
+}
+#heroLine > div:first-child {
+  letter-spacing: 0.35em;
+  margin-bottom: 15px;
+}
+#heroLine > div {
+  animation: puff-in-center 0.9s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+#learnmoreButton {
+  background-color: white;
+  color: black;
+  box-shadow: 00px 0px 20px 10px rgba(0, 0, 0, 0.2);
+  transition: all.8s;
+  position: relative;
+  top: 75px;
+}
+#learnmoreButton:hover {
+  box-shadow: 00px 0px 20px 10px rgba(245, 245, 245, 0.2);
+  font-size: 0.9em;
+  cursor: pointer;
+}
+#subHero {
+  background: url("../public/assets/andreapugliese/chef3.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#subHero > div {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+#chef1,
+#chef2,
+#chef3 {
+  height: 20vh;
+  background-size: contain;
+  background-position: center;
+}
+#chef1 {
+  background: url("../public/assets/andreapugliese/chef6.jpeg");
+}
+#chef2 {
+  background: url("../public/assets/andreapugliese/chef4.jpeg");
+}
+#chef3 {
+  background: url("../public/assets/andreapugliese/pastry1.jpeg");
+}
+.col-list {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media screen and (min-width: 500px) {
+  #chef1,
+  #chef2,
+  #chef3 {
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+  }
+}
+#Aside {
+  padding-bottom: 5vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  background-position: center;
+  background-size: contain;
+}
+#Aside > div {
+  background: linear-gradient(
+    to bottom,
+    rgba(11, 11, 11, 0.99),
+    rgba(11, 11, 11, 0.95),
+    rgba(11, 11, 11, 0.9),
+    rgba(11, 11, 11, 0.95)
+  );
+}
+#requestNow {
+  background: white;
+}
+
+.same-size {
+  height: 375px;
+  border-radius: 1%;
+  margin-top: 25px;
+}
+.chef1 {
+  background: url("../public/assets/andreapugliese/chef1.jpeg");
+}
+.chef2 {
+  background: url("../public/assets/andreapugliese/chef2.jpeg");
+}
+.chef3 {
+  background: url("../public/assets/andreapugliese/chef3.jpeg");
+}
+.chef4 {
+  background: url("../public/assets/andreapugliese/chef6.jpeg");
+}
+.chef5 {
+  background: url("../public/assets/andreapugliese/chef5.jpeg");
+}
+.chef6 {
+  background: url("../public/assets/andreapugliese/chef7.jpeg");
+}
+.chef1,
+.chef2,
+.chef3,
+.chef4,
+.chef5,
+.chef6 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-to-black {
+  background: linear-gradient(
+    to bottom,
+    rgba(11, 11, 11, 0.94),
+    rgba(11, 11, 11, 0.95),
+    rgba(11, 11, 11, 1)
+  );
+}
+#requestButton {
+  box-shadow: 00px 0px 20px 10px rgba(0, 0, 0, 0.2);
+  transition: all.8s;
+}
+#requestButton:hover {
+  box-shadow: 00px 0px 20px 10px rgba(245, 245, 245, 0.2);
+  font-size: 0.85em;
+  cursor: pointer;
+}

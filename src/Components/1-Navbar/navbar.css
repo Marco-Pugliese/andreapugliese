@@ -1,0 +1,38 @@
+#headermenu div,
+#headermenu svg {
+  transition: ease-out all 0.8s;
+}
+#headermenu div:not(:last-of-type):hover {
+  font-size: 1.2em;
+  color: var(--contrast);
+  text-shadow: 0 0px 10px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+#headermenu div:last-of-type:hover {
+  font-size: 1.4em;
+  color: var(--contrast);
+  cursor: pointer;
+}
+
+.fs-small {
+  font-size: 0.8em;
+}
+
+.hamburger,
+#hamburger {
+  transition: all 0.4s !important;
+}
+
+.hamburger:hover,
+#hamburger:hover {
+  color: rgb(46, 120, 46) !important;
+  cursor: pointer;
+  user-select: none !important;
+}
+
+#img-logo {
+  width: 300px;
+}
+#generalheader {
+  height: 15vh;
+}
