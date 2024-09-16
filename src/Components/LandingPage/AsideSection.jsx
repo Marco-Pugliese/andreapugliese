@@ -1,73 +1,44 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { useSelector } from "react-redux";
+import SliderContainer from "./SliderContainer";
+import { useEffect } from "react";
 
 const AsideSection = () => {
+  const LangInUse = useSelector((state) => state.lang);
+  useEffect(() => {
+    console.log(LangInUse);
+  }, [LangInUse]);
   return (
     <div id="Aside">
-      <div className="w-100 text-center pt-5 fs-3 ">
+      <div className="w-100 text-center py-5 fs-3 ">
         <section>
           <div className="py-4">
-            <span className="text-light">
-              Looking to book your next event? I am just a click away!
+            <span className="text-Light">
+              {LangInUse === "Eng" && (
+                <>Want to know something more? You{"'"}re just a click away!</>
+              )}
+
+              {LangInUse === "Esp" && (
+                <>
+                  ¿Quieres saber algo más? ¡Estás a solo un click de distancia!
+                </>
+              )}
+              {LangInUse === "Ita" && (
+                <>Vuoi saperne di più? Sei solo ad un click di distanza!</>
+              )}
             </span>
           </div>
-          <div className="my-4 fs-small">
+          <div className="py-4 fs-small">
             <span
               id="requestButton"
-              className="bg-white px-5 py-3 rounded-3 fs-small"
+              className="bg-light text-Dark px-5 py-3 rounded-3 fs-small"
             >
-              Request a quote Now!
+              {LangInUse === "Eng" && <>Let{"'"}s get in touch</>}
+              {LangInUse === "Esp" && <>Pongámonos en contacto!</>}
+              {LangInUse === "Ita" && <>Mettiamoci in contatto!</>}
             </span>
           </div>
         </section>
-        <section>
-          <Container fluid>
-            <Row className="mt-5">
-              <Col className=" col-4 col-lg-3 col-xxl-2">
-                <div className="chef1 p-4 same-size"></div>
-              </Col>
-
-              <Col className="same-size col-4 col-lg-3 col-xxl-2">
-                <div className="chef2 p-4 same-size"></div>
-              </Col>
-
-              <Col className="same-size  col-4 col-lg-3 col-xxl-2">
-                <div className="chef3 p-4 same-size"></div>
-              </Col>
-
-              <Col className="same-size col-4 col-lg-3 col-xxl-2">
-                <div className="chef4 p-4 same-size"></div>
-              </Col>
-              <Col className="same-size col-4 col-lg-3 col-xxl-2">
-                <div className="chef5 p-4 same-size"></div>
-              </Col>
-              <Col className="same-size col-4 col-lg-3 col-xxl-2">
-                <div className="chef6 p-4 same-size"></div>
-              </Col>
-
-              <Col className=" col-4 col-lg-3 col-xxl-2">
-                <div className="chef1 p-4 same-size"></div>
-              </Col>
-
-              <Col className="same-size col-4 col-lg-3 col-xxl-2">
-                <div className="chef2 p-4 same-size"></div>
-              </Col>
-
-              <Col className="same-size  col-4 col-lg-3 col-xxl-2">
-                <div className="chef3 p-4 same-size"></div>
-              </Col>
-
-              <Col className="same-size col-4 col-lg-3 col-xxl-2">
-                <div className="chef4 p-4 same-size"></div>
-              </Col>
-              <Col className="same-size col-4 col-lg-3 col-xxl-2">
-                <div className="chef5 p-4 same-size"></div>
-              </Col>
-              <Col className="same-size col-4 col-lg-3 col-xxl-2">
-                <div className="chef6 p-4 same-size"></div>
-              </Col>
-            </Row>
-          </Container>
-        </section>
+        <SliderContainer />
       </div>
     </div>
   );

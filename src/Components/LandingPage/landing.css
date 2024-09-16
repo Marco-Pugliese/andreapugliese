@@ -1,19 +1,22 @@
 #generalHero {
-  height: 65vh;
-  background: url("../public/assets/andreapugliese/andreap.jpeg");
-  background-size: cover;
+  margin-top: 10vh;
+  height: 90vh;
+  background: white;
+  background-image: url("../public/assets/andreapugliese/andreap2.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
 }
-#generalHero > div {
-  backdrop-filter: brightness(70%);
-}
+
+/* .filterblue {
+  background: #00000023;
+} */
 #heroLine {
-  color: white;
-  text-shadow: 0px 0px 20px rgb(131, 118, 118);
+  text-shadow: 0px 0px 20px rgba(131, 118, 118, 0.084);
+  top: 60%;
 }
 #heroLine > div:first-child {
   letter-spacing: 0.35em;
-  margin-bottom: 15px;
 }
 #heroLine > div {
   animation: puff-in-center 0.9s cubic-bezier(0.47, 0, 0.745, 0.715) both;
@@ -31,37 +34,14 @@
   font-size: 0.9em;
   cursor: pointer;
 }
-#subHero {
-  background: url("../public/assets/andreapugliese/chef3.jpeg");
-  background-size: cover;
-  background-position: center;
-}
-#subHero > div {
-  background-color: rgba(0, 0, 0, 0.9);
-}
-#chef1,
-#chef2,
-#chef3 {
-  height: 20vh;
-  background-size: contain;
-  background-position: center;
-}
-#chef1 {
-  background: url("../public/assets/andreapugliese/chef6.jpeg");
-}
-#chef2 {
-  background: url("../public/assets/andreapugliese/chef4.jpeg");
-}
-#chef3 {
-  background: url("../public/assets/andreapugliese/pastry1.jpeg");
-}
+
 .col-list {
   height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 300px) {
   #chef1,
   #chef2,
   #chef3 {
@@ -71,28 +51,32 @@
   }
 }
 #Aside {
-  padding-bottom: 5vh;
   background-color: rgba(0, 0, 0, 0.9);
   background-position: center;
   background-size: contain;
 }
 #Aside > div {
-  background: linear-gradient(
-    to bottom,
-    rgba(11, 11, 11, 0.99),
-    rgba(11, 11, 11, 0.95),
-    rgba(11, 11, 11, 0.9),
-    rgba(11, 11, 11, 0.95)
-  );
-}
-#requestNow {
-  background: white;
+  background: var(--dark2);
 }
 
-.same-size {
-  height: 375px;
-  border-radius: 1%;
-  margin-top: 25px;
+@media screen and (min-width: 400px) {
+  .slidingbg {
+    height: 35vh;
+    width: 25vw;
+    padding: 10px;
+    transition: all 0.4s linear;
+  }
+}
+@media screen and (max-width: 400px) {
+  .slidingbg {
+    height: 35vh;
+    width: 50vw;
+    padding: 5px;
+    transition: all 0.4s linear;
+  }
+}
+.slidingbg > div {
+  border-radius: 5px;
 }
 .chef1 {
   background: url("../public/assets/andreapugliese/chef1.jpeg");
@@ -121,16 +105,11 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  filter: grayscale(1) sepia(0.25);
+  transition: all 0.8s;
+  z-index: 0;
 }
 
-.bg-to-black {
-  background: linear-gradient(
-    to bottom,
-    rgba(11, 11, 11, 0.94),
-    rgba(11, 11, 11, 0.95),
-    rgba(11, 11, 11, 1)
-  );
-}
 #requestButton {
   box-shadow: 00px 0px 20px 10px rgba(0, 0, 0, 0.2);
   transition: all.8s;
@@ -139,4 +118,79 @@
   box-shadow: 00px 0px 20px 10px rgba(245, 245, 245, 0.2);
   font-size: 0.85em;
   cursor: pointer;
+}
+#sliderContainer {
+  min-height: 50vh;
+}
+#slide {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+.chef1:hover,
+.chef2:hover,
+.chef3:hover,
+.chef4:hover,
+.chef5:hover,
+.chef6:hover {
+  cursor: pointer;
+  filter: grayscale(0) sepia(0);
+  scale: 1.07;
+  z-index: 1111;
+}
+#subHero {
+  width: 100vw;
+  margin-top: 20vh;
+}
+.bluebordertop1 {
+  color: var(--dark2);
+  border-top: 2px solid var(--dark2);
+  padding-top: 5px;
+  text-shadow: 0 0 15px var(--dark2);
+}
+.bluebordertop {
+  color: var(--dark2);
+  border-top: 1px solid var(--dark2);
+}
+.blueborderbottom {
+  color: var(--dark2);
+  border-bottom: 1px solid var(--dark2);
+}
+
+.imgbg1 {
+  background: url("../public/assets/andreapugliese/chef2.jpeg");
+  background-size: cover;
+}
+.imgbg2 {
+  background: url("../public/assets/andreapugliese/chef6.jpeg");
+}
+.imgbg3 {
+  background: url("../public/assets/andreapugliese/andreap4.jpeg");
+}
+.imgbg1,
+.imgbg2,
+.imgbg3 {
+  height: 45vh !important;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.8s !important;
+}
+.imgbg1:hover,
+.imgbg2:hover,
+.imgbg3:hover {
+  scale: 1.1em;
+  cursor: pointer;
+}
+.btnLanding {
+  background: var(--dark);
+  border: 1px solid rgba(169, 169, 169, 0.1);
+  transition: all 0.8s;
+  color: white;
+}
+.btnLanding:hover {
+  scale: 1.1;
+  cursor: pointer;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  background: var(--contrast);
+  color: var(--dark2);
 }

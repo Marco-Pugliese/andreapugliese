@@ -1,17 +1,22 @@
-#headermenu div,
-#headermenu svg {
-  transition: ease-out all 0.8s;
+.navElement {
+  transition: all 0.8s;
+  font-size: 1.1em;
 }
-#headermenu div:not(:last-of-type):hover {
-  font-size: 1.2em;
-  color: var(--contrast);
-  text-shadow: 0 0px 10px rgba(0, 0, 0, 0.8);
-  cursor: pointer;
+.flags {
+  transition: all 0.8s;
+  font-size: 1.5em;
 }
-#headermenu div:last-of-type:hover {
-  font-size: 1.4em;
+.navElement:hover {
+  font-size: 1.35em;
   color: var(--contrast);
+  /* text-shadow: 0 0px 15px rgba(0, 0, 0, 0.8); */
   cursor: pointer;
+  font-weight: bolder !important;
+}
+.flags:hover {
+  font-size: 2.1em;
+  cursor: pointer;
+  font-weight: bolder !important;
 }
 
 .fs-small {
@@ -21,18 +26,41 @@
 .hamburger,
 #hamburger {
   transition: all 0.4s !important;
+  color: var(--dark) !important;
 }
 
 .hamburger:hover,
 #hamburger:hover {
-  color: rgb(46, 120, 46) !important;
+  color: var(--contrast) !important;
   cursor: pointer;
   user-select: none !important;
 }
 
 #img-logo {
-  width: 300px;
+  transition: all 0.8s;
+  width: 100%;
+  height: 100%;
 }
+@media screen and (max-width: 499px) {
+  #img-logoContainer {
+    width: 220px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  #img-logoContainer {
+    width: 300px;
+  }
+}
+
 #generalheader {
-  height: 15vh;
+  height: 10vh;
+  background: whitesmoke;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1111;
+}
+.bg-smoke {
+  background: whitesmoke;
 }

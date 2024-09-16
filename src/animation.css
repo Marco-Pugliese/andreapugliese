@@ -112,7 +112,7 @@
   }
 }
 .puff-in-center {
-  animation: puff-in-center 0.9s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: puff-in-center 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
 @keyframes puff-in-center {
   0% {
@@ -124,5 +124,147 @@
     transform: scale(1);
     filter: blur(0px);
     opacity: 1;
+  }
+}
+
+.row1 {
+  animation: slide1 25s linear infinite;
+  position: absolute;
+}
+@keyframes slide1 {
+  0% {
+    position: absolute;
+    right: -100vw;
+  }
+  100% {
+    position: absolute;
+    right: 100vw;
+  }
+}
+.row2 {
+  animation: slide2 25s linear infinite;
+  animation-delay: 12.5s;
+  opacity: 0;
+  position: absolute;
+}
+@keyframes slide2 {
+  0% {
+    opacity: 1;
+    position: absolute;
+    right: -100vw;
+  }
+  100% {
+    opacity: 1;
+    position: absolute;
+    right: 100vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  .slidingbg {
+    height: 35vh;
+    width: 50vw !important;
+    padding: 5px;
+  }
+  @keyframes slide2 {
+    0% {
+      opacity: 1;
+      position: absolute;
+      right: -200vw;
+    }
+    100% {
+      opacity: 1;
+      position: absolute;
+      right: 200vw;
+    }
+  }
+  @keyframes slide1 {
+    0% {
+      position: absolute;
+      right: -200vw;
+    }
+    100% {
+      position: absolute;
+      right: 200vw;
+    }
+  }
+}
+
+.bg-effect1 {
+  animation: bg-effect 1.5s linear both;
+  box-shadow: 0 0 100px 1px #00000015;
+  color: var(--light);
+  font-size: 0.9em !important;
+  letter-spacing: 1.1em;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.633);
+}
+
+@keyframes bg-effect {
+  0% {
+    margin-top: 5vh;
+    background: #2f3e65;
+    height: 0vh;
+    /* color: transparent; */
+  }
+  50% {
+    /* color: transparent; */
+  }
+  100% {
+    height: 13vh;
+
+    background: #080f22;
+    margin-top: 0vh;
+    padding: 5vh;
+    /* color: lightblue; */
+  }
+}
+.filterchange {
+  animation: fitlerchange1 6s linear both;
+}
+
+@keyframes filterchange1 {
+  0% {
+    filter: grayscale(1);
+  }
+  100% {
+    filter: grayscale(0);
+  }
+}
+
+.showMeAppear {
+  animation: showMeAppear 5s linear both;
+}
+@keyframes showMeAppear {
+  0% {
+    height: 0vh;
+    color: transparent;
+  }
+  33% {
+    color: transparent;
+  }
+  50% {
+    color: var(--dark2);
+  }
+  100% {
+    height: 28.6vh;
+    color: var(--dark2);
+  }
+}
+.showMeDisappear {
+  animation: showMeDisappear 5s linear both;
+}
+@keyframes showMeDisappear {
+  0% {
+    height: 28.6vh;
+    color: var(--dark2);
+  }
+  33% {
+    color: var(--dark2);
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    height: 0vh;
+    color: transparent;
   }
 }

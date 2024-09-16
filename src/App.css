@@ -3,11 +3,12 @@
 @import url("../src/Components/LandingPage/landing.css");
 @import url("../src/Components/1-Navbar/navbar.css");
 :root {
-  --dark: #110b11;
-  --light: #fde8e9;
-  --secondary: #6c6f7f;
-  --contrastLight: #c7efcf;
-  --contrast: #84bc9c;
+  --dark: #131d3a;
+  --dark2: #080f22;
+  --darkLight: #1d496e;
+
+  --light: rgb(247, 226, 210);
+  --contrast: #e3d26f;
 }
 * {
   padding: 0;
@@ -20,4 +21,44 @@
   /* font-family: 'Poppins', sans-serif; */
   font-weight: 400;
   /* font-style: normal; */
+}
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden !important;
+}
+
+.bg-Dark {
+  background: var(--dark) !important;
+}
+.bg-Darker {
+  background: var(--dark2) !important;
+}
+.bg-White {
+  background: var(--white) !important;
+}
+
+.bg-DarkLight {
+  background: var(--darkLight) !important;
+}
+.bg-Contrast {
+  background: var(--contrast) !important;
+}
+.text-Dark {
+  color: var(--dark) !important;
+}
+.text-Dark {
+  color: var(--dark2) !important;
+}
+.text-White {
+  color: var(--white) !important;
+}
+.text-Light {
+  color: var(--light) !important;
+}
+.text-DarkLight {
+  color: var(--darkLight) !important;
+}
+.text-Contrast {
+  color: var(--contrast) !important;
 }

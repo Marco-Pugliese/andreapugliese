@@ -10,8 +10,8 @@ const Footer = () => {
   const today = new Date();
   const thisYear = today.getFullYear();
   return (
-    <Container fluid className="p-0">
-      <div className="d-flex justify-content-center bg-light my-3">
+    <Container fluid className="p-0 bg-Darker">
+      <div className="d-flex justify-content-center text-Dark bg-light  py-3">
         <div className="d-flex flex-column">
           <div className="text-start">
             <div className="text-end fs-small">
@@ -29,8 +29,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-to-black py-3">
-        <div className="text-white fs-small d-flex justify-content-center align-items-center">
-          Made with <HeartFill className="text-success heartbeat fs-3 mx-2" />{" "}
+        <div className="text-Light fs-small d-flex justify-content-center align-items-center">
+          Made with <HeartFill className="text-DarkLight heartbeat fs-3 mx-2" />{" "}
           for my Brother, by lessismore
         </div>
       </div>

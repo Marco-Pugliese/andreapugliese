@@ -1,10 +1,8 @@
 const Logo = () => {
   return (
-    <img
-      src="./assets/img/logo-andreapugliesecocina.png"
-      alt=""
-      id="img-logo"
-    />
+    <div id="img-logoContainer">
+      <img src="./assets/img/logo-andreapugliese.png" alt="" id="img-logo" />
+    </div>
   );
 };
 export default Logo;
