@@ -1,13 +1,10 @@
 import { Container } from "react-bootstrap";
 import SubHeroTriplet from "./SubHeroTriplet";
 import { useSelector } from "react-redux";
-import { useEffect } from "react";
 
 const SubHeroSection = () => {
-  const LangInUse = useSelector((state) => state.lang);
-  useEffect(() => {
-    console.log(LangInUse);
-  }, [LangInUse]);
+  const LangInUse = useSelector((state) => state.Lang.lang);
+
   return (
     <Container id="subHero" className="text-light mb-5">
       <div className="h-100 w-100">

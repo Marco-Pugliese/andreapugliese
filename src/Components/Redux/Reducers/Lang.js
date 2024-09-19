@@ -1,4 +1,5 @@
 import { SET_LANG } from "../Actions";
+
 const initialState = {
   lang: "Eng",
 };

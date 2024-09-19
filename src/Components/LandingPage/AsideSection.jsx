@@ -1,12 +1,9 @@
 import { useSelector } from "react-redux";
 import SliderContainer from "./SliderContainer";
-import { useEffect } from "react";
 
 const AsideSection = () => {
-  const LangInUse = useSelector((state) => state.lang);
-  useEffect(() => {
-    console.log(LangInUse);
-  }, [LangInUse]);
+  const LangInUse = useSelector((state) => state.Lang.lang);
+
   return (
     <div id="Aside">
       <div className="w-100 text-center py-5 fs-3 ">

@@ -2,6 +2,7 @@
 @import url("./animation.css");
 @import url("../src/Components/LandingPage/landing.css");
 @import url("../src/Components/1-Navbar/navbar.css");
+@import url("../src/Components/AboutMePage/aboutM.css");
 :root {
   --dark: #131d3a;
   --dark2: #080f22;
@@ -27,7 +28,9 @@ body {
   width: 100vw;
   overflow-x: hidden !important;
 }
-
+.mtNeces {
+  margin-top: 10vh;
+}
 .bg-Dark {
   background: var(--dark) !important;
 }

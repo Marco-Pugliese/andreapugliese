@@ -3,14 +3,18 @@ import "./App.css";
 import Header from "./Components/1-Navbar/Header";
 import LandingPage from "./Components/LandingPage/LandingPage";
 import Footer from "./Components/Z-Footer/Footer";
+import AboutMePage from "./Components/AboutMePage/AboutMePage";
 
 function App() {
   return (
     <>
       <Header />
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-      </Routes>
+      <div className="mtNeces">
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/aboutMe" element={<AboutMePage />} />
+        </Routes>
+      </div>
       <Footer />
     </>
   );

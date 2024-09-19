@@ -1,5 +1,4 @@
 #generalHero {
-  margin-top: 10vh;
   height: 90vh;
   background: white;
   background-image: url("../public/assets/andreapugliese/andreap2.jpeg");
@@ -159,7 +158,6 @@
 
 .imgbg1 {
   background: url("../public/assets/andreapugliese/chef2.jpeg");
-  background-size: cover;
 }
 .imgbg2 {
   background: url("../public/assets/andreapugliese/chef6.jpeg");
@@ -171,15 +169,16 @@
 .imgbg2,
 .imgbg3 {
   height: 45vh !important;
-  background-size: cover;
+  background-size: 68vh;
   background-position: center;
-  transition: all 0.8s !important;
+  transition: all 2.8s !important;
 }
 .imgbg1:hover,
 .imgbg2:hover,
 .imgbg3:hover {
-  scale: 1.1em;
   cursor: pointer;
+  background-size: 88vh;
+  filter: grayscale(0.5);
 }
 .btnLanding {
   background: var(--dark);
@@ -187,10 +186,60 @@
   transition: all 0.8s;
   color: white;
 }
-.btnLanding:hover {
+.btnLandingSm {
+  background: var(--light);
+  border: 1px solid rgba(169, 169, 169, 0.1);
+  transition: all 0.8s;
+  color: var(--dark2);
+}
+.btnLanding:hover,
+.btnLandingSm:hover {
   scale: 1.1;
   cursor: pointer;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
   background: var(--contrast);
   color: var(--dark2);
+}
+
+.filterdark {
+  animation: getdark 1s linear both;
+  height: 100%;
+  width: 100%;
+  transition: all 0.8s;
+}
+@keyframes getdark {
+  0% {
+    background: rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.75);
+  }
+}
+.filterdark:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+.imgbg1sm {
+  background: url("../public/assets/andreapugliese/chef2.jpeg");
+}
+.imgbg2sm {
+  background: url("../public/assets/andreapugliese/chef6.jpeg");
+}
+.imgbg3sm {
+  background: url("../public/assets/andreapugliese/andreap4.jpeg");
+}
+
+.imgbg1sm,
+.imgbg2sm,
+.imgbg3sm {
+  height: 45vh !important;
+  background-size: 93vh;
+  background-position: center;
+  transition: all 2.8s !important;
+}
+.imgbg1sm:hover,
+.imgbg2sm:hover,
+.imgbg3sm:hover {
+  cursor: pointer;
+  background-size: 115vh;
+  filter: grayscale(0.5);
 }

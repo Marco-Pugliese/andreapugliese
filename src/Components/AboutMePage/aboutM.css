@@ -1,0 +1,8 @@
+#aboutMe {
+  height: 90vh;
+  /* background-image: url("../public/assets/andreapugliese/andreap5.jpeg"); */
+  background-image: url("../public/assets/andreapugliese/chef13.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: var(--light);
+}
