@@ -1,3 +1,4 @@
+import { Col, Row } from "react-bootstrap";
 import { useSelector } from "react-redux";
 
 const AboutMePage = () => {
@@ -5,14 +6,14 @@ const AboutMePage = () => {
 
   return (
     <div id="aboutMe">
-      <div className="filterdark">
+      <Row className="filterdark2 p-5 justify-content-center">
         {LangInUse === "Eng" && (
           <>
-            <div className="px-5">
-              <div className="fs-1 text-center py-5">
+            <Col className="col-12 col-lg-9 col-xxl-7 d-flex flex-column">
+              <div className="fs-1 text-center py-5 ls-2">
                 From Naples to Valencia
               </div>
-              <div>
+              <div className="ls-1">
                 I am Andrea Pugliese, a passionate Italian chef who was born and
                 raised on the beautiful Island of Procida, in the Gulf of
                 Naples. My adventure in Spain began in 2019, and since then I
@@ -31,17 +32,16 @@ const AboutMePage = () => {
                 and, why not, throughout Spain. I hope to share the true flavor
                 of Italian cuisine with you.
               </div>
-            </div>
+            </Col>
           </>
         )}
         {LangInUse === "Esp" && (
           <>
-            <div className="px-5">
-              <div className="fs-1 text-center py-5">
+            <Col className="col-12 col-lg-9 col-xxl-7 d-flex flex-column">
+              <div className="fs-1 text-center py-5 ls-2">
                 Desde Nápoles a Valencia
               </div>
-
-              <div>
+              <div className="ls-1">
                 Soy Andrea Pugliese, un apasionado chef italiano que nació y
                 creció en la hermosa Isla de Procida, en el Golfo de Nápoles. Mi
                 aventura en España comenzó en 2019, y desde entonces he estado
@@ -60,15 +60,16 @@ const AboutMePage = () => {
                 Valenciana y, ¿por qué no?, en toda España. Espero poder
                 compartir el verdadero sabor de la cocina italiana contigo.
               </div>
-            </div>
+            </Col>
           </>
         )}
         {LangInUse === "Ita" && (
           <>
-            <div className="px-5">
-              <div className="fs-1 text-center py-5">Da Napoli a Valencia</div>
-
-              <div>
+            <Col className="col-12 col-lg-9 col-xxl-7 d-flex flex-column">
+              <div className="fs-1 text-center py-5 ls-2">
+                Da Napoli a Valencia
+              </div>
+              <div className="ls-1">
                 Sono Andrea Pugliese, un appassionato chef italiano nato e
                 cresciuto nella bellissima Isola di Procida, nel Golfo di
                 Napoli. La mia avventura in Spagna è iniziata nel 2019 e da
@@ -88,10 +89,10 @@ const AboutMePage = () => {
                 Comunità Valenciana e, perché no, in tutta la Spagna. Spero di
                 poter condividere il vero sapore della cucina italiana con te.
               </div>
-            </div>
+            </Col>
           </>
         )}
-      </div>
+      </Row>
     </div>
   );
 };

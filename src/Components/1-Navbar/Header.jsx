@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <Container fluid className="text-Dark p-0" id="generalheader">
       <Row className="h-100 fs-6 d-flex align-items-center justify-content-center">
-        <Col className="col-5 ms-2">
+        <Col className="col-4 col-xl-5 ms-2">
           <Link
             to={"/"}
             className="nav-link"

@@ -3,6 +3,7 @@
 @import url("../src/Components/LandingPage/landing.css");
 @import url("../src/Components/1-Navbar/navbar.css");
 @import url("../src/Components/AboutMePage/aboutM.css");
+@import url("../src/Components/CookingClassPage/cookingClass.css");
 :root {
   --dark: #131d3a;
   --dark2: #080f22;

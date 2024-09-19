@@ -231,7 +231,7 @@
 }
 
 .showMeAppear {
-  animation: showMeAppear 5s linear both;
+  animation: showMeAppear 2s linear both;
 }
 @keyframes showMeAppear {
   0% {
@@ -250,17 +250,17 @@
   }
 }
 .showMeDisappear {
-  animation: showMeDisappear 5s linear both;
+  animation: showMeDisappear 2s linear both;
 }
 @keyframes showMeDisappear {
   0% {
     height: 28.6vh;
     color: var(--dark2);
   }
-  33% {
+  25% {
     color: var(--dark2);
   }
-  50% {
+  38% {
     color: transparent;
   }
   100% {

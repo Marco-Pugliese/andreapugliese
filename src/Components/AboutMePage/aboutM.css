@@ -5,4 +5,45 @@
   background-size: cover;
   background-position: center;
   color: var(--light);
+  transition: all 0.8s;
+}
+.ls-2 {
+  transition: all 0.8s;
+  letter-spacing: 0.45em;
+}
+.ls-1 {
+  display: flex;
+  letter-spacing: 0.3em;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1200px) {
+  #aboutMe * {
+    font-size: 1.1em;
+  }
+  #aboutMe .ls-2 {
+    font-size: 2.6em !important;
+  }
+}
+@media screen and (max-width: 1199px) {
+  #aboutMe * {
+    font-size: 1.07em;
+  }
+  #aboutMe .ls-2 {
+    font-size: 2.4em !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  #aboutMe * {
+    font-size: 0.99em;
+  }
+}
+.filterdark2 {
+  transition: all 0.8s;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+.filterdark2:hover {
+  background: rgba(0, 0, 0, 0.9) !important;
 }

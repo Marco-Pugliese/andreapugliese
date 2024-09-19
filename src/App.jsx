@@ -4,6 +4,7 @@ import Header from "./Components/1-Navbar/Header";
 import LandingPage from "./Components/LandingPage/LandingPage";
 import Footer from "./Components/Z-Footer/Footer";
 import AboutMePage from "./Components/AboutMePage/AboutMePage";
+import CookingClassPage from "./Components/CookingClassPage/CookingClassPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/aboutMe" element={<AboutMePage />} />
+          <Route path="/cookingClass" element={<CookingClassPage />} />
         </Routes>
       </div>
       <Footer />
