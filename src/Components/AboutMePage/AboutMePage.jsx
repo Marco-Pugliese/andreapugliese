@@ -6,10 +6,10 @@ const AboutMePage = () => {
 
   return (
     <div id="aboutMe">
-      <Row className="filterdark2 p-5 justify-content-center">
+      <Row className="filterdark2 px-5 justify-content-center align-items-around">
         {LangInUse === "Eng" && (
           <>
-            <Col className="col-12 col-lg-9 col-xxl-7 d-flex flex-column">
+            <Col className="col-12 col-lg-9 col-xxl-7 d-flex flex-column d-flex justify-content-center">
               <div className="fs-1 text-center py-5 ls-2">
                 From Naples to Valencia
               </div>
@@ -37,7 +37,7 @@ const AboutMePage = () => {
         )}
         {LangInUse === "Esp" && (
           <>
-            <Col className="col-12 col-lg-9 col-xxl-7 d-flex flex-column">
+            <Col className="col-12 col-lg-9 col-xxl-7 d-flex flex-column d-flex justify-content-center">
               <div className="fs-1 text-center py-5 ls-2">
                 Desde Nápoles a Valencia
               </div>
@@ -65,7 +65,7 @@ const AboutMePage = () => {
         )}
         {LangInUse === "Ita" && (
           <>
-            <Col className="col-12 col-lg-9 col-xxl-7 d-flex flex-column">
+            <Col className="col-12 col-lg-9 col-xxl-7 d-flex flex-column d-flex justify-content-center">
               <div className="fs-1 text-center py-5 ls-2">
                 Da Napoli a Valencia
               </div>
