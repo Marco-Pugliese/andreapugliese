@@ -1,7 +1,7 @@
 #generalHero {
   height: 90vh;
   background: white;
-  background-image: url("./assets/andreapugliese/andreap2.jpeg");
+  background-image: url("../../../public/assets/andreapugliese/andreap2.jpeg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -79,22 +79,22 @@
   border-radius: 5px;
 }
 .chef1 {
-  background: url("./assets/andreapugliese/chef1.jpeg");
+  background: url("../../../public/assets/andreapugliese/chef1.jpeg");
 }
 .chef2 {
-  background: url("./assets/andreapugliese/chef2.jpeg");
+  background: url("../../../public/assets/andreapugliese/chef2.jpeg");
 }
 .chef3 {
-  background: url("./assets/andreapugliese/chef3.jpeg");
+  background: url("../../../public/assets/andreapugliese/chef3.jpeg");
 }
 .chef4 {
-  background: url("./assets/andreapugliese/chef6.jpeg");
+  background: url("../../../public/assets/andreapugliese/chef6.jpeg");
 }
 .chef5 {
-  background: url("./assets/andreapugliese/chef5.jpeg");
+  background: url("../../../public/assets/andreapugliese/chef5.jpeg");
 }
 .chef6 {
-  background: url("./assets/andreapugliese/chef7.jpeg");
+  background: url("../../../public/assets/andreapugliese/chef7.jpeg");
 }
 .chef1,
 .chef2,
@@ -158,13 +158,13 @@
 }
 
 .imgbg1 {
-  background: url("./assets/andreapugliese/chef2.jpeg");
+  background: url("../../../public/assets/andreapugliese/chef2.jpeg");
 }
 .imgbg2 {
-  background: url("./assets/andreapugliese/chef6.jpeg");
+  background: url("../../../public/assets/andreapugliese/chef6.jpeg");
 }
 .imgbg3 {
-  background: url("./assets/andreapugliese/andreap4.jpeg");
+  background: url("../../../public/assets/andreapugliese/andreap4.jpeg");
 }
 .imgbg1,
 .imgbg2,
@@ -220,13 +220,13 @@
   background: rgba(0, 0, 0, 0.9);
 }
 .imgbg1sm {
-  background: url("./assets/andreapugliese/chef2.jpeg");
+  background: url("../../../public/assets/andreapugliese/chef2.jpeg");
 }
 .imgbg2sm {
-  background: url("./assets/andreapugliese/chef6.jpeg");
+  background: url("../../../public/assets/andreapugliese/chef6.jpeg");
 }
 .imgbg3sm {
-  background: url("./assets/andreapugliese/andreap4.jpeg");
+  background: url("../../../public/assets/andreapugliese/andreap4.jpeg");
 }
 
 .imgbg1sm,
