@@ -4,11 +4,11 @@
 @import url("../src/Components/1-Navbar/navbar.css");
 @import url("../src/Components/AboutMePage/aboutM.css");
 @import url("../src/Components/CookingClassPage/cookingClass.css");
+@import url("../src/Components/LoadingPage/loading.css");
 :root {
   --dark: #131d3a;
   --dark2: #080f22;
   --darkLight: #1d496e;
-
   --light: rgb(247, 226, 210);
   --contrast: #e3d26f;
 }

@@ -11,7 +11,7 @@ const CookingClassPage = () => {
         <div className="filterdark2 text-Light h-100 d-flex align-items-around justify-content-center px-5">
           {LangInUse === "Esp" && (
             <Row className="d-flex align-items-center justify-content-center">
-              <Col className="Col-12 col-xl-10 col-xxl-8 ls-2">
+              <Col className="col-12 col-xl-10 col-xxl-8 ls-2">
                 ¡Descubre la Cocina Italiana Conmigo! ¿Te gustaría aprender a
                 preparar auténticos platos italianos en un ambiente divertido y
                 acogedor? ¡Estás en el lugar correcto! Ofrezco cursos de cocina
@@ -142,7 +142,7 @@ const CookingClassPage = () => {
 
           {LangInUse === "Eng" && (
             <Row className="d-flex align-items-center justify-content-center">
-              <Col className="Col-12 col-xl-10 col-xxl-8 ls-2">
+              <Col className="col-12 col-xl-10 col-xxl-8 ls-2">
                 Discover Italian Cuisine with Me! Would you like to learn how to
                 prepare authentic Italian dishes in a fun and welcoming
                 environment? You’re in the right place! I offer Italian cooking
@@ -268,7 +268,7 @@ const CookingClassPage = () => {
 
           {LangInUse === "Ita" && (
             <Row className="d-flex align-items-center justify-content-center">
-              <Col className="Col-12 col-xl-10 col-xxl-8 ls-2">
+              <Col className="col-12 col-xl-10 col-xxl-8 ls-2">
                 Scopri la Cucina Italiana con Me! Ti piacerebbe imparare a
                 preparare autentici piatti italiani in un ambiente divertente e
                 accogliente? Sei nel posto giusto! Offro corsi di cucina

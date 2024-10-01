@@ -5,12 +5,12 @@ const AboutMePage = () => {
   const LangInUse = useSelector((state) => state.Lang.lang);
 
   return (
-    <div id="aboutMe">
-      <Row className="filterdark2 px-5 justify-content-center align-items-around">
+    <div id="aboutMe" className="">
+      <Row className="filterdark2 p-5 justify-content-center align-items-around">
         {LangInUse === "Eng" && (
           <>
             <Col className="col-12 col-lg-9 col-xxl-7 d-flex flex-column d-flex justify-content-center">
-              <div className="fs-1 text-center py-5 ls-2">
+              <div className="fs-1 text-center  ls-2">
                 From Naples to Valencia
               </div>
               <div className="ls-1">

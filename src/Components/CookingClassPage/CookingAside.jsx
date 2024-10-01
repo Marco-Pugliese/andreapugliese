@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 const CookingAside = () => {
   const LangInUse = useSelector((state) => state.Lang.lang);
   return (
-    <div id="cookingAside">
+    <div id="cookingAside" className="">
       <Row>
         {LangInUse === "Ita" && (
           <>

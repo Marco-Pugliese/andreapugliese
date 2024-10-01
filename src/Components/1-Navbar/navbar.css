@@ -41,7 +41,17 @@
   width: 100%;
   height: 100%;
 }
-@media screen and (max-width: 499px) {
+#img-logoContainer {
+  padding: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+@media screen and (max-width: 315px) {
+  #img-logoContainer {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 316px) {
   #img-logoContainer {
     width: 220px;
   }
@@ -52,9 +62,14 @@
     width: 300px;
   }
 }
+/* @media screen and (max-height: 850px) {
+  #img-logoContainer {
+    width: 150px;
+  }
+} */
 
 #generalheader {
-  height: 10vh;
+  min-height: 10vh;
   background: whitesmoke;
   position: fixed;
   top: 0;

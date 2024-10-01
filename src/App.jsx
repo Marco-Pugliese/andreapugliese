@@ -5,19 +5,43 @@ import LandingPage from "./Components/LandingPage/LandingPage";
 import Footer from "./Components/Z-Footer/Footer";
 import AboutMePage from "./Components/AboutMePage/AboutMePage";
 import CookingClassPage from "./Components/CookingClassPage/CookingClassPage";
+import { useEffect, useState } from "react";
+import Loading from "./Components/LoadingPage/Loading";
 
 function App() {
+  const [loaded, setIsLoaded] = useState(false);
+  const changedLoaded = () => {
+    setIsLoaded(true);
+  };
+  const changeStatus = () => {
+    setTimeout(changedLoaded, 5000);
+  };
+  useEffect(() => {
+    changeStatus();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  useEffect(() => {
+    console.log("the page is loaded?:" + loaded);
+  }, [loaded]);
   return (
     <>
-      <Header />
-      <div className="mtNeces">
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/aboutMe" element={<AboutMePage />} />
-          <Route path="/cookingClass" element={<CookingClassPage />} />
-        </Routes>
-      </div>
-      <Footer />
+      {loaded === false ? (
+        <Loading />
+      ) : (
+        <>
+          <Header />
+
+          <div className="mtNeces">
+            <Routes>
+              <Route path="/aboutMe" element={<AboutMePage />} />
+              <Route path="/cookingClass" element={<CookingClassPage />} />
+              <Route path="/" element={<LandingPage />} />
+            </Routes>
+          </div>
+
+          <Footer />
+        </>
+      )}
     </>
   );
 }
