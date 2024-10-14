@@ -51,24 +51,24 @@ const AsideSection = () => {
             </Modal.Header>
             <Modal.Body>
               <div id="contactInfo">
-                <div className="d-flex justify-content-between align-items-center my-2">
+                <div className="d-flex small justify-content-between align-items-center my-2">
                   <EnvelopeAtFill className="fs-6 ms-4" />
-                  andreapugliesecocina@yahoo.com
+                  <div className="small">andreapugliesecocina@yahoo.com</div>
                   <EnvelopeAtFill className="fs-6 me-4" />
                 </div>
-                <div className="d-flex justify-content-between align-items-center my-2">
+                <div className="d-flex small justify-content-between align-items-center my-2">
                   <TelephoneFill className="fs-6 ms-4" />
-                  +39 3341445233
+                  <div className="small"> +00112233112233</div>
                   <TelephoneFill className="fs-6 me-4" />
                 </div>
-                <div className="d-flex justify-content-between align-items-center my-2">
+                <div className="d-flex small justify-content-between align-items-center my-2">
                   <Instagram className="fs-6 ms-4" />
                   <a
-                    href="https://www.instagram.com/andreapugliesecocina"
+                    href="https://www.instagram.com/andreapugliesecocina?igsh=cXM2d2xxOXMzMW1p"
                     target="_blank"
                     className="text-black text-decoration-none"
                   >
-                    @andreapugliesecocina
+                    <div className="small"> @andreapugliesecocina</div>
                   </a>
                   <Instagram className="fs-6 me-4" />
                 </div>

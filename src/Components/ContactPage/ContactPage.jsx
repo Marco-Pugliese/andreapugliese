@@ -33,7 +33,9 @@ const ContactPage = () => {
                       setShowMail(!showMail);
                     }}
                   />
-                  {showMail && <div>andreapugliesecocina@yahoo.com</div>}
+                  {showMail && (
+                    <div className="small">andreapugliesecocina@yahoo.com</div>
+                  )}
                 </div>
               </>
               <>
@@ -44,7 +46,7 @@ const ContactPage = () => {
                       setShowNumber(!showNumber);
                     }}
                   />
-                  {showNumber && <div>+39 3341445233</div>}
+                  {showNumber && <div className="small">+39 3341445233</div>}
                 </div>
               </>
               <>
@@ -64,9 +66,9 @@ const ContactPage = () => {
                     }}
                   />
                   {showInstagram && (
-                    <div>
+                    <div className="small">
                       <a
-                        href="https://www.instagram.com/andreapugliesecocina"
+                        href="https://www.instagram.com/andreapugliesecocina?igsh=cXM2d2xxOXMzMW1p"
                         target="_blank"
                         className={
                           instagramIsHovered === true

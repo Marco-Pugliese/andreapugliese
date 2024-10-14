@@ -20,25 +20,29 @@ const Footer = () => {
             <div className="text-end fs-small">
               <span className="fs-small">©{thisYear}</span>
             </div>
-            <Logo />
+            <div className="small">
+              <Logo />
+            </div>
           </div>
-          <div className="text-end">
+          <div className="text-end d-flex flex-row align-items-center justify-content-end">
             <TelephoneFill
               className="fs-6 me-2 cursorOnHover shake-left "
               onClick={() => {
                 setShowNumber(!showNumber);
               }}
-            />{" "}
-            {showNumber && <> +39 3341445233</>}
+            />
+            {showNumber && <div className="small"> +00112233112233</div>}
           </div>
-          <div className="text-end">
+          <div className="text-end d-flex flex-row align-items-center justify-content-end">
             <EnvelopeAtFill
               className="fs-6 me-2 cursorOnHover jello-horizontal"
               onClick={() => {
                 setShowMail(!showMail);
               }}
             />
-            {showMail && <>andreapugliesecocina@yahoo.com</>}
+            {showMail && (
+              <div className="small">andreapugliesecocina@yahoo.com</div>
+            )}
           </div>
         </div>
       </div>
