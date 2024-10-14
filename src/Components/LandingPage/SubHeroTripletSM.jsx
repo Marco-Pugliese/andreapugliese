@@ -31,13 +31,6 @@ const SubHeroTripletSM = () => {
                 </>
               )}
             </div>
-            <div>
-              <div className="rounded-3 px-3 py-1 mt-4 btnLandingSm">
-                {LangInUse === "Eng" && <>Hello</>}
-                {LangInUse === "Esp" && <>Hola</>}
-                {LangInUse === "Ita" && <>Ciao</>}
-              </div>
-            </div>
           </div>
         </Col>
         <Col className="imgbg2sm m-0 p-0 col-10 mt-2">
@@ -63,13 +56,6 @@ const SubHeroTripletSM = () => {
                   in base alle tue preferenze.
                 </>
               )}
-            </div>
-            <div>
-              <div className="rounded-3 px-3 py-1 mt-4 btnLandingSm">
-                {LangInUse === "Eng" && <>Hello</>}
-                {LangInUse === "Esp" && <>Hola</>}
-                {LangInUse === "Ita" && <>Ciao</>}
-              </div>
             </div>
           </div>
         </Col>
@@ -98,13 +84,7 @@ const SubHeroTripletSM = () => {
                 </>
               )}
             </div>
-            <div>
-              <div className="rounded-3 px-3 py-1 mt-4 btnLandingSm">
-                {LangInUse === "Eng" && <>Hello</>}
-                {LangInUse === "Esp" && <>Hola</>}
-                {LangInUse === "Ita" && <>Ciao</>}
-              </div>
-            </div>
+            <div></div>
           </div>
         </Col>
       </Row>

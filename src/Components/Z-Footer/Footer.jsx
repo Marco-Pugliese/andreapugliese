@@ -5,13 +5,16 @@ import {
   HeartFill,
   TelephoneFill,
 } from "react-bootstrap-icons";
+import { useState } from "react";
 
 const Footer = () => {
+  const [showNumber, setShowNumber] = useState(false);
+  const [showMail, setShowMail] = useState(false);
   const today = new Date();
   const thisYear = today.getFullYear();
   return (
     <Container fluid className="p-0 bg-Darker">
-      <div className="d-flex justify-content-center text-Dark bg-light  py-3">
+      <div className="d-flex justify-content-center text-Dark bg-light  pt-5 pb-3">
         <div className="d-flex flex-column">
           <div className="text-start">
             <div className="text-end fs-small">
@@ -20,11 +23,22 @@ const Footer = () => {
             <Logo />
           </div>
           <div className="text-end">
-            <TelephoneFill className="fs-6 me-2" /> +00 12345678910
+            <TelephoneFill
+              className="fs-6 me-2 cursorOnHover shake-left "
+              onClick={() => {
+                setShowNumber(!showNumber);
+              }}
+            />{" "}
+            {showNumber && <> +39 3341445233</>}
           </div>
           <div className="text-end">
-            <EnvelopeAtFill className="fs-6 me-2" />
-            andreapugliesecocina@yahoo.com
+            <EnvelopeAtFill
+              className="fs-6 me-2 cursorOnHover jello-horizontal"
+              onClick={() => {
+                setShowMail(!showMail);
+              }}
+            />
+            {showMail && <>andreapugliesecocina@yahoo.com</>}
           </div>
         </div>
       </div>

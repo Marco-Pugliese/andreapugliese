@@ -13,7 +13,8 @@
 }
 .ls-1 {
   display: flex;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.18em;
+  word-spacing: 0.55em;
   line-height: 1.2em;
   font-weight: bold;
   transition: all 0.8s;
@@ -29,6 +30,9 @@
   .ls-1 {
     padding-top: 50px;
   }
+}
+#aboutMe * {
+  text-shadow: 0 0 5px black;
 }
 @media screen and (max-width: 1199px) {
   #aboutMe * {

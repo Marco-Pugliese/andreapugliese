@@ -1,0 +1,51 @@
+#ContactPage {
+  background-image: url("../../../public/assets/img/bg2astract.avif");
+  background-size: cover;
+  min-height: 90vh;
+}
+#ContactPage .col {
+  transition: all 0.8s;
+}
+.minh80 {
+  min-height: 90vh;
+  background: rgba(0, 0, 0, 0.85) !important;
+}
+.minh35 {
+  min-height: 15vh;
+  background: rgba(0, 0, 0, 0.85) !important;
+}
+.minh10 {
+  min-height: 60vh;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  min-width: 70vw;
+  box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.3);
+  color: var(--dark);
+}
+.changeColor2 {
+  text-decoration: none;
+  color: var(--light);
+  transition: all 0.82s;
+}
+.cursorOnHover2:hover {
+  scale: 1.1;
+  cursor: pointer;
+  color: var(--light) !important;
+}
+
+.cursorOnHover2 {
+  transition: all 0.82s;
+}
+.text-Dark2 {
+  text-decoration: none;
+  transition: all 0.82s;
+  color: var(--dark);
+}
+.icon-fixed-size {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0; /* Impedisce il ridimensionamento */
+}

@@ -7,6 +7,7 @@ import AboutMePage from "./Components/AboutMePage/AboutMePage";
 import CookingClassPage from "./Components/CookingClassPage/CookingClassPage";
 import { useEffect, useState } from "react";
 import Loading from "./Components/LoadingPage/Loading";
+import ContactPage from "./Components/ContactPage/ContactPage";
 
 function App() {
   const [loaded, setIsLoaded] = useState(false);
@@ -35,6 +36,7 @@ function App() {
             <Routes>
               <Route path="/aboutMe" element={<AboutMePage />} />
               <Route path="/cookingClass" element={<CookingClassPage />} />
+              <Route path="/contacts" element={<ContactPage />} />
               <Route path="/" element={<LandingPage />} />
             </Routes>
           </div>

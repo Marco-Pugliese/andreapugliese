@@ -4,7 +4,7 @@ const SliderContainer = () => {
   return (
     <>
       <section id="sliderContainer">
-        <Container fluid id="slide" className="p-0 position-relative">
+        <Container fluid id="slide" className="p-0 py-5 position-relative">
           <div className="row1 d-flex flex-row">
             <div className="slidingbg">
               <div className="w-100 h-100 chef1"></div>

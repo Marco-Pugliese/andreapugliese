@@ -6,7 +6,6 @@ const CookingClassPage = () => {
   const LangInUse = useSelector((state) => state.Lang.lang);
   return (
     <>
-      {" "}
       <div id="cookingClass">
         <div className="filterdark2 text-Light h-100 d-flex align-items-around justify-content-center px-5">
           {LangInUse === "Esp" && (
@@ -87,7 +86,7 @@ const CookingClassPage = () => {
                       <div className="text-center ls-2 mb-4 py-4">
                         ••Clases Privadas••{" "}
                       </div>
-                      <div className="text-center small">
+                      <div className="text-center">
                         <div className="small mb-3">
                           Si prefieres una atención más personalizada, mis
                           clases privadas son perfectas para ti.
@@ -102,7 +101,7 @@ const CookingClassPage = () => {
                       <div className="text-center ls-2 mb-4 py-4">
                         ••Team Building para Empresas••{" "}
                       </div>
-                      <div className="text-center small">
+                      <div className="text-center">
                         <div className="small mb-3">
                           Fortalece los lazos de tu equipo a través de la
                           cocina.
@@ -119,7 +118,7 @@ const CookingClassPage = () => {
                       <div className="text-center ls-2 mb-4 py-2 py-4">
                         ••Cursos Grupales••{" "}
                       </div>
-                      <div className="text-center small">
+                      <div className="text-center">
                         <div className="small mb-3">
                           Mis clases grupales son abiertas al público, lo que
                           significa que cualquier persona puede inscribirse.
@@ -150,10 +149,12 @@ const CookingClassPage = () => {
                 activities for companies.
               </Col>
 
-              <Col className="col-12 small">
+              <Col className="col-12 small mt-5">
                 <Row>
-                  <Col className="col-12 text-center fs-5 mb-4 ">
-                    <span className="border-bottom px-5">What do I offer?</span>
+                  <Col className="col-12 d-flex justify-content-center text-center fs-5 mt-5 mb-3">
+                    <span className="border-bottom d-block w-50">
+                      What do I offer?
+                    </span>
                   </Col>
                 </Row>
                 <Row className="d-none d-md-flex">
@@ -216,7 +217,7 @@ const CookingClassPage = () => {
                       <div className="text-center ls-2 mb-4 py-4">
                         ••Private Classes••{" "}
                       </div>
-                      <div className="text-center small">
+                      <div className="text-center">
                         <div className="small mb-3">
                           If you prefer more personalized attention, my private
                           classes are perfect for you.
@@ -231,7 +232,7 @@ const CookingClassPage = () => {
                       <div className="text-center ls-2 mb-4 py-4">
                         ••Team Building for Companies••{" "}
                       </div>
-                      <div className="text-center small">
+                      <div className="text-center">
                         <div className="small mb-3">
                           Strengthen your team’s bonds through cooking
                         </div>
@@ -246,7 +247,7 @@ const CookingClassPage = () => {
                       <div className="text-center ls-2 mb-4 py-4">
                         ••Group Courses••{" "}
                       </div>
-                      <div className="text-center small">
+                      <div className="text-center">
                         <div className="small mb-3">
                           group classes are open to the public, which means
                           anyone can sign up.
@@ -340,13 +341,13 @@ const CookingClassPage = () => {
                   </Col>
                   <Col className="col-1 d-none d-xl-block"></Col>
                 </Row>
-                <Row className="d-flex d-md-none px-5">
+                <Row className="d-block d-md-none">
                   <Carousel controls={false} indicators={false} fade>
                     <Carousel.Item>
                       <div className="text-center ls-2 mb-4 py-4">
                         ••Lezioni Private••{" "}
                       </div>
-                      <div className="text-center small">
+                      <div className="text-center">
                         <div className="small mb-3">
                           Se preferisci un{"'"}attenzione più personalizzata, le
                           mie lezioni private sono perfette per te.
@@ -361,7 +362,7 @@ const CookingClassPage = () => {
                       <div className="text-center ls-2 mb-4 py-4">
                         ••Team Building per Aziende••{" "}
                       </div>
-                      <div className="text-center small">
+                      <div className="text-center">
                         <div className="small mb-3">
                           Rafforza i legami del tuo team attraverso la cucina.
                         </div>
@@ -377,7 +378,7 @@ const CookingClassPage = () => {
                       <div className="text-center ls-2 mb-4 py-4">
                         ••Corsi di Gruppo••{" "}
                       </div>
-                      <div className="text-center small">
+                      <div className="text-center">
                         <div className="small mb-3">
                           Le mie lezioni di gruppo sono aperte al pubblico, il
                           che significa che chiunque può iscriversi.
@@ -401,6 +402,7 @@ const CookingClassPage = () => {
           )}
         </div>
       </div>
+
       <CookingAside />
     </>
   );
