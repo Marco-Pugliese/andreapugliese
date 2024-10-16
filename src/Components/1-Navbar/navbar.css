@@ -62,12 +62,17 @@
     width: 300px;
   }
 }
-/* @media screen and (max-height: 850px) {
-  #img-logoContainer {
-    width: 150px;
-  }
-} */
 
+.bg-smoke {
+  background: whitesmoke;
+}
+@media screen and (orientation: landscape) {
+  .nav-link {
+    font-size: 0.9em !important;
+    background: whitesmoke;
+    z-index: 1111;
+  }
+}
 #generalheader {
   min-height: 10vh;
   background: whitesmoke;
@@ -75,7 +80,4 @@
   top: 0;
   width: 100%;
   z-index: 1111;
-}
-.bg-smoke {
-  background: whitesmoke;
 }
