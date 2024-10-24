@@ -7,9 +7,6 @@ import {
 } from "react-bootstrap-icons";
 
 const ContactPage = () => {
-  const [showNumber, setShowNumber] = useState(false);
-  const [showMail, setShowMail] = useState(false);
-  const [showInstagram, setShowInstagram] = useState(false);
   const [instagramIsHovered, setInstasgramIsHovered] = useState(false);
 
   return (
@@ -27,26 +24,15 @@ const ContactPage = () => {
             <Col className="col-12 offset-md-1 col-md-10 col-xl-5 offset-xl-0 d-flex flex-column align-items-center justify-content-center">
               <>
                 <div className="d-flex align-items-center justify-content-between w-100 py-2 cursorOnHover2">
-                  <EnvelopeAtFill
-                    className="icon-fixed-size"
-                    onClick={() => {
-                      setShowMail(!showMail);
-                    }}
-                  />
-                  {showMail && (
-                    <div className="small">andreapugliesecocina@yahoo.com</div>
-                  )}
+                  <EnvelopeAtFill className="icon-fixed-size" />
+
+                  <div className="small">andreapugliesecocina@yahoo.com</div>
                 </div>
               </>
               <>
                 <div className="d-flex align-items-center justify-content-between w-100 py-2 cursorOnHover2">
-                  <TelephoneFill
-                    className="icon-fixed-size"
-                    onClick={() => {
-                      setShowNumber(!showNumber);
-                    }}
-                  />
-                  {showNumber && <div className="small">+39 3341445233</div>}
+                  <TelephoneFill className="icon-fixed-size" />
+                  <div className="small">+39 3341445233</div>
                 </div>
               </>
               <>
@@ -59,27 +45,21 @@ const ContactPage = () => {
                     setInstasgramIsHovered(false);
                   }}
                 >
-                  <Instagram
-                    className="icon-fixed-size"
-                    onClick={() => {
-                      setShowInstagram(!showInstagram);
-                    }}
-                  />
-                  {showInstagram && (
-                    <div className="small">
-                      <a
-                        href="https://www.instagram.com/andreapugliesecocina?igsh=cXM2d2xxOXMzMW1p"
-                        target="_blank"
-                        className={
-                          instagramIsHovered === true
-                            ? "changeColor2"
-                            : "text-Dark2"
-                        }
-                      >
-                        @andreapugliesecocina
-                      </a>
-                    </div>
-                  )}
+                  <Instagram className="icon-fixed-size" />
+
+                  <div className="small">
+                    <a
+                      href="https://www.instagram.com/andreapugliesecocina?igsh=cXM2d2xxOXMzMW1p"
+                      target="_blank"
+                      className={
+                        instagramIsHovered === true
+                          ? "changeColor2"
+                          : "text-Dark2"
+                      }
+                    >
+                      @andreapugliesecocina
+                    </a>
+                  </div>
                 </div>
               </>
             </Col>
