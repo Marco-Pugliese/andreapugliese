@@ -8,8 +8,8 @@ import {
 import { useState } from "react";
 
 const Footer = () => {
-  const [showNumber, setShowNumber] = useState(false);
-  const [showMail, setShowMail] = useState(false);
+  const [showNumber, setShowNumber] = useState(true);
+  const [showMail, setShowMail] = useState(true);
   const today = new Date();
   const thisYear = today.getFullYear();
   return (
@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
           <div className="text-end d-flex flex-row align-items-center justify-content-end">
             <TelephoneFill
-              className="fs-6 me-2 cursorOnHover shake-left "
+              className="fs-6 me-2 cursorOnHover icon-dancing"
               onClick={() => {
                 setShowNumber(!showNumber);
               }}
@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
           <div className="text-end d-flex flex-row align-items-center justify-content-end">
             <EnvelopeAtFill
-              className="fs-6 me-2 cursorOnHover jello-horizontal"
+              className="fs-6 me-2 cursorOnHover icon-dancing"
               onClick={() => {
                 setShowMail(!showMail);
               }}

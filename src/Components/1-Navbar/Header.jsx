@@ -21,13 +21,21 @@ const Header = () => {
 
   return (
     <Container fluid className="text-Dark p-0" id="generalheader">
-      <Row className="h-100 fs-6 d-flex align-items-center justify-content-center">
+      <Row className="fs-6 d-flex align-items-center justify-content-center mh-10">
         <Col className="col-4 col-xl-5 ms-2">
           <Link
             to={"/"}
             className="nav-link"
             onClick={() => {
               dispatch(SetPageAction("Home"));
+              {
+                openNav === true
+                  ? () => {
+                      setOpenNav(!openNav);
+                      setIsClosed(!isClosed);
+                    }
+                  : null;
+              }
             }}
           >
             <Logo />
@@ -46,6 +54,14 @@ const Header = () => {
                       to={"/aboutMe"}
                       onClick={() => {
                         dispatch(SetPageAction("AboutMe"));
+                        {
+                          openNav === true
+                            ? () => {
+                                setOpenNav(!openNav);
+                                setIsClosed(!isClosed);
+                              }
+                            : null;
+                        }
                       }}
                       className="nav-link"
                     >
@@ -58,6 +74,14 @@ const Header = () => {
                       to={"/cookingClass"}
                       onClick={() => {
                         dispatch(SetPageAction("CookingClass"));
+                        {
+                          openNav === true
+                            ? () => {
+                                setOpenNav(!openNav);
+                                setIsClosed(!isClosed);
+                              }
+                            : null;
+                        }
                       }}
                       className="nav-link"
                     >
@@ -69,6 +93,14 @@ const Header = () => {
                       to={"/info"}
                       onClick={() => {
                         dispatch(SetPageAction("Info"));
+                        {
+                          openNav === true
+                            ? () => {
+                                setOpenNav(!openNav);
+                                setIsClosed(!isClosed);
+                              }
+                            : null;
+                        }
                       }}
                       className="nav-link"
                     >
@@ -81,6 +113,14 @@ const Header = () => {
                       to={"/contacts"}
                       onClick={() => {
                         dispatch(SetPageAction("Contacts"));
+                        {
+                          openNav === true
+                            ? () => {
+                                setOpenNav(!openNav);
+                                setIsClosed(!isClosed);
+                              }
+                            : null;
+                        }
                       }}
                       className="nav-link"
                     >
@@ -95,6 +135,14 @@ const Header = () => {
                       to={"/aboutMe"}
                       onClick={() => {
                         dispatch(SetPageAction("AboutMe"));
+                        {
+                          openNav === true
+                            ? () => {
+                                setOpenNav(!openNav);
+                                setIsClosed(!isClosed);
+                              }
+                            : null;
+                        }
                       }}
                       className="nav-link"
                     >
@@ -106,6 +154,14 @@ const Header = () => {
                       to={"/cookingClass"}
                       onClick={() => {
                         dispatch(SetPageAction("CookingClass"));
+                        {
+                          openNav === true
+                            ? () => {
+                                setOpenNav(!openNav);
+                                setIsClosed(!isClosed);
+                              }
+                            : null;
+                        }
                       }}
                       className="nav-link"
                     >
@@ -117,6 +173,14 @@ const Header = () => {
                       to={"/info"}
                       onClick={() => {
                         dispatch(SetPageAction("Info"));
+                        {
+                          openNav === true
+                            ? () => {
+                                setOpenNav(!openNav);
+                                setIsClosed(!isClosed);
+                              }
+                            : null;
+                        }
                       }}
                       className="nav-link"
                     >
@@ -129,6 +193,14 @@ const Header = () => {
                       to={"/contacts"}
                       onClick={() => {
                         dispatch(SetPageAction("Contacts"));
+                        {
+                          openNav === true
+                            ? () => {
+                                setOpenNav(!openNav);
+                                setIsClosed(!isClosed);
+                              }
+                            : null;
+                        }
                       }}
                       className="nav-link"
                     >
@@ -143,6 +215,14 @@ const Header = () => {
                       to={"/aboutMe"}
                       onClick={() => {
                         dispatch(SetPageAction("AboutMe"));
+                        {
+                          openNav === true
+                            ? () => {
+                                setOpenNav(!openNav);
+                                setIsClosed(!isClosed);
+                              }
+                            : null;
+                        }
                       }}
                       className="nav-link"
                     >
@@ -154,6 +234,14 @@ const Header = () => {
                       to={"/cookingClass"}
                       onClick={() => {
                         dispatch(SetPageAction("CookingClass"));
+                        {
+                          openNav === true
+                            ? () => {
+                                setOpenNav(!openNav);
+                                setIsClosed(!isClosed);
+                              }
+                            : null;
+                        }
                       }}
                       className="nav-link"
                     >
@@ -165,6 +253,14 @@ const Header = () => {
                       to={"/info"}
                       onClick={() => {
                         dispatch(SetPageAction("Info"));
+                        {
+                          openNav === true
+                            ? () => {
+                                setOpenNav(!openNav);
+                                setIsClosed(!isClosed);
+                              }
+                            : null;
+                        }
                       }}
                       className="nav-link"
                     >
@@ -177,6 +273,14 @@ const Header = () => {
                       to={"/contacts"}
                       onClick={() => {
                         dispatch(SetPageAction("Contacts"));
+                        {
+                          openNav === true
+                            ? () => {
+                                setOpenNav(!openNav);
+                                setIsClosed(!isClosed);
+                              }
+                            : null;
+                        }
                       }}
                       className="nav-link"
                     >
@@ -191,6 +295,7 @@ const Header = () => {
         <Col
           onClick={() => {
             setIsClosed(!isClosed);
+
             console.log("is hamburger closed? " + isClosed);
           }}
           className="d-block d-lg-none col-5 offset-1 fw-bold"
@@ -267,6 +372,8 @@ const Header = () => {
                   to={"/aboutMe"}
                   onClick={() => {
                     dispatch(SetPageAction("AboutMe"));
+                    setOpenNav(!openNav);
+                    setIsClosed(!isClosed);
                   }}
                   className="nav-link"
                 >
@@ -278,6 +385,8 @@ const Header = () => {
                   to={"/cookingClass"}
                   onClick={() => {
                     dispatch(SetPageAction("CookingClass"));
+                    setOpenNav(!openNav);
+                    setIsClosed(!isClosed);
                   }}
                   className="nav-link"
                 >
@@ -289,6 +398,8 @@ const Header = () => {
                   to={"/info"}
                   onClick={() => {
                     dispatch(SetPageAction("Info"));
+                    setOpenNav(!openNav);
+                    setIsClosed(!isClosed);
                   }}
                   className="nav-link"
                 >
@@ -300,6 +411,8 @@ const Header = () => {
                   to={"/contacts"}
                   onClick={() => {
                     dispatch(SetPageAction("Contacts"));
+                    setOpenNav(!openNav);
+                    setIsClosed(!isClosed);
                   }}
                   className="nav-link"
                 >
@@ -315,6 +428,8 @@ const Header = () => {
                   to={"/aboutMe"}
                   onClick={() => {
                     dispatch(SetPageAction("AboutMe"));
+                    setOpenNav(!openNav);
+                    setIsClosed(!isClosed);
                   }}
                   className="nav-link"
                 >
@@ -326,6 +441,8 @@ const Header = () => {
                   to={"/cookingClass"}
                   onClick={() => {
                     dispatch(SetPageAction("CookingClass"));
+                    setOpenNav(!openNav);
+                    setIsClosed(!isClosed);
                   }}
                   className="nav-link"
                 >
@@ -337,6 +454,8 @@ const Header = () => {
                   to={"/info"}
                   onClick={() => {
                     dispatch(SetPageAction("Info"));
+                    setOpenNav(!openNav);
+                    setIsClosed(!isClosed);
                   }}
                   className="nav-link"
                 >
@@ -348,6 +467,8 @@ const Header = () => {
                   to={"/contacts"}
                   onClick={() => {
                     dispatch(SetPageAction("Contacts"));
+                    setOpenNav(!openNav);
+                    setIsClosed(!isClosed);
                   }}
                   className="nav-link"
                 >
@@ -364,6 +485,8 @@ const Header = () => {
                   to={"/aboutMe"}
                   onClick={() => {
                     dispatch(SetPageAction("AboutMe"));
+                    setOpenNav(!openNav);
+                    setIsClosed(!isClosed);
                   }}
                   className="nav-link"
                 >
@@ -375,6 +498,8 @@ const Header = () => {
                   to={"/cookingClass"}
                   onClick={() => {
                     dispatch(SetPageAction("CookingClass"));
+                    setOpenNav(!openNav);
+                    setIsClosed(!isClosed);
                   }}
                   className="nav-link"
                 >
@@ -386,6 +511,8 @@ const Header = () => {
                   to={"/info"}
                   onClick={() => {
                     dispatch(SetPageAction("Info"));
+                    setOpenNav(!openNav);
+                    setIsClosed(!isClosed);
                   }}
                   className="nav-link"
                 >
@@ -397,6 +524,8 @@ const Header = () => {
                   to={"/contacts"}
                   onClick={() => {
                     dispatch(SetPageAction("Contacts"));
+                    setOpenNav(!openNav);
+                    setIsClosed(!isClosed);
                   }}
                   className="nav-link"
                 >
