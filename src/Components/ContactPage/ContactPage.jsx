@@ -111,6 +111,7 @@ const ContactPage = () => {
                     <a
                       href="https://www.instagram.com/andreapugliesecocina?igsh=cXM2d2xxOXMzMW1p"
                       target="_blank"
+                      rel="noopener"
                       className={
                         instagramIsHovered === true
                           ? "changeColor2"
