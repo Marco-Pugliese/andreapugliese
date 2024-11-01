@@ -6,9 +6,22 @@ import {
   EnvelopeAtFill,
   Instagram,
   TelephoneFill,
+  Tiktok,
+  Youtube,
 } from "react-bootstrap-icons";
 
 const AsideSection = () => {
+  const phoneNumber = "34600539809"; // Numero senza simboli e spazi
+  const message = "Hello! I'm intrested in your services";
+  const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
+  const email = "andreapugliesecocina@yahoo.com";
+  const subject = "Info request";
+  const body = "Hello! I'd like to know more about your services.";
+  const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
+    subject
+  )}&body=${encodeURIComponent(body)}`;
   const LangInUse = useSelector((state) => state.Lang.lang);
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -53,12 +66,32 @@ const AsideSection = () => {
               <div id="contactInfo">
                 <div className="d-flex small justify-content-between align-items-center my-2">
                   <EnvelopeAtFill className="fs-6 ms-4" />
-                  <div className="small">andreapugliesecocina@yahoo.com</div>
+                  <div className="small">
+                    {" "}
+                    <a
+                      href={mailtoLink}
+                      className="text-dark px-1"
+                      style={{ textDecoration: "none" }}
+                    >
+                      andreapugliesecocina@yahoo.com
+                    </a>
+                  </div>
                   <EnvelopeAtFill className="fs-6 me-4" />
                 </div>
                 <div className="d-flex small justify-content-between align-items-center my-2">
                   <TelephoneFill className="fs-6 ms-4" />
-                  <div className="small"> +00112233112233</div>
+
+                  <div className="small">
+                    <a
+                      href={whatsappLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-dark px-1"
+                      style={{ textDecoration: "none" }}
+                    >
+                      +34 600539809
+                    </a>
+                  </div>
                   <TelephoneFill className="fs-6 me-4" />
                 </div>
                 <div className="d-flex small justify-content-between align-items-center my-2">
@@ -71,6 +104,30 @@ const AsideSection = () => {
                     <div className="small"> @andreapugliesecocina</div>
                   </a>
                   <Instagram className="fs-6 me-4" />
+                </div>
+
+                {/* //////////////////////////////////////////////////////////////////////////////////// */}
+                <div className="d-flex small justify-content-between align-items-center my-2">
+                  <Youtube className="fs-6 ms-4" />
+                  <a
+                    href="https://youtube.com/@andreapugliesecocina?si=OnLXbFGqKFJZL4dC"
+                    target="_blank"
+                    className="text-black text-decoration-none"
+                  >
+                    <div className="small"> @andreapugliesecocina</div>
+                  </a>
+                  <Youtube className="fs-6 me-4" />
+                </div>
+                <div className="d-flex small justify-content-between align-items-center my-2">
+                  <Tiktok className="fs-6 ms-4" />
+                  <a
+                    href="https://www.tiktok.com/@andreapugliesecocina?_t=8r1oOxL9Qrw&_r=1"
+                    target="_blank"
+                    className="text-black text-decoration-none"
+                  >
+                    <div className="small"> @andreapugliesecocina</div>
+                  </a>
+                  <Tiktok className="fs-6 me-4" />
                 </div>
               </div>
             </Modal.Body>

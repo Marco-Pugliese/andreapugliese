@@ -62,3 +62,25 @@
 .filterdark2:hover {
   background: rgba(0, 0, 0, 0.9) !important;
 }
+.MyCarousels .carousel-control-next-icon {
+  background-color: black !important;
+  padding: 30px;
+  border-radius: 50%;
+}
+.MyCarousels .carousel-control-prev-icon {
+  background-color: black !important;
+  padding: 30px;
+  border-radius: 50%;
+}
+.instasvg {
+  width: 500px !important;
+  height: 500px !important;
+}
+.carousel-control-prev {
+  height: 50%;
+  margin: auto;
+}
+.carousel-control-next {
+  height: 50%;
+  margin: auto;
+}

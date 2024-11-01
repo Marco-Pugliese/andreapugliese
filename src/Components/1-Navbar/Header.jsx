@@ -18,6 +18,9 @@ const Header = () => {
   useEffect(() => {
     console.log("Selected Page: " + SelectedPage);
   }, [SelectedPage]);
+  useEffect(() => {
+    console.log("Nav is Opened? " + openNav);
+  }, [openNav]);
 
   return (
     <Container fluid className="text-Dark p-0" id="generalheader">
@@ -25,7 +28,6 @@ const Header = () => {
         <Col className="col-4 col-xl-5 ms-2">
           <Link
             to={"/"}
-            className="nav-link"
             onClick={() => {
               dispatch(SetPageAction("Home"));
               {
@@ -37,6 +39,7 @@ const Header = () => {
                   : null;
               }
             }}
+            className="nav-link"
           >
             <Logo />
           </Link>
@@ -85,28 +88,10 @@ const Header = () => {
                       }}
                       className="nav-link"
                     >
-                      Cooking Class
+                      Cooking Class & Private Chef
                     </Link>
                   </Col>
-                  <Col>
-                    <Link
-                      to={"/info"}
-                      onClick={() => {
-                        dispatch(SetPageAction("Info"));
-                        {
-                          openNav === true
-                            ? () => {
-                                setOpenNav(!openNav);
-                                setIsClosed(!isClosed);
-                              }
-                            : null;
-                        }
-                      }}
-                      className="nav-link"
-                    >
-                      Info
-                    </Link>
-                  </Col>
+
                   <Col>
                     {" "}
                     <Link
@@ -124,7 +109,7 @@ const Header = () => {
                       }}
                       className="nav-link"
                     >
-                      Contact
+                      Info & Contact
                     </Link>
                   </Col>
                 </>
@@ -165,28 +150,10 @@ const Header = () => {
                       }}
                       className="nav-link"
                     >
-                      Clases de Cocina
+                      Clases de Cocina Y Chef Privado
                     </Link>
                   </Col>
-                  <Col>
-                    <Link
-                      to={"/info"}
-                      onClick={() => {
-                        dispatch(SetPageAction("Info"));
-                        {
-                          openNav === true
-                            ? () => {
-                                setOpenNav(!openNav);
-                                setIsClosed(!isClosed);
-                              }
-                            : null;
-                        }
-                      }}
-                      className="nav-link"
-                    >
-                      Info
-                    </Link>
-                  </Col>
+
                   <Col>
                     {" "}
                     <Link
@@ -204,7 +171,7 @@ const Header = () => {
                       }}
                       className="nav-link"
                     >
-                      Contacto
+                      Info & Contacto
                     </Link>
                   </Col>
                 </>
@@ -245,28 +212,10 @@ const Header = () => {
                       }}
                       className="nav-link"
                     >
-                      Corsi di Cucina
+                      Corsi di Cucina & Chef Privato
                     </Link>
                   </Col>
-                  <Col>
-                    <Link
-                      to={"/info"}
-                      onClick={() => {
-                        dispatch(SetPageAction("Info"));
-                        {
-                          openNav === true
-                            ? () => {
-                                setOpenNav(!openNav);
-                                setIsClosed(!isClosed);
-                              }
-                            : null;
-                        }
-                      }}
-                      className="nav-link"
-                    >
-                      Info
-                    </Link>
-                  </Col>
+
                   <Col>
                     {" "}
                     <Link
@@ -284,7 +233,7 @@ const Header = () => {
                       }}
                       className="nav-link"
                     >
-                      Contatti
+                      Info & Contatti
                     </Link>
                   </Col>
                 </>
@@ -390,22 +339,10 @@ const Header = () => {
                   }}
                   className="nav-link"
                 >
-                  Cooking Class
+                  Cooking Class & Private Chef
                 </Link>
               </Col>
-              <Col className="d-flex align-items-center justify-content-center col-12 text-center">
-                <Link
-                  to={"/info"}
-                  onClick={() => {
-                    dispatch(SetPageAction("Info"));
-                    setOpenNav(!openNav);
-                    setIsClosed(!isClosed);
-                  }}
-                  className="nav-link"
-                >
-                  Info
-                </Link>
-              </Col>
+
               <Col className="d-flex align-items-center justify-content-center col-12 text-center">
                 <Link
                   to={"/contacts"}
@@ -416,7 +353,7 @@ const Header = () => {
                   }}
                   className="nav-link"
                 >
-                  Contacts
+                  Info & Contacts
                 </Link>
               </Col>
             </>
@@ -446,22 +383,10 @@ const Header = () => {
                   }}
                   className="nav-link"
                 >
-                  Clases de Cocina
+                  Clases de Cocina Y Chef Privado
                 </Link>
               </Col>
-              <Col className="d-flex align-items-center justify-content-center col-12 text-center">
-                <Link
-                  to={"/info"}
-                  onClick={() => {
-                    dispatch(SetPageAction("Info"));
-                    setOpenNav(!openNav);
-                    setIsClosed(!isClosed);
-                  }}
-                  className="nav-link"
-                >
-                  Info
-                </Link>
-              </Col>
+
               <Col className="d-flex align-items-center justify-content-center col-12 text-center">
                 <Link
                   to={"/contacts"}
@@ -472,7 +397,7 @@ const Header = () => {
                   }}
                   className="nav-link"
                 >
-                  Contacto
+                  Info & Contacto
                 </Link>
               </Col>
             </>
@@ -503,22 +428,10 @@ const Header = () => {
                   }}
                   className="nav-link"
                 >
-                  Corsi di Cucina
+                  Corsi di Cucina & Chef Privato
                 </Link>
               </Col>
-              <Col className="d-flex align-items-center justify-content-center col-12 text-center">
-                <Link
-                  to={"/info"}
-                  onClick={() => {
-                    dispatch(SetPageAction("Info"));
-                    setOpenNav(!openNav);
-                    setIsClosed(!isClosed);
-                  }}
-                  className="nav-link"
-                >
-                  Info
-                </Link>
-              </Col>
+
               <Col className="d-flex align-items-center justify-content-center col-12 text-center">
                 <Link
                   to={"/contacts"}
@@ -529,7 +442,7 @@ const Header = () => {
                   }}
                   className="nav-link"
                 >
-                  Contatti
+                  Info & Contatti
                 </Link>
               </Col>
             </>

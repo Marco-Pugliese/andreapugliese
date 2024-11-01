@@ -180,7 +180,7 @@
 .imgbg3:hover {
   cursor: pointer;
   background-size: 88vh;
-  filter: grayscale(0.5);
+  filter: grayscale(1);
 }
 .btnLanding {
   background: var(--dark);
@@ -229,7 +229,7 @@
 .imgbg3sm:hover {
   cursor: pointer;
   background-size: 115vh;
-  filter: grayscale(0.5);
+  filter: grayscale(1);
 }
 #contactInfoContainer {
   margin-top: 150px;

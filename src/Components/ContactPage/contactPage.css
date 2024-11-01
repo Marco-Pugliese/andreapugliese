@@ -63,3 +63,9 @@
     transform: scale(1);
   }
 }
+.miniscale {
+  transition: all 0.8s;
+}
+.miniscale:hover {
+  scale: 1.1;
+}
