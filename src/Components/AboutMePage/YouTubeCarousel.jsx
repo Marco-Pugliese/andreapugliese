@@ -16,16 +16,20 @@ const YouTubeCarousel = () => {
         return (
           <Carousel.Item
             key={index}
-            onMouseEnter={() => {
-              setIsClicked(true);
-            }}
-            onMouseLeave={() => setIsClicked(false)}
             interval={isClicked === true ? 60000 : 6000}
           >
             <div
               onTouchEnd={() => {
                 setIsClicked(true);
                 console.log("interval set to 60000ms");
+              }}
+              onMouseEnter={() => {
+                setIsClicked(true);
+                console.log("interval set to 60000ms");
+              }}
+              onMouseLeave={() => {
+                console.log("interval set back at 6000");
+                setIsClicked(false);
               }}
             >
               <EmbedVideo url={singleReel} />

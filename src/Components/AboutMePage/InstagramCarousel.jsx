@@ -36,6 +36,14 @@ const InstagramCarousel = () => {
             interval={isClicked === true ? 60000 : 6000}
           >
             <div
+              onMouseEnter={() => {
+                setIsClicked(true);
+                console.log("interval set to 60000ms");
+              }}
+              onMouseLeave={() => {
+                console.log("interval set back at 6000");
+                setIsClicked(false);
+              }}
               onTouchEnd={() => {
                 setIsClicked(true);
                 console.log("end from instagram carousel.item");
