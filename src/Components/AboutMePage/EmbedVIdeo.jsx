@@ -2,10 +2,9 @@ import PropTypes from "prop-types";
 const EmbedVideo = ({ url }) => {
   return (
     <iframe
-      height="500"
-      style={{ width: "100%" }}
+      height="565px"
       src={url}
-      className="py-1"
+      className="littleShadow m-4"
       allowFullScreen
     ></iframe>
   );

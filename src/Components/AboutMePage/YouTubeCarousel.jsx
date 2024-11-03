@@ -11,7 +11,7 @@ const YouTubeCarousel = () => {
   const REEL_ID3 = "https://youtube.com/embed/2zC8EcR5zVs?si=1Lu5qmjz1A32h-5A";
   const AllReels = [REEL_ID1, REEL_ID2, REEL_ID3];
   return (
-    <Carousel className="MyCarousels" indicators={false}>
+    <Carousel className="MyCarousels">
       {AllReels.map((singleReel, index) => {
         return (
           <Carousel.Item
@@ -20,15 +20,16 @@ const YouTubeCarousel = () => {
               setIsClicked(true);
             }}
             onMouseLeave={() => setIsClicked(false)}
-            onTouchEnd={() => {
-              console.log("end");
-            }}
-            onTouchStart={() => {
-              console.log("start");
-            }}
-            interval={isClicked === true ? null : 6000}
+            interval={isClicked === true ? 60000 : 6000}
           >
-            <EmbedVideo url={singleReel} />
+            <div
+              onTouchEnd={() => {
+                setIsClicked(true);
+                console.log("interval set to 60000ms");
+              }}
+            >
+              <EmbedVideo url={singleReel} />
+            </div>
           </Carousel.Item>
         );
       })}

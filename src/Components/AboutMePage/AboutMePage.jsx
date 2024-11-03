@@ -102,46 +102,48 @@ const AboutMePage = () => {
           )}
         </Row>
       </div>
-      <div className="p-5 bg-light">
-        <Row>
-          <Col className="d-flex col-12 col-xl-6 text-center align-items-center justify-content-center">
-            <img
-              src="/public/assets/img/logo-garofalo.png"
-              alt="logo garofalo"
-              className="p-3"
-              style={{ width: "200px" }}
-            />
-          </Col>
-          <Col className="col-12 col-xl-6 text-center">
-            <YouTubeCarousel />
-          </Col>
-        </Row>
-      </div>
-      <div className="p-5 bg-light">
-        <Row>
-          <Col className="col-12 col-xl-6 d-flex d-xl-none py-4 mt-2 text-center align-items-center justify-content-center">
-            <img
-              src="/public/assets/img/logo-insta.png"
-              alt=""
-              style={{ width: "200px" }}
-            />
-          </Col>
-          <Col className="col-12 col-xl-6 text-center">
-            <Row>
-              <Col>
-                <InstagramCarousel />
-              </Col>
-            </Row>
-          </Col>
-          <Col className="col-12 col-xl-6 d-none d-xl-flex text-center align-items-center justify-content-center">
-            <img
-              src="/public/assets/img/logo-insta.png"
-              alt=""
-              style={{ width: "200px" }}
-            />
-          </Col>
-        </Row>
-      </div>
+      <section className="bg-smokegray">
+        <div className="p-5 ">
+          <Row className="">
+            <Col className="d-flex col-12 col-xl-6 text-center align-items-center justify-content-center ">
+              <img
+                src="./assets/img/logo-garofalo.png"
+                alt="logo garofalo"
+                className="p-3"
+                style={{ width: "200px" }}
+              />
+            </Col>
+            <Col className="col-12 col-xl-6 text-center ">
+              <YouTubeCarousel />
+            </Col>
+          </Row>
+        </div>
+        <div className="p-5 ">
+          <Row>
+            <Col className="col-12 col-xl-6 d-flex d-xl-none py-4 mt-2 text-center align-items-center justify-content-center">
+              <img
+                src="./assets/img/logo-insta.png"
+                alt=""
+                style={{ width: "200px" }}
+              />
+            </Col>
+            <Col className="col-12 col-xl-6 text-center">
+              <Row>
+                <Col>
+                  <InstagramCarousel />
+                </Col>
+              </Row>
+            </Col>
+            <Col className="col-12 col-xl-6 d-none d-xl-flex text-center align-items-center justify-content-center">
+              <img
+                src="/public/assets/img/logo-insta.png"
+                alt=""
+                style={{ width: "200px" }}
+              />
+            </Col>
+          </Row>
+        </div>
+      </section>
       <div className="filterdark">
         <SliderContainer />
       </div>

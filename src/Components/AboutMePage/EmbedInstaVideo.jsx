@@ -5,9 +5,10 @@ const EmbedInstaVideo = ({ postUrl, lastPart }) => {
 
   return (
     <iframe
-      style={{ width: "100%", minHeight: "67vh" }}
+      height="565px"
       src={embedUrl}
       allowFullScreen
+      className="m-4 littleShadow"
     ></iframe>
   );
 };

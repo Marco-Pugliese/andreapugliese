@@ -84,3 +84,35 @@
   height: 50%;
   margin: auto;
 }
+@media screen and (max-width: 500px) {
+  .MyCarousels .carousel-control-next,
+  .MyCarousels .carousel-control-prev {
+    display: none !important;
+  }
+}
+.carousel-indicators * {
+  box-shadow: inset 0 10px 5px #000;
+}
+.bg-smokegray {
+  background: whitesmoke;
+}
+.littleShadow {
+  box-shadow: 0 0 20px 1px #00000072;
+}
+.MyCarousels .carousel-indicators {
+  position: absolute;
+  top: 600px;
+}
+.mediaCarousel {
+  width: 100%;
+}
+@media screen and (min-width: 400px) and (max-width: 700px) {
+  .mediaCarousel {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1700px) {
+  .mediaCarousel {
+    width: 50%;
+  }
+}
