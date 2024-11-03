@@ -136,7 +136,7 @@ const AboutMePage = () => {
             </Col>
             <Col className="col-12 col-xl-6 d-none d-xl-flex text-center align-items-center justify-content-center">
               <img
-                src="/public/assets/img/logo-insta.png"
+                src="/assets/img/logo-insta.png"
                 alt=""
                 style={{ width: "200px" }}
               />
