@@ -107,7 +107,7 @@ const AboutMePage = () => {
           <Row className="">
             <Col className="d-flex col-12 col-xl-6 text-center align-items-center justify-content-center ">
               <img
-                src="./assets/img/logo-garofalo.png"
+                src="/assets/img/logo-garofalo.png"
                 alt="logo garofalo"
                 className="p-3"
                 style={{ width: "200px" }}
@@ -122,7 +122,7 @@ const AboutMePage = () => {
           <Row>
             <Col className="col-12 col-xl-6 d-flex d-xl-none py-4 mt-2 text-center align-items-center justify-content-center">
               <img
-                src="./assets/img/logo-insta.png"
+                src="/assets/img/logo-insta.png"
                 alt=""
                 style={{ width: "200px" }}
               />
