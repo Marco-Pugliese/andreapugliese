@@ -107,8 +107,8 @@ const CookingClassPage = () => {
       <div id="cookingClass">
         <div className="filterdark2 text-Light h-100 d-flex flex-column align-items-center justify-content-between px-5 ">
           {LangInUse === "Esp" && (
-            <Row className="d-flex align-items-center justify-content-center flex-grow-1">
-              <Col className="col-12 col-xl-10 col-xxl-8 ls-2">
+            <Row className="d-flex align-items-around justify-content-center flex-grow-1">
+              <Col className="col-12 col-xl-10 col-xxl-8 ls-2 ">
                 ¡Descubre la Cocina Italiana Conmigo! ¿Te gustaría aprender a
                 preparar auténticos platos italianos en un ambiente divertido y
                 acogedor? ¡Estás en el lugar correcto! Ofrezco cursos de cocina
@@ -116,9 +116,9 @@ const CookingClassPage = () => {
                 de team building para empresas.
               </Col>
 
-              <Col className="col-12 small">
+              <Col className="col-12 small ">
                 <Row>
-                  <Col className="col-12 text-center fs-5 mb-4 ">
+                  <Col className="col-12 text-center fs-5 mb-4 py-5  ">
                     <span className="border-bottom px-5">¿Qué ofrezco?</span>
                   </Col>
                 </Row>
@@ -271,7 +271,7 @@ const CookingClassPage = () => {
           )}
 
           {LangInUse === "Eng" && (
-            <Row className="d-flex align-items-center justify-content-center flex-grow-1">
+            <Row className="d-flex align-items-around justify-content-center flex-grow-1">
               <Col className="col-12 col-xl-10 col-xxl-8 ls-2">
                 Discover Italian Cuisine with Me! Would you like to learn how to
                 prepare authentic Italian dishes in a fun and welcoming
@@ -282,7 +282,7 @@ const CookingClassPage = () => {
 
               <Col className="col-12 small">
                 <Row>
-                  <Col className="col-12 text-center fs-5 mb-4 ">
+                  <Col className="col-12 text-center fs-5 mb-4 py-5  ">
                     <span className="border-bottom px-5">What do I offer?</span>
                   </Col>
                 </Row>
@@ -430,7 +430,7 @@ const CookingClassPage = () => {
           )}
 
           {LangInUse === "Ita" && (
-            <Row className="d-flex align-items-center justify-content-center flex-grow-1">
+            <Row className="d-flex align-items-around justify-content-center flex-grow-1">
               <Col className="col-12 col-xl-10 col-xxl-8 ls-2">
                 Scopri la Cucina Italiana con Me! Ti piacerebbe imparare a
                 preparare autentici piatti italiani in un ambiente divertente e
@@ -441,7 +441,7 @@ const CookingClassPage = () => {
 
               <Col className="col-12 small">
                 <Row>
-                  <Col className="col-12 text-center fs-5 mb-4 ">
+                  <Col className="col-12 text-center fs-5 mb-4 py-5  ">
                     <span className="border-bottom px-5">Cosa offro?</span>
                   </Col>
                 </Row>
@@ -595,70 +595,73 @@ const CookingClassPage = () => {
               </Col>
             </Row>
           )}
-          <div
-            className={
-              showButtonForGroupClass === true ||
-              showButtonForPrivateClass === true ||
-              showButtonForTeamClass === true
-                ? "d-flex justify-content-around appear"
-                : "d-flex justify-content-around disappear"
-            }
-          >
+          {/* ///////////////////////////////SEZIONE A COMPARSA/////////////////////////////////// */}
+          <>
             <div
-              onMouseEnter={() => {
-                setIsDiv1Hovered(true);
-              }}
-              onMouseLeave={() => {
-                setIsDiv1Hovered(false);
-              }}
-              className="py-4 fs-4 text-center w-100 darker-1 rounded-3 mx-3  textIconDancing"
+              className={
+                showButtonForGroupClass === true ||
+                showButtonForPrivateClass === true ||
+                showButtonForTeamClass === true
+                  ? " d-none pt-5 d-md-flex justify-content-around appear"
+                  : " d-none d-md-flex pt-5 justify-content-around disappear"
+              }
             >
-              <a
-                href={
-                  LangInUse === "Eng"
-                    ? mailtoLinkEng
-                    : LangInUse === "Ita"
-                    ? mailtoLinkIta
-                    : LangInUse === "Esp"
-                    ? mailtoLinkEsp
-                    : null
-                }
-                style={{ textDecoration: "none" }}
+              <div
+                onMouseEnter={() => {
+                  setIsDiv1Hovered(true);
+                }}
+                onMouseLeave={() => {
+                  setIsDiv1Hovered(false);
+                }}
+                className="py-4 fs-4 text-center w-100 darker-1 rounded-3 mx-3  textIconDancing"
               >
-                <EnvelopeAtFill
-                  className={
-                    isDiv1Hovered === true
-                      ? "cursorOnHover icon-dancing text-Contrast"
-                      : "cursorOnHover icon-dancing"
+                <a
+                  href={
+                    LangInUse === "Eng"
+                      ? mailtoLinkEng
+                      : LangInUse === "Ita"
+                      ? mailtoLinkIta
+                      : LangInUse === "Esp"
+                      ? mailtoLinkEsp
+                      : null
                   }
-                />
-              </a>
-            </div>
-            <div
-              onMouseEnter={() => {
-                setIsDiv2Hovered(true);
-              }}
-              onMouseLeave={() => {
-                setIsDiv2Hovered(false);
-              }}
-              className="py-4 fs-4 text-center w-100 darker-1 rounded-3 mx-3  textIconDancing"
-            >
-              <a
-                href={whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: "none" }}
+                  style={{ textDecoration: "none" }}
+                >
+                  <EnvelopeAtFill
+                    className={
+                      isDiv1Hovered === true
+                        ? "cursorOnHover icon-dancing text-Contrast"
+                        : "cursorOnHover icon-dancing"
+                    }
+                  />
+                </a>
+              </div>
+              <div
+                onMouseEnter={() => {
+                  setIsDiv2Hovered(true);
+                }}
+                onMouseLeave={() => {
+                  setIsDiv2Hovered(false);
+                }}
+                className="py-4 fs-4 text-center w-100 darker-1 rounded-3 mx-3  textIconDancing"
               >
-                <TelephoneFill
-                  className={
-                    isDiv2Hovered === true
-                      ? "cursorOnHover icon-dancing text-Contrast"
-                      : "cursorOnHover icon-dancing"
-                  }
-                />
-              </a>
+                <a
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none" }}
+                >
+                  <TelephoneFill
+                    className={
+                      isDiv2Hovered === true
+                        ? "cursorOnHover icon-dancing text-Contrast"
+                        : "cursorOnHover icon-dancing"
+                    }
+                  />
+                </a>
+              </div>
             </div>
-          </div>
+          </>
         </div>
       </div>
 
