@@ -2,15 +2,112 @@ import { Carousel, Col, Row } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import CookingAside from "./CookingAside";
 import PrivateChefPage from "./PrivateChefPage";
+import { useEffect, useState } from "react";
+import { EnvelopeAtFill, TelephoneFill } from "react-bootstrap-icons";
 
 const CookingClassPage = () => {
+  const [isDiv1Hovered, setIsDiv1Hovered] = useState(false);
+  const [isDiv2Hovered, setIsDiv2Hovered] = useState(false);
   const LangInUse = useSelector((state) => state.Lang.lang);
+  const [body, setBody] = useState("Hello! Hola! Ciao!");
+  const [showButtonForGroupClass, setShowButtonForGroupClass] = useState(false);
+  const [showButtonForPrivateClass, setShowButtonForPrivateClass] =
+    useState(false);
+  const [showButtonForTeamClass, setShowButtonForTeamClass] = useState(false);
+  // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
+  // // // // // // // // // // // // // // // // // // //WHATSAPP // // // // // // // // // // // // // // // // // // // //
+  // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
+  const phoneNumber = "34600539809";
+
+  const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    body
+  )}`;
+
+  // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
+  // // // // // // // // // // // // // // // // // // //EMAIL // // // // // // // // // // // // // // // // // // // //
+  // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
+
+  const email = "andreapugliesecocina@yahoo.com";
+  // English mail
+  const subjectEng = "Info request";
+  const bodyEngGroup =
+    "Hello! I'd like to know more about your Group Course services.";
+  const bodyEngPrivate =
+    "Hello! I'd like to know more about your Private Classes services.";
+  const bodyEngTeam =
+    "Hello! I'd like to know more about your Team Building for company services.";
+  const mailtoLinkEng = `mailto:${email}?subject=${encodeURIComponent(
+    subjectEng
+  )}&body=${encodeURIComponent(body)}`;
+  // Spanish mail
+  const subjectEsp = "Solicitud de información";
+  const bodyEspGroup =
+    "¡Hola! Me gustaría saber más sobre sus servicios de Cursos Grupales.";
+  const bodyEspPrivate =
+    "¡Hola! Me gustaría saber más sobre sus servicios de Clases Privadas.";
+  const bodyEspTeam =
+    "¡Hola! Me gustaría saber más sobre sus servicios de Team Building para Empresas.";
+  const mailtoLinkEsp = `mailto:${email}?subject=${encodeURIComponent(
+    subjectEsp
+  )}&body=${encodeURIComponent(body)}`;
+
+  // Italian mail
+  const subjectIta = "Richiesta Informazioni";
+  const bodyItaGroup =
+    "Ciao! Mi piacerebbe sapere di più sui servizi di Corsi per Gruppo";
+  const bodyItaPrivate =
+    "Ciao! Mi piacerebbe sapere di più sui servizi di Corsi per Privati";
+  const bodyItaTeam =
+    "Ciao! Mi piacerebbe sapere di più sui servizi di Corsi per Team Aziendale";
+  const mailtoLinkIta = `mailto:${email}?subject=${encodeURIComponent(
+    subjectIta
+  )}&body=${encodeURIComponent(body)}`;
+  //
+  const [whatIsSelected, setWhatIsSelected] = useState("none");
+
+  useEffect(() => {
+    showButtonForGroupClass === true && setWhatIsSelected("Group Class");
+    showButtonForPrivateClass === true && setWhatIsSelected("Private Class");
+    showButtonForTeamClass === true && setWhatIsSelected("Team Class");
+  }, [
+    showButtonForGroupClass,
+    showButtonForPrivateClass,
+    showButtonForTeamClass,
+  ]);
+  useEffect(() => {
+    whatIsSelected === "Group Class" && LangInUse === "Ita"
+      ? setBody(bodyItaGroup)
+      : whatIsSelected === "Private Class" && LangInUse === "Ita"
+      ? setBody(bodyItaPrivate)
+      : whatIsSelected === "Team Class" && LangInUse === "Ita"
+      ? setBody(bodyItaTeam)
+      : null;
+  }, [LangInUse, whatIsSelected]);
+  useEffect(() => {
+    whatIsSelected === "Group Class" && LangInUse === "Esp"
+      ? setBody(bodyEspGroup)
+      : whatIsSelected === "Private Class" && LangInUse === "Esp"
+      ? setBody(bodyEspPrivate)
+      : whatIsSelected === "Team Class" && LangInUse === "Esp"
+      ? setBody(bodyEspTeam)
+      : null;
+  }, [LangInUse, whatIsSelected]);
+  useEffect(() => {
+    whatIsSelected === "Group Class" && LangInUse === "Eng"
+      ? setBody(bodyEngGroup)
+      : whatIsSelected === "Private Class" && LangInUse === "Eng"
+      ? setBody(bodyEngPrivate)
+      : whatIsSelected === "Team Class" && LangInUse === "Eng"
+      ? setBody(bodyEngTeam)
+      : null;
+  }, [LangInUse, whatIsSelected]);
+
   return (
     <>
       <div id="cookingClass">
-        <div className="filterdark2 text-Light h-100 d-flex align-items-around justify-content-center px-5">
+        <div className="filterdark2 text-Light h-100 d-flex flex-column align-items-center justify-content-between px-5 ">
           {LangInUse === "Esp" && (
-            <Row className="d-flex align-items-center justify-content-center">
+            <Row className="d-flex align-items-center justify-content-center flex-grow-1">
               <Col className="col-12 col-xl-10 col-xxl-8 ls-2">
                 ¡Descubre la Cocina Italiana Conmigo! ¿Te gustaría aprender a
                 preparar auténticos platos italianos en un ambiente divertido y
@@ -27,7 +124,18 @@ const CookingClassPage = () => {
                 </Row>
                 <Row className="d-none d-md-flex">
                   <Col className="col-1 d-none d-xl-block"></Col>
-                  <Col className="border rounded-4 p-4 brightonhover">
+                  <Col
+                    onClick={() => {
+                      setShowButtonForGroupClass(!showButtonForGroupClass);
+                      setShowButtonForPrivateClass(false);
+                      setShowButtonForTeamClass(false);
+                    }}
+                    className={
+                      whatIsSelected === "Group Class"
+                        ? "border rounded-4 p-4 brightonhover selectedSection"
+                        : "border rounded-4 p-4 brightonhover"
+                    }
+                  >
                     <div className="text-center ls-2 mb-4 py-2">
                       ••Cursos Grupales••{" "}
                     </div>
@@ -47,7 +155,18 @@ const CookingClassPage = () => {
                     </div>
                   </Col>
                   <Col className="col-1 d-none d-md-block"></Col>
-                  <Col className="border rounded-4 p-4 brightonhover">
+                  <Col
+                    onClick={() => {
+                      setShowButtonForGroupClass(false);
+                      setShowButtonForPrivateClass(!showButtonForPrivateClass);
+                      setShowButtonForTeamClass(false);
+                    }}
+                    className={
+                      whatIsSelected === "Private Class"
+                        ? "border rounded-4 p-4 brightonhover selectedSection"
+                        : "border rounded-4 p-4 brightonhover"
+                    }
+                  >
                     <div className="text-center ls-2 mb-4">
                       ••Clases Privadas••{" "}
                     </div>
@@ -63,7 +182,18 @@ const CookingClassPage = () => {
                     </div>
                   </Col>
                   <Col className="col-1 d-none d-md-block"></Col>
-                  <Col className="border rounded-4 p-4 brightonhover">
+                  <Col
+                    className={
+                      whatIsSelected === "Team Class"
+                        ? "border rounded-4 p-4 brightonhover selectedSection"
+                        : "border rounded-4 p-4 brightonhover"
+                    }
+                    onClick={() => {
+                      setShowButtonForGroupClass(false);
+                      setShowButtonForPrivateClass(false);
+                      setShowButtonForTeamClass(!showButtonForTeamClass);
+                    }}
+                  >
                     <div className="text-center ls-2 mb-4">
                       ••Team Building para Empresas••{" "}
                     </div>
@@ -141,7 +271,7 @@ const CookingClassPage = () => {
           )}
 
           {LangInUse === "Eng" && (
-            <Row className="d-flex align-items-center justify-content-center">
+            <Row className="d-flex align-items-center justify-content-center flex-grow-1">
               <Col className="col-12 col-xl-10 col-xxl-8 ls-2">
                 Discover Italian Cuisine with Me! Would you like to learn how to
                 prepare authentic Italian dishes in a fun and welcoming
@@ -150,18 +280,27 @@ const CookingClassPage = () => {
                 activities for companies.
               </Col>
 
-              <Col className="col-12 small mt-5">
+              <Col className="col-12 small">
                 <Row>
-                  <Col className="col-12 d-flex justify-content-center text-center fs-5 mt-5 mb-3">
-                    <span className="border-bottom d-block w-50">
-                      What do I offer?
-                    </span>
+                  <Col className="col-12 text-center fs-5 mb-4 ">
+                    <span className="border-bottom px-5">What do I offer?</span>
                   </Col>
                 </Row>
                 <Row className="d-none d-md-flex">
                   <Col className="col-1 d-none d-xl-block"></Col>
-                  <Col className="border rounded-4 p-4 brightonhover">
-                    <div className="text-center ls-2 mb-4">
+                  <Col
+                    className={
+                      whatIsSelected === "Group Class"
+                        ? "border rounded-4 p-4 brightonhover selectedSection"
+                        : "border rounded-4 p-4 brightonhover"
+                    }
+                    onClick={() => {
+                      setShowButtonForGroupClass(!showButtonForGroupClass);
+                      setShowButtonForPrivateClass(false);
+                      setShowButtonForTeamClass(false);
+                    }}
+                  >
+                    <div className="text-center ls-2 mb-4 py-2">
                       ••Group Courses••{" "}
                     </div>
                     <div className="text-center small">
@@ -179,9 +318,20 @@ const CookingClassPage = () => {
                     </div>
                   </Col>
                   <Col className="col-1 d-none d-md-block"></Col>
-                  <Col className="border rounded-4 p-4 brightonhover">
-                    <div className="text-center ls-2 mb-4">
-                      ••Private Classes••{" "}
+                  <Col
+                    className={
+                      whatIsSelected === "Private Class"
+                        ? "border rounded-4 p-4 brightonhover selectedSection"
+                        : "border rounded-4 p-4 brightonhover"
+                    }
+                    onClick={() => {
+                      setShowButtonForGroupClass(false);
+                      setShowButtonForPrivateClass(!showButtonForPrivateClass);
+                      setShowButtonForTeamClass(false);
+                    }}
+                  >
+                    <div className="text-center ls-2 mb-4 py-2">
+                      ••Private Classes••
                     </div>
                     <div className="text-center small">
                       <div className="small mb-3">
@@ -195,9 +345,20 @@ const CookingClassPage = () => {
                     </div>
                   </Col>
                   <Col className="col-1 d-none d-md-block"></Col>
-                  <Col className="border rounded-4 p-4 brightonhover">
-                    <div className="text-center ls-2 mb-4">
-                      ••Team Building for Companies••{" "}
+                  <Col
+                    className={
+                      whatIsSelected === "Team Class"
+                        ? "border rounded-4 p-4 brightonhover selectedSection"
+                        : "border rounded-4 p-4 brightonhover"
+                    }
+                    onClick={() => {
+                      setShowButtonForGroupClass(false);
+                      setShowButtonForPrivateClass(false);
+                      setShowButtonForTeamClass(!showButtonForTeamClass);
+                    }}
+                  >
+                    <div className="text-center ls-2 mb-4 py-2">
+                      ••Team Building for Companies••
                     </div>
                     <div className="text-center small">
                       <div className="small mb-3">
@@ -216,7 +377,7 @@ const CookingClassPage = () => {
                   <Carousel controls={false} indicators={false} fade>
                     <Carousel.Item>
                       <div className="text-center ls-2 mb-4 py-4">
-                        ••Private Classes••{" "}
+                        ••Private Classes••
                       </div>
                       <div className="text-center">
                         <div className="small mb-3">
@@ -231,7 +392,7 @@ const CookingClassPage = () => {
                     </Carousel.Item>
                     <Carousel.Item>
                       <div className="text-center ls-2 mb-4 py-4">
-                        ••Team Building for Companies••{" "}
+                        ••Team Building for Companies••
                       </div>
                       <div className="text-center">
                         <div className="small mb-3">
@@ -245,12 +406,12 @@ const CookingClassPage = () => {
                       </div>
                     </Carousel.Item>
                     <Carousel.Item>
-                      <div className="text-center ls-2 mb-4 py-4">
-                        ••Group Courses••{" "}
+                      <div className="text-center ls-2 mb-4 py-2 py-4">
+                        ••Group Courses••
                       </div>
                       <div className="text-center">
                         <div className="small mb-3">
-                          group classes are open to the public, which means
+                          Group classes are open to the public, which means
                           anyone can sign up.
                         </div>
                         <div className="small">
@@ -269,7 +430,7 @@ const CookingClassPage = () => {
           )}
 
           {LangInUse === "Ita" && (
-            <Row className="d-flex align-items-center justify-content-center">
+            <Row className="d-flex align-items-center justify-content-center flex-grow-1">
               <Col className="col-12 col-xl-10 col-xxl-8 ls-2">
                 Scopri la Cucina Italiana con Me! Ti piacerebbe imparare a
                 preparare autentici piatti italiani in un ambiente divertente e
@@ -286,7 +447,18 @@ const CookingClassPage = () => {
                 </Row>
                 <Row className="d-none d-md-flex">
                   <Col className="col-1 d-none d-xl-block"></Col>
-                  <Col className="border rounded-4 p-4 brightonhover">
+                  <Col
+                    className={
+                      whatIsSelected === "Group Class"
+                        ? "border rounded-4 p-4 brightonhover selectedSection"
+                        : "border rounded-4 p-4 brightonhover"
+                    }
+                    onClick={() => {
+                      setShowButtonForGroupClass(!showButtonForGroupClass);
+                      setShowButtonForPrivateClass(false);
+                      setShowButtonForTeamClass(false);
+                    }}
+                  >
                     <div className="text-center ls-2 mb-4">
                       ••Corsi di Gruppo••{" "}
                     </div>
@@ -308,7 +480,18 @@ const CookingClassPage = () => {
                     </div>
                   </Col>
                   <Col className="col-1 d-none d-md-block"></Col>
-                  <Col className="border rounded-4 p-4 brightonhover">
+                  <Col
+                    className={
+                      whatIsSelected === "Private Class"
+                        ? "border rounded-4 p-4 brightonhover selectedSection"
+                        : "border rounded-4 p-4 brightonhover"
+                    }
+                    onClick={() => {
+                      setShowButtonForGroupClass(false);
+                      setShowButtonForPrivateClass(!showButtonForPrivateClass);
+                      setShowButtonForTeamClass(false);
+                    }}
+                  >
                     <div className="text-center ls-2 mb-4">
                       ••Lezioni Private••{" "}
                     </div>
@@ -324,7 +507,18 @@ const CookingClassPage = () => {
                     </div>
                   </Col>
                   <Col className="col-1 d-none d-md-block"></Col>
-                  <Col className="border rounded-4 p-4 brightonhover">
+                  <Col
+                    className={
+                      whatIsSelected === "Team Class"
+                        ? "border rounded-4 p-4 brightonhover selectedSection"
+                        : "border rounded-4 p-4 brightonhover"
+                    }
+                    onClick={() => {
+                      setShowButtonForGroupClass(false);
+                      setShowButtonForPrivateClass(false);
+                      setShowButtonForTeamClass(!showButtonForTeamClass);
+                    }}
+                  >
                     <div className="text-center ls-2 mb-4">
                       ••Team Building per Aziende••{" "}
                     </div>
@@ -401,6 +595,70 @@ const CookingClassPage = () => {
               </Col>
             </Row>
           )}
+          <div
+            className={
+              showButtonForGroupClass === true ||
+              showButtonForPrivateClass === true ||
+              showButtonForTeamClass === true
+                ? "d-flex justify-content-around appear"
+                : "d-flex justify-content-around disappear"
+            }
+          >
+            <div
+              onMouseEnter={() => {
+                setIsDiv1Hovered(true);
+              }}
+              onMouseLeave={() => {
+                setIsDiv1Hovered(false);
+              }}
+              className="py-4 fs-4 text-center w-100 darker-1 rounded-3 mx-3  textIconDancing"
+            >
+              <a
+                href={
+                  LangInUse === "Eng"
+                    ? mailtoLinkEng
+                    : LangInUse === "Ita"
+                    ? mailtoLinkIta
+                    : LangInUse === "Esp"
+                    ? mailtoLinkEsp
+                    : null
+                }
+                style={{ textDecoration: "none" }}
+              >
+                <EnvelopeAtFill
+                  className={
+                    isDiv1Hovered === true
+                      ? "cursorOnHover icon-dancing text-Contrast"
+                      : "cursorOnHover icon-dancing"
+                  }
+                />
+              </a>
+            </div>
+            <div
+              onMouseEnter={() => {
+                setIsDiv2Hovered(true);
+              }}
+              onMouseLeave={() => {
+                setIsDiv2Hovered(false);
+              }}
+              className="py-4 fs-4 text-center w-100 darker-1 rounded-3 mx-3  textIconDancing"
+            >
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none" }}
+              >
+                <TelephoneFill
+                  className={
+                    isDiv2Hovered === true
+                      ? "cursorOnHover icon-dancing text-Contrast"
+                      : "cursorOnHover icon-dancing"
+                  }
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 

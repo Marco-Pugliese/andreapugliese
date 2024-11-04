@@ -505,3 +505,44 @@
     color: var(--light);
   }
 }
+
+.appear {
+  animation: appear 2s linear both;
+}
+.disappear {
+  animation: disappear 2s linear both;
+  width: 50%;
+}
+
+@keyframes appear {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  50% {
+    width: 100%;
+
+    opacity: 0.5;
+  }
+  100% {
+    width: 100%;
+
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  0% {
+    width: 100%;
+
+    opacity: 1;
+  }
+  50% {
+    width: 100%;
+
+    opacity: 0.5;
+  }
+  100% {
+    width: 0%;
+    opacity: 0;
+  }
+}

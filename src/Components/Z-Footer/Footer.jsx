@@ -9,19 +9,45 @@ import {
   Youtube,
 } from "react-bootstrap-icons";
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
 const Footer = () => {
+  const LangInUse = useSelector((state) => state.Lang.lang);
   const phoneNumber = "34600539809";
-  const message = "Hello! I'm intrested in your services";
-  const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-    message
+
+  const messageEng = "Hello! I'm intrested in your services";
+  const whatsappLinkEng = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    messageEng
   )}`;
+  const messageEsp = "¡Hola! Me gustaría saber más sobre sus servicios.";
+  const whatsappLinkEsp = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    messageEsp
+  )}`;
+  const messageIta = "Ciao! Mi piacerebbe sapere di più sui servizi che offri";
+  const whatsappLinkIta = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    messageIta
+  )}`;
+  //
   const email = "andreapugliesecocina@yahoo.com";
-  const subject = "Info request";
-  const body = "Hello! I'd like to know more about your services.";
-  const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
-    subject
-  )}&body=${encodeURIComponent(body)}`;
+  // English mail
+  const subjectEng = "Info request";
+  const bodyEng = "Hello! I'd like to know more about your services.";
+  const mailtoLinkEng = `mailto:${email}?subject=${encodeURIComponent(
+    subjectEng
+  )}&body=${encodeURIComponent(bodyEng)}`;
+  // Spanish mail
+  const subjectEsp = "Solicitud de información";
+  const bodyEsp = "¡Hola! Me gustaría saber más sobre sus servicios.";
+  const mailtoLinkEsp = `mailto:${email}?subject=${encodeURIComponent(
+    subjectEsp
+  )}&body=${encodeURIComponent(bodyEsp)}`;
+  // Italian mail
+  const subjectIta = "Richiesta Informazioni";
+  const bodyIta = "Ciao! Mi piacerebbe sapere di più sui servizi che offri";
+  const mailtoLinkIta = `mailto:${email}?subject=${encodeURIComponent(
+    subjectIta
+  )}&body=${encodeURIComponent(bodyIta)}`;
+  //
   const [showNumber, setShowNumber] = useState(true);
   const [showMail, setShowMail] = useState(true);
   const today = new Date();
@@ -48,7 +74,15 @@ const Footer = () => {
             <div className="small">
               {" "}
               <a
-                href={whatsappLink}
+                href={
+                  LangInUse === "Eng"
+                    ? whatsappLinkEng
+                    : LangInUse === "Ita"
+                    ? whatsappLinkIta
+                    : LangInUse === "Esp"
+                    ? whatsappLinkEsp
+                    : null
+                }
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-dark px-1"
@@ -67,7 +101,15 @@ const Footer = () => {
             />
 
             <a
-              href={mailtoLink}
+              href={
+                LangInUse === "Eng"
+                  ? mailtoLinkEng
+                  : LangInUse === "Ita"
+                  ? mailtoLinkIta
+                  : LangInUse === "Esp"
+                  ? mailtoLinkEsp
+                  : null
+              }
               className="text-dark px-1"
               style={{ textDecoration: "none" }}
             >

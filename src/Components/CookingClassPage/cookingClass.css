@@ -71,7 +71,37 @@
   background: whitesmoke;
   color: var(--lightDark);
 }
+.bg-menu > div {
+  transition: all 0.8s;
+}
 .bg-menu > div:hover {
   background-color: rgba(0, 0, 0, 0.8);
+  color: var(--light);
+}
+.bg-menu > div > div > div:hover {
+  scale: 1.03;
   color: var(--contrast);
+  cursor: pointer;
+}
+.bg-menu > div > div > div {
+  padding: 10px 0;
+  transition: all 0.8s;
+}
+.darker-1 {
+  background: rgba(0, 0, 0, 0.3);
+  transition: all 0.8s;
+}
+.darker-1:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+.textIconDancing > a {
+  color: var(--light);
+}
+.textIconDancing:hover {
+  cursor: pointer;
+}
+.selectedSection {
+  background: rgba(0, 0, 0, 0.6) !important;
+  color: var(--contrast);
+  scale: 1.06;
 }
