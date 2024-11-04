@@ -1,20 +1,21 @@
 #generalHero {
   height: 90vh;
-  background: white;
-  background-image: url("../../../public/assets/andreapugliese/andreap2.jpeg");
-  background-size: contain;
+  background: whitesmoke;
+  /* background-image: url("../../../public/assets/andreapugliese/andreap2.jpeg"); */
+  /* background-image: url("../../../public/assets/andreapugliese/andreap6.jpeg"); */
+  /* background-image: url("../../../public/assets/andreapugliese/andreap5.jpeg"); */
+  background-image: url("../../../public/assets/andreapugliese/andreap.jpeg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-position: center; */
 }
 
-/* .filterblue {
-  background: #00000023;
-} */
-#heroLine {
-  text-shadow: 0px 0px 20px rgba(131, 118, 118, 0.084);
-  top: 60%;
+.filterblue {
+  /* background: #0000005d; */
+  background: rgba(1, 9, 34, 0.85);
+  background: rgba(0, 0, 0, 0.75);
 }
+
 #heroLine > div:first-child {
   letter-spacing: 0.35em;
 }
@@ -49,14 +50,6 @@
     background-size: cover;
     background-position: center;
   }
-}
-#Aside {
-  background-color: rgba(0, 0, 0, 0.9);
-  background-position: center;
-  background-size: contain;
-}
-#Aside > div {
-  background: var(--dark2);
 }
 
 @media screen and (min-width: 400px) {
@@ -240,4 +233,96 @@
 }
 .cursorOnHover {
   transition: all 0.8s;
+}
+.phraseContainer {
+  position: relative;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.phraseContainer > span {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 1.3em;
+  color: var(--light) !important;
+}
+
+.text-Italy {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.text-Italy::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(
+    to right,
+    rgba(0, 128, 0, 0.1),
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 0, 0, 0.1)
+  );
+  filter: blur(8px);
+}
+.text-Spain {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.text-Spain::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(
+    to bottom,
+
+    rgba(255, 0, 0, 0.1),
+    rgba(158, 206, 14, 0.1),
+    rgba(255, 0, 0, 0.1)
+  );
+  filter: blur(8px);
+}
+.text-Argentina {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.text-Argentina::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(
+    to bottom,
+    rgba(32, 67, 224, 0.1),
+    rgba(255, 255, 255, 0.1),
+    rgba(32, 67, 224, 0.1)
+  );
+  filter: blur(8px);
+}
+.shadow-Light {
+  text-shadow: 0 0px 5px whitesmoke;
 }

@@ -27,7 +27,7 @@ const AsideSection = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <div id="Aside">
+    <div id="Aside" className="bg-dark">
       <div className="w-100 text-center py-5 fs-3 px-4">
         <section className="my-5 py-5 ">
           <div className="py-4">

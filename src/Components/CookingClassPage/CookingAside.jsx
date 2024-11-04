@@ -5,11 +5,11 @@ const CookingAside = () => {
   const LangInUse = useSelector((state) => state.Lang.lang);
   return (
     <div id="cookingAside">
-      <div className="w-100 h-100">
+      <div className="py-5">
         <Row>
           {LangInUse === "Ita" && (
             <>
-              <Col className="py-5 fs-5  text-center col-12">
+              <Col className="pb-5 fs-5 text-center col-12">
                 Perché scegliere me?
               </Col>
               <Col className="px-3 col-12">
@@ -32,9 +32,7 @@ const CookingAside = () => {
         <Row>
           {LangInUse === "Eng" && (
             <>
-              <Col className="py-5 fs-5  text-center col-12">
-                Why choose me?
-              </Col>
+              <Col className="pb-5 fs-5 text-center col-12">Why choose me?</Col>
               <Col className="px-3 col-12">
                 With my experience as an Italian chef and my passion for
                 cooking, I will guide you through every step of the process,
@@ -54,7 +52,7 @@ const CookingAside = () => {
         <Row>
           {LangInUse === "Esp" && (
             <>
-              <Col className="py-5 fs-5  text-center col-12">
+              <Col className="pb-5 fs-5 text-center col-12">
                 {" "}
                 ¿Por qué elegirme?
               </Col>

@@ -1,6 +1,7 @@
 import { Carousel, Col, Row } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import CookingAside from "./CookingAside";
+import PrivateChefPage from "./PrivateChefPage";
 
 const CookingClassPage = () => {
   const LangInUse = useSelector((state) => state.Lang.lang);
@@ -404,6 +405,7 @@ const CookingClassPage = () => {
       </div>
 
       <CookingAside />
+      <PrivateChefPage />
     </>
   );
 };

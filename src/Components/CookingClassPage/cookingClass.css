@@ -15,26 +15,28 @@
   box-shadow: 0 0 10px 10px rgba(135, 135, 135, 0.2);
 }
 #cookingAside {
-  background-image: url("../../../public/assets/img/bgabstract.avif");
+  /* background-image: url("../../../public/assets/img/bgabstract.avif"); */
+  background: whitesmoke;
   background-size: cover;
-  min-height: 80vh;
+  min-height: 40vh;
   letter-spacing: 0.2em;
   word-spacing: 0.5em;
-  color: white;
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
   font-size: 1em;
+  color: var(--lightDark);
 }
 #cookingAside > div {
   padding: 2vh 15vw;
-  background: rgba(0, 0, 0, 0.3);
-  min-height: 80vh;
+  /* background: rgba(0, 0, 0, 0.3); */
+  min-height: 40vh;
   transition: all 0.8s;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 #cookingAside > div:hover {
-  background: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--contrast);
 }
 #cookingClass > div {
   padding-bottom: 5vh;
@@ -50,4 +52,26 @@
     padding-top: 10vh;
     padding: 10vh;
   }
+}
+
+#PrivateChef {
+  transition: all 0.8s;
+}
+
+#PrivateChef {
+  background: whitesmoke;
+}
+#PrivateChef > div:first-child {
+  color: var(--light);
+}
+.bg-lightGrey {
+  background-color: rgb(27, 27, 27);
+}
+#PrivateChef > .bg-menu {
+  background: whitesmoke;
+  color: var(--lightDark);
+}
+.bg-menu > div:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--contrast);
 }

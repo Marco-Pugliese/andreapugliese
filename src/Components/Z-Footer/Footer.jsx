@@ -11,7 +11,7 @@ import {
 import { useState } from "react";
 
 const Footer = () => {
-  const phoneNumber = "34600539809"; // Numero senza simboli e spazi
+  const phoneNumber = "34600539809";
   const message = "Hello! I'm intrested in your services";
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
@@ -27,7 +27,7 @@ const Footer = () => {
   const today = new Date();
   const thisYear = today.getFullYear();
   return (
-    <Container fluid className="p-0 bg-Darker">
+    <Container fluid className="p-0 bg-dark">
       <div className="d-flex justify-content-center text-Dark bg-light  pt-5 pb-3">
         <div className="d-flex flex-column">
           <div className="text-start">
