@@ -51,10 +51,12 @@ const Footer = () => {
   const thisYear = today.getFullYear();
   const dispatch = useDispatch();
   return (
-    <Container fluid className="p-0 bg-dark pt-5">
-      <SocialStripe />
+    <Container fluid className="p-0 bg-dark">
+      <div className="ShadowEffectTop py-2">
+        <SocialStripe />
+      </div>
 
-      <div className="d-flex text-Dark bg-smoke">
+      <div className="d-flex text-Dark bg-smoke ShadowLightEffect">
         <div className="d-flex flex-row w-100 justify-content-around">
           <div className="p-2">
             <div className="text-end fs-small">
@@ -129,7 +131,12 @@ const Footer = () => {
         </div>
       </div>
 
-      <DedicateTo />
+      <div
+        className="ShadowEffectBott {
+"
+      >
+        <DedicateTo />
+      </div>
     </Container>
   );
 };

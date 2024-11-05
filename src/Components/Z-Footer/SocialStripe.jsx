@@ -3,7 +3,7 @@ import { Instagram, Tiktok, Youtube } from "react-bootstrap-icons";
 
 const SocialStripe = () => {
   return (
-    <div className="bg-Contrast  py-3">
+    <div className="py-3 ShadowEffectTop">
       <Row>
         <Col className="text-center d-none d-lg-flex align-items-center justify-content-center ">
           <img
