@@ -5,8 +5,8 @@ import { Button, Modal } from "react-bootstrap";
 import {
   EnvelopeAtFill,
   Instagram,
-  TelephoneFill,
   Tiktok,
+  Whatsapp,
   Youtube,
 } from "react-bootstrap-icons";
 
@@ -79,7 +79,7 @@ const AsideSection = () => {
                   <EnvelopeAtFill className="fs-6 me-4" />
                 </div>
                 <div className="d-flex small justify-content-between align-items-center my-2">
-                  <TelephoneFill className="fs-6 ms-4" />
+                  <Whatsapp className="fs-6 ms-4" />
 
                   <div className="small">
                     <a
@@ -92,7 +92,7 @@ const AsideSection = () => {
                       +34 600539809
                     </a>
                   </div>
-                  <TelephoneFill className="fs-6 me-4" />
+                  <Whatsapp className="fs-6 me-4" />
                 </div>
                 <div className="d-flex small justify-content-between align-items-center my-2">
                   <Instagram className="fs-6 ms-4" />

@@ -3,7 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import {
   EnvelopeAtFill,
   Instagram,
-  TelephoneFill,
+  Whatsapp,
   Tiktok,
   Youtube,
 } from "react-bootstrap-icons";
@@ -128,7 +128,7 @@ const ContactPage = () => {
                   }}
                 >
                   <div className="small">
-                    <TelephoneFill
+                    <Whatsapp
                       className={
                         phoneIsHovered === true
                           ? "icon-fixed-size icon-dancing"
@@ -157,7 +157,7 @@ const ContactPage = () => {
                         +34 600539809
                       </a>
                     </span>
-                    <TelephoneFill
+                    <Whatsapp
                       className={
                         phoneIsHovered === true
                           ? "icon-fixed-size icon-dancing"

@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import CookingAside from "./CookingAside";
 import PrivateChefPage from "./PrivateChefPage";
 import { useEffect, useState } from "react";
-import { EnvelopeAtFill, TelephoneFill } from "react-bootstrap-icons";
+import { EnvelopeAtFill, Whatsapp } from "react-bootstrap-icons";
 
 const CookingClassPage = () => {
   const [isDiv1Hovered, setIsDiv1Hovered] = useState(false);
@@ -659,7 +659,7 @@ const CookingClassPage = () => {
                   rel="noopener noreferrer"
                   style={{ textDecoration: "none" }}
                 >
-                  <TelephoneFill
+                  <Whatsapp
                     className={
                       isDiv2Hovered === true
                         ? "cursorOnHover icon-dancing text-Contrast"

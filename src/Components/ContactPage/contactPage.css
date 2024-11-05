@@ -1,39 +1,47 @@
 #ContactPage {
-  background-image: url("../../../public/assets/img/bg2astract.avif");
+  /* background-image: url("../../../public/assets/img/bg2astract.avif"); */
+  /* background-image: url("../../../public/assets/img/bgabstract.avif"); */
+  background-image: url("../../../public/assets/andreapugliese/chef6.jpeg");
+
   background-size: cover;
+
+  background-position: center;
   min-height: 90vh;
 }
 #ContactPage .col {
   transition: all 0.8s;
 }
-.minh80 {
-  min-height: 90vh;
-  background: rgba(0, 0, 0, 0.85) !important;
+
+#ContactPage > div {
+  transition: all 0.8s;
+}
+#ContactPage > div:hover {
+  background: rgba(0, 0, 0, 0.65);
 }
 .minh35 {
-  min-height: 15vh;
-  background: rgba(0, 0, 0, 0.85) !important;
+  min-height: 20vh;
+  background: rgba(0, 0, 0, 0.9) !important;
 }
 .minh10 {
-  min-height: 60vh;
-  background: rgba(0, 0, 0, 0.2);
+  min-height: 50vh;
+  background: rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 15px;
   min-width: 100vw;
   box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.3);
-  color: var(--dark);
+  color: var(--light);
 }
 .changeColor2 {
   text-decoration: none;
-  color: var(--light);
+  color: var(--contrast);
   transition: all 0.82s;
 }
 .cursorOnHover2:hover {
   scale: 1.03;
   cursor: pointer;
-  color: var(--light) !important;
+  color: var(--contrast);
 }
 
 .cursorOnHover2 {
@@ -42,7 +50,11 @@
 .text-Dark2 {
   text-decoration: none;
   transition: all 0.82s;
-  color: var(--dark);
+  color: var(--light);
+  transition: all 0.8s;
+}
+.text-Dark2:hover {
+  color: var(--contrast);
 }
 .icon-fixed-size {
   width: 24px;

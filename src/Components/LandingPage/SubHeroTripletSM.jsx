@@ -9,7 +9,7 @@ const SubHeroTripletSM = () => {
       <Row className="justify-content-center">
         <Col className="imgbg1sm m-0 p-0 col-10 mt-2">
           <div className="filterdark px-5 d-flex align-items-center justify-content-center flex-column">
-            <div className="darkHover px-3 text-Light">
+            <div className="px-3 text-LightHover">
               {LangInUse === "Eng" && (
                 <>
                   Group cooking classes where participants learn to make Italian
@@ -35,7 +35,7 @@ const SubHeroTripletSM = () => {
         </Col>
         <Col className="imgbg2sm m-0 p-0 col-10 mt-2">
           <div className="filterdark px-5 d-flex align-items-center justify-content-center flex-column">
-            <div className="darkHover px-3 text-Light">
+            <div className="px-3 text-LightHover">
               {LangInUse === "Eng" && (
                 <>
                   Private cooking classes offer personalized attention, allowing
@@ -60,8 +60,8 @@ const SubHeroTripletSM = () => {
           </div>
         </Col>
         <Col className="imgbg3sm m-0 p-0 col-10 mt-2">
-          <div className="filterdark px-5 d-flex align-items-center justify-content-center flex-column">
-            <div className="darkHover px-3 text-Light">
+          <div className="filterdark px-5 d-flex align-items-center justify-content-center flex-column w-100">
+            <div className="px-3 text-LightHover">
               {LangInUse === "Eng" && (
                 <>
                   Team-building workshops use cooking to foster collaboration

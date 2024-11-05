@@ -1,15 +1,12 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Logo from "../1-Navbar/Logo";
-import {
-  EnvelopeAtFill,
-  HeartFill,
-  Instagram,
-  TelephoneFill,
-  Tiktok,
-  Youtube,
-} from "react-bootstrap-icons";
+import { EnvelopeAtFill, Whatsapp } from "react-bootstrap-icons";
 import { useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { SetPageAction } from "../Redux/Actions";
+import SocialStripe from "./SocialStripe";
+import DedicateTo from "./DedicateTo";
 
 const Footer = () => {
   const LangInUse = useSelector((state) => state.Lang.lang);
@@ -52,8 +49,11 @@ const Footer = () => {
   const [showMail, setShowMail] = useState(true);
   const today = new Date();
   const thisYear = today.getFullYear();
+  const dispatch = useDispatch();
   return (
-    <Container fluid className="p-0 bg-dark">
+    <Container fluid className="p-0 bg-dark pt-5">
+      <SocialStripe />
+
       <div className="d-flex text-Dark bg-smoke">
         <div className="d-flex flex-row w-100 justify-content-around">
           <div className="p-2">
@@ -61,12 +61,20 @@ const Footer = () => {
               <span className="fs-small">©{thisYear}</span>
             </div>
             <div className="small">
-              <Logo />
+              <Link
+                to={"/"}
+                onClick={() => {
+                  dispatch(SetPageAction("Home"));
+                }}
+                className="nav-link"
+              >
+                <Logo />
+              </Link>
             </div>
           </div>
           <div className="d-flex flex-column h-100 justify-content-center">
             <div className="d-flex align-items-center p-2">
-              <TelephoneFill
+              <Whatsapp
                 className="fs-6 me-2 cursorOnHover icon-dancing"
                 onClick={() => {
                   setShowNumber(!showNumber);
@@ -120,52 +128,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-Contrast  py-3">
-        <Row>
-          <Col className="text-center d-none d-lg-flex align-items-center justify-content-center ">
-            {/* <Globe /> */}
-            <img
-              src="/public/assets/img/icon.png"
-              alt="icon"
-              style={{ width: "25px" }}
-            />
-            <span className="small ">andreapugliesecocina</span>
-          </Col>
 
-          <Col className="d-flex  align-items-center justify-content-around">
-            <a
-              href="https://www.instagram.com/andreapugliesecocina?igsh=cXM2d2xxOXMzMW1p"
-              target="_blank"
-              rel="noopener"
-              className="iconFooter"
-            >
-              <Instagram />
-            </a>
-            <a
-              href="https://www.tiktok.com/@andreapugliesecocina?_t=8r1oOxL9Qrw&_r=1"
-              target="_blank"
-              rel="noopener"
-              className="iconFooter"
-            >
-              <Tiktok />
-            </a>
-            <a
-              href="https://youtube.com/@andreapugliesecocina?si=OnLXbFGqKFJZL4dC"
-              target="_blank"
-              rel="noopener"
-              className="iconFooter"
-            >
-              <Youtube />
-            </a>
-          </Col>
-        </Row>
-      </div>
-      <div className="bg-to-black py-3">
-        <div className="text-Light fs-small d-flex justify-content-center align-items-center">
-          Made with <HeartFill className="text-DarkLight heartbeat fs-3 mx-2" />
-          for my Brother, by lessismore
-        </div>
-      </div>
+      <DedicateTo />
     </Container>
   );
 };
