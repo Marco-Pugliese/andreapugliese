@@ -54,8 +54,8 @@ const ContactPage = () => {
       <div>
         <div className="minh35"></div>
         <div className="minh10">
-          <Row className="w-100">
-            <Col className="fs-2 text-center col-12 col-xl-4 mb-5">
+          <Row className="w-100 align-items-center">
+            <Col className="fs-1 text-center col-12 col-xl-4 mb-5 getInTouch">
               {LangInUse === "Eng" ? (
                 <> Want to get in Touch?!</>
               ) : LangInUse === "Ita" ? (
@@ -84,7 +84,7 @@ const ContactPage = () => {
                       className={
                         mailIsHovered === true
                           ? "icon-fixed-size icon-dancing"
-                          : "icon-fixed-size"
+                          : " icon-fixed-size"
                       }
                     />
                     <a
@@ -99,8 +99,8 @@ const ContactPage = () => {
                       }
                       className={
                         mailIsHovered === true
-                          ? "changeColor2 px-1"
-                          : "text-Dark2 px-1"
+                          ? "changeColor2 px-3"
+                          : "text-Dark2 px-3"
                       }
                     >
                       andreapugliesecocina@yahoo.com
@@ -110,7 +110,7 @@ const ContactPage = () => {
                       className={
                         mailIsHovered === true
                           ? "icon-fixed-size icon-dancing"
-                          : "icon-fixed-size"
+                          : " icon-fixed-size"
                       }
                     />
                   </div>
@@ -150,8 +150,8 @@ const ContactPage = () => {
                         rel="noopener noreferrer"
                         className={
                           phoneIsHovered === true
-                            ? "changeColor2"
-                            : "text-Dark2"
+                            ? "changeColor2 px-2"
+                            : "text-Dark2 px-2"
                         }
                       >
                         +34 600539809
@@ -192,8 +192,8 @@ const ContactPage = () => {
                       rel="noopener"
                       className={
                         instagramIsHovered === true
-                          ? "changeColor2"
-                          : "text-Dark2"
+                          ? "changeColor2 px-2"
+                          : "text-Dark2 px-2"
                       }
                     >
                       @andreapugliesecocina
@@ -233,8 +233,8 @@ const ContactPage = () => {
                       rel="noopener"
                       className={
                         youtubeIsHovered === true
-                          ? "changeColor2"
-                          : "text-Dark2"
+                          ? "changeColor2 px-2"
+                          : "text-Dark2 px-2"
                       }
                     >
                       @andreapugliesecocina
@@ -274,7 +274,9 @@ const ContactPage = () => {
                       target="_blank"
                       rel="noopener"
                       className={
-                        tikTokIsHovered === true ? "changeColor2" : "text-Dark2"
+                        tikTokIsHovered === true
+                          ? "changeColor2 px-2"
+                          : "text-Dark2 px-2"
                       }
                     >
                       @andreapugliesecocina

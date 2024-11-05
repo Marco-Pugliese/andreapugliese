@@ -14,17 +14,16 @@
 
 #ContactPage > div {
   transition: all 0.8s;
+  background: rgba(0, 0, 0, 0.75) !important;
 }
 #ContactPage > div:hover {
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.9) !important;
 }
 .minh35 {
   min-height: 20vh;
-  background: rgba(0, 0, 0, 0.9) !important;
 }
 .minh10 {
   min-height: 50vh;
-  background: rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,6 +31,7 @@
   min-width: 100vw;
   box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.3);
   color: var(--light);
+  letter-spacing: 0.15em;
 }
 .changeColor2 {
   text-decoration: none;
@@ -80,4 +80,9 @@
 }
 .miniscale:hover {
   scale: 1.1;
+}
+.getInTouch:hover {
+  text-shadow: 0 0 10px rgb(155, 155, 155);
+  scale: 1.05;
+  cursor: pointer;
 }
