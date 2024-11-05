@@ -7,7 +7,7 @@ const SubHeroSection = () => {
 
   return (
     <Container id="subHero" className="text-light mb-5">
-      <div className="h-100 w-100">
+      <div className="h-100 w-100 text-center d-flex justify-content-center align-items-center flex-column">
         <div className="text-Dark w-100 text-center  mb-3">
           <span className="fs-2 fw-bold bluebordertop1 px-5 ">
             {" "}
