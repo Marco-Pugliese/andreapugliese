@@ -54,9 +54,9 @@ const Footer = () => {
   const thisYear = today.getFullYear();
   return (
     <Container fluid className="p-0 bg-dark">
-      <div className="d-flex justify-content-center text-Dark bg-light  pt-5 pb-3">
-        <div className="d-flex flex-column">
-          <div className="text-start">
+      <div className="d-flex text-Dark bg-smoke">
+        <div className="d-flex flex-row w-100 justify-content-around">
+          <div className="p-2">
             <div className="text-end fs-small">
               <span className="fs-small">©{thisYear}</span>
             </div>
@@ -64,57 +64,59 @@ const Footer = () => {
               <Logo />
             </div>
           </div>
-          <div className="text-end d-flex flex-row align-items-center justify-content-end">
-            <TelephoneFill
-              className="fs-6 me-2 cursorOnHover icon-dancing"
-              onClick={() => {
-                setShowNumber(!showNumber);
-              }}
-            />
-            <div className="small">
-              {" "}
+          <div className="d-flex flex-column h-100 justify-content-center">
+            <div className="d-flex align-items-center p-2">
+              <TelephoneFill
+                className="fs-6 me-2 cursorOnHover icon-dancing"
+                onClick={() => {
+                  setShowNumber(!showNumber);
+                }}
+              />
+              <div className="small">
+                {" "}
+                <a
+                  href={
+                    LangInUse === "Eng"
+                      ? whatsappLinkEng
+                      : LangInUse === "Ita"
+                      ? whatsappLinkIta
+                      : LangInUse === "Esp"
+                      ? whatsappLinkEsp
+                      : null
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-dark px-1"
+                  style={{ textDecoration: "none" }}
+                >
+                  +34 600539809
+                </a>
+              </div>
+            </div>
+            <div className="d-flex align-items-center p-2">
+              <EnvelopeAtFill
+                className="fs-6 me-2 cursorOnHover icon-dancing"
+                onClick={() => {
+                  setShowMail(!showMail);
+                }}
+              />
+
               <a
                 href={
                   LangInUse === "Eng"
-                    ? whatsappLinkEng
+                    ? mailtoLinkEng
                     : LangInUse === "Ita"
-                    ? whatsappLinkIta
+                    ? mailtoLinkIta
                     : LangInUse === "Esp"
-                    ? whatsappLinkEsp
+                    ? mailtoLinkEsp
                     : null
                 }
-                target="_blank"
-                rel="noopener noreferrer"
                 className="text-dark px-1"
                 style={{ textDecoration: "none" }}
               >
-                +34 600539809
+                andreapugliesecocina@yahoo.com
               </a>
             </div>
-          </div>
-          <div className="text-end d-flex flex-row align-items-center justify-content-end">
-            <EnvelopeAtFill
-              className="fs-6 me-2 cursorOnHover icon-dancing"
-              onClick={() => {
-                setShowMail(!showMail);
-              }}
-            />
-
-            <a
-              href={
-                LangInUse === "Eng"
-                  ? mailtoLinkEng
-                  : LangInUse === "Ita"
-                  ? mailtoLinkIta
-                  : LangInUse === "Esp"
-                  ? mailtoLinkEsp
-                  : null
-              }
-              className="text-dark px-1"
-              style={{ textDecoration: "none" }}
-            >
-              andreapugliesecocina@yahoo.com
-            </a>
           </div>
         </div>
       </div>

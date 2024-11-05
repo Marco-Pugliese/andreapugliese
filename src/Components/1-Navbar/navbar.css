@@ -1,20 +1,19 @@
 .nav-link {
   transition: all 0.8s !important;
-  font-size: 1.1em !important;
 }
 .flags {
   transition: all 0.8s;
   font-size: 1.5em;
 }
 .nav-link:hover {
-  font-size: 1.35em !important;
+  font-size: 1.02em !important;
   color: var(--contrast) !important;
   /* text-shadow: 0 0px 15px rgba(0, 0, 0, 0.8); */
   cursor: pointer !important;
   font-weight: bolder !important;
 }
 .flags:hover {
-  font-size: 2.1em;
+  font-size: 1.8em;
   cursor: pointer;
   font-weight: bolder !important;
 }
@@ -42,9 +41,9 @@
   height: 100%;
 }
 #img-logoContainer {
-  padding: 2px;
-  margin-top: 2px;
-  margin-bottom: 2px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 315px) {
   #img-logoContainer {

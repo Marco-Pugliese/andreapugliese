@@ -108,12 +108,16 @@ const CookingClassPage = () => {
         <div className="filterdark2 text-Light h-100 d-flex flex-column align-items-center justify-content-between px-5 ">
           {LangInUse === "Esp" && (
             <Row className="d-flex align-items-around justify-content-center flex-grow-1">
-              <Col className="col-12 col-xl-10 col-xxl-8 ls-2 ">
-                ¡Descubre la Cocina Italiana Conmigo! ¿Te gustaría aprender a
-                preparar auténticos platos italianos en un ambiente divertido y
-                acogedor? ¡Estás en el lugar correcto! Ofrezco cursos de cocina
-                italiana diseñados para grupos, sesiones privadas y actividades
-                de team building para empresas.
+              <Col className="col-12 col-xl-10 col-xxl-8 ls-2 text-center">
+                ¡Descubre la Cocina Italiana Conmigo!
+                <br />
+                <br />
+                ¿Te gustaría aprender a preparar auténticos platos italianos en
+                un ambiente divertido y acogedor? ¡Estás en el lugar correcto!
+                <br />
+                <br />
+                Ofrezco cursos de cocina italiana diseñados para grupos,
+                sesiones privadas y actividades de team building para empresas.
               </Col>
 
               <Col className="col-12 small ">
@@ -132,15 +136,15 @@ const CookingClassPage = () => {
                     }}
                     className={
                       whatIsSelected === "Group Class"
-                        ? "border rounded-4 p-4 brightonhover selectedSection"
-                        : "border rounded-4 p-4 brightonhover"
+                        ? "border rounded-4 py-4 brightonhover selectedSection"
+                        : "border rounded-4 py-4 brightonhover"
                     }
                   >
                     <div className="text-center ls-2 mb-4 py-2">
                       ••Cursos Grupales••{" "}
                     </div>
-                    <div className="text-center small">
-                      <div className="small mb-3">
+                    <div className="text-center px-2">
+                      <div className="mb-3 small">
                         Mis clases grupales son abiertas al público, lo que
                         significa que cualquier persona puede inscribirse.
                       </div>
@@ -163,19 +167,19 @@ const CookingClassPage = () => {
                     }}
                     className={
                       whatIsSelected === "Private Class"
-                        ? "border rounded-4 p-4 brightonhover selectedSection"
-                        : "border rounded-4 p-4 brightonhover"
+                        ? "border rounded-4 py-4 brightonhover selectedSection"
+                        : "border rounded-4 py-4 brightonhover"
                     }
                   >
-                    <div className="text-center ls-2 mb-4">
+                    <div className="text-center ls-2 mb-4 py-2">
                       ••Clases Privadas••{" "}
                     </div>
                     <div className="text-center small">
-                      <div className="small mb-3">
+                      <div className="mb-3 ">
                         Si prefieres una atención más personalizada, mis clases
                         privadas son perfectas para ti.
                       </div>
-                      <div className="small">
+                      <div>
                         Podrás elegir el menú y el ritmo de la clase,
                         adaptándola a tus necesidades y preferencias.
                       </div>
@@ -185,8 +189,8 @@ const CookingClassPage = () => {
                   <Col
                     className={
                       whatIsSelected === "Team Class"
-                        ? "border rounded-4 p-4 brightonhover selectedSection"
-                        : "border rounded-4 p-4 brightonhover"
+                        ? "border rounded-4 py-4 brightonhover selectedSection"
+                        : "border rounded-4 py-4 brightonhover"
                     }
                     onClick={() => {
                       setShowButtonForGroupClass(false);
@@ -194,14 +198,14 @@ const CookingClassPage = () => {
                       setShowButtonForTeamClass(!showButtonForTeamClass);
                     }}
                   >
-                    <div className="text-center ls-2 mb-4">
+                    <div className="text-center ls-2 mb-4 py-2">
                       ••Team Building para Empresas••{" "}
                     </div>
                     <div className="text-center small">
-                      <div className="small mb-3">
+                      <div className="mb-3">
                         Fortalece los lazos de tu equipo a través de la cocina.
                       </div>
-                      <div className="small">
+                      <div className="">
                         Mis talleres de team building fomentan la colaboración y
                         la creatividad, mientras aprenden a preparar platos
                         italianos juntos. ¡Una forma deliciosa de construir
@@ -214,7 +218,7 @@ const CookingClassPage = () => {
                 <Row className="d-flex d-md-none px-5">
                   <Carousel controls={false} indicators={false} fade>
                     <Carousel.Item>
-                      <div className="text-center ls-2 mb-4 py-4">
+                      <div className="fs-6 text-center ls-2 mb-4">
                         ••Clases Privadas••{" "}
                       </div>
                       <div className="text-center">
@@ -229,15 +233,15 @@ const CookingClassPage = () => {
                       </div>
                     </Carousel.Item>
                     <Carousel.Item>
-                      <div className="text-center ls-2 mb-4 py-4">
+                      <div className="fs-6 text-center ls-2 mb-4">
                         ••Team Building para Empresas••{" "}
                       </div>
-                      <div className="text-center">
-                        <div className="small mb-3">
+                      <div className="small text-center">
+                        <div className=" mb-3">
                           Fortalece los lazos de tu equipo a través de la
                           cocina.
                         </div>
-                        <div className="small">
+                        <div className="">
                           Mis talleres de team building fomentan la colaboración
                           y la creatividad, mientras aprenden a preparar platos
                           italianos juntos. ¡Una forma deliciosa de construir
@@ -272,12 +276,14 @@ const CookingClassPage = () => {
 
           {LangInUse === "Eng" && (
             <Row className="d-flex align-items-around justify-content-center flex-grow-1">
-              <Col className="col-12 col-xl-10 col-xxl-8 ls-2">
-                Discover Italian Cuisine with Me! Would you like to learn how to
-                prepare authentic Italian dishes in a fun and welcoming
-                environment? You’re in the right place! I offer Italian cooking
-                courses designed for groups, private sessions, and team-building
-                activities for companies.
+              <Col className="col-12 col-xl-10 col-xxl-8 ls-2 text-center">
+                Discover Italian Cuisine with Me! <br />
+                <br />
+                Would you like to learn how to prepare authentic Italian dishes
+                in a fun and welcoming environment? You’re in the right place!{" "}
+                <br />
+                <br /> I offer Italian cooking courses designed for groups,
+                private sessions, and team-building activities for companies.
               </Col>
 
               <Col className="col-12 small">
@@ -291,8 +297,8 @@ const CookingClassPage = () => {
                   <Col
                     className={
                       whatIsSelected === "Group Class"
-                        ? "border rounded-4 p-4 brightonhover selectedSection"
-                        : "border rounded-4 p-4 brightonhover"
+                        ? "border rounded-4 py-4 brightonhover selectedSection"
+                        : "border rounded-4 py-4 brightonhover"
                     }
                     onClick={() => {
                       setShowButtonForGroupClass(!showButtonForGroupClass);
@@ -304,11 +310,11 @@ const CookingClassPage = () => {
                       ••Group Courses••{" "}
                     </div>
                     <div className="text-center small">
-                      <div className="small mb-3">
+                      <div className="mb-3">
                         My group classes are open to the public, which means
                         anyone can sign up.
                       </div>
-                      <div className="small">
+                      <div>
                         Join the experience and meet new people while enjoying a
                         unique and fun culinary adventure! You will learn to
                         cook traditional Italian recipes, from fresh pasta to
@@ -321,8 +327,8 @@ const CookingClassPage = () => {
                   <Col
                     className={
                       whatIsSelected === "Private Class"
-                        ? "border rounded-4 p-4 brightonhover selectedSection"
-                        : "border rounded-4 p-4 brightonhover"
+                        ? "border rounded-4 py-4 brightonhover selectedSection"
+                        : "border rounded-4 py-4 brightonhover"
                     }
                     onClick={() => {
                       setShowButtonForGroupClass(false);
@@ -334,11 +340,11 @@ const CookingClassPage = () => {
                       ••Private Classes••
                     </div>
                     <div className="text-center small">
-                      <div className="small mb-3">
+                      <div className="mb-3">
                         If you prefer more personalized attention, my private
                         classes are perfect for you.
                       </div>
-                      <div className="small">
+                      <div>
                         You can choose the menu and the pace of the class,
                         tailoring it to your needs and preferences.
                       </div>
@@ -348,8 +354,8 @@ const CookingClassPage = () => {
                   <Col
                     className={
                       whatIsSelected === "Team Class"
-                        ? "border rounded-4 p-4 brightonhover selectedSection"
-                        : "border rounded-4 p-4 brightonhover"
+                        ? "border rounded-4 py-4 brightonhover selectedSection"
+                        : "border rounded-4 py-4 brightonhover"
                     }
                     onClick={() => {
                       setShowButtonForGroupClass(false);
@@ -361,10 +367,10 @@ const CookingClassPage = () => {
                       ••Team Building for Companies••
                     </div>
                     <div className="text-center small">
-                      <div className="small mb-3">
+                      <div className="mb-3">
                         Strengthen your team’s bonds through cooking
                       </div>
-                      <div className="small">
+                      <div>
                         My team-building workshops encourage collaboration and
                         creativity while learning to prepare Italian dishes
                         together. A delicious way to build relationships!
@@ -376,29 +382,29 @@ const CookingClassPage = () => {
                 <Row className="d-flex d-md-none px-5">
                   <Carousel controls={false} indicators={false} fade>
                     <Carousel.Item>
-                      <div className="text-center ls-2 mb-4 py-4">
+                      <div className="fs-6 text-center ls-2 mb-4">
                         ••Private Classes••
                       </div>
                       <div className="text-center">
-                        <div className="small mb-3">
+                        <div className="mb-3">
                           If you prefer more personalized attention, my private
                           classes are perfect for you.
                         </div>
-                        <div className="small">
+                        <div className="">
                           You can choose the menu and the pace of the class,
                           tailoring it to your needs and preferences.
                         </div>
                       </div>
                     </Carousel.Item>
                     <Carousel.Item>
-                      <div className="text-center ls-2 mb-4 py-4">
+                      <div className="fs-6 text-center ls-2 mb-4">
                         ••Team Building for Companies••
                       </div>
                       <div className="text-center">
-                        <div className="small mb-3">
+                        <div className="mb-3">
                           Strengthen your team’s bonds through cooking
                         </div>
-                        <div className="small">
+                        <div className="">
                           My team-building workshops encourage collaboration and
                           creativity while learning to prepare Italian dishes
                           together. A delicious way to build relationships!
@@ -406,15 +412,15 @@ const CookingClassPage = () => {
                       </div>
                     </Carousel.Item>
                     <Carousel.Item>
-                      <div className="text-center ls-2 mb-4 py-2 py-4">
+                      <div className="fs-6 text-center ls-2 mb-4">
                         ••Group Courses••
                       </div>
                       <div className="text-center">
-                        <div className="small mb-3">
+                        <div className="mb-3">
                           Group classes are open to the public, which means
                           anyone can sign up.
                         </div>
-                        <div className="small">
+                        <div>
                           Join the experience and meet new people while enjoying
                           a unique and fun culinary adventure! You will learn to
                           cook traditional Italian recipes, from fresh pasta to
@@ -431,12 +437,14 @@ const CookingClassPage = () => {
 
           {LangInUse === "Ita" && (
             <Row className="d-flex align-items-around justify-content-center flex-grow-1">
-              <Col className="col-12 col-xl-10 col-xxl-8 ls-2">
-                Scopri la Cucina Italiana con Me! Ti piacerebbe imparare a
-                preparare autentici piatti italiani in un ambiente divertente e
-                accogliente? Sei nel posto giusto! Offro corsi di cucina
-                italiana progettati per gruppi, sessioni private e attività di
-                team building per aziende.
+              <Col className="col-12 col-xl-10 col-xxl-8 ls-2 text-center">
+                Scopri la Cucina Italiana con Me! <br />
+                <br /> Ti piacerebbe imparare a preparare autentici piatti
+                italiani in un ambiente divertente e accogliente? Sei nel posto
+                giusto! <br />
+                <br />
+                Offro corsi di cucina italiana progettati per gruppi, sessioni
+                private e attività di team building per aziende.
               </Col>
 
               <Col className="col-12 small">
@@ -450,8 +458,8 @@ const CookingClassPage = () => {
                   <Col
                     className={
                       whatIsSelected === "Group Class"
-                        ? "border rounded-4 p-4 brightonhover selectedSection"
-                        : "border rounded-4 p-4 brightonhover"
+                        ? "border rounded-4 py-4 brightonhover selectedSection"
+                        : "border rounded-4 py-4 brightonhover"
                     }
                     onClick={() => {
                       setShowButtonForGroupClass(!showButtonForGroupClass);
@@ -459,7 +467,7 @@ const CookingClassPage = () => {
                       setShowButtonForTeamClass(false);
                     }}
                   >
-                    <div className="text-center ls-2 mb-4">
+                    <div className="text-center ls-2 mb-4 py-2">
                       ••Corsi di Gruppo••{" "}
                     </div>
                     <div className="text-center small">
@@ -483,8 +491,8 @@ const CookingClassPage = () => {
                   <Col
                     className={
                       whatIsSelected === "Private Class"
-                        ? "border rounded-4 p-4 brightonhover selectedSection"
-                        : "border rounded-4 p-4 brightonhover"
+                        ? "border rounded-4 py-4 brightonhover selectedSection"
+                        : "border rounded-4 py-4 brightonhover"
                     }
                     onClick={() => {
                       setShowButtonForGroupClass(false);
@@ -492,7 +500,7 @@ const CookingClassPage = () => {
                       setShowButtonForTeamClass(false);
                     }}
                   >
-                    <div className="text-center ls-2 mb-4">
+                    <div className="text-center ls-2 mb-4 py-2">
                       ••Lezioni Private••{" "}
                     </div>
                     <div className="text-center small">
@@ -510,8 +518,8 @@ const CookingClassPage = () => {
                   <Col
                     className={
                       whatIsSelected === "Team Class"
-                        ? "border rounded-4 p-4 brightonhover selectedSection"
-                        : "border rounded-4 p-4 brightonhover"
+                        ? "border rounded-4 py-4 brightonhover selectedSection"
+                        : "border rounded-4 py-4 brightonhover"
                     }
                     onClick={() => {
                       setShowButtonForGroupClass(false);
@@ -519,7 +527,7 @@ const CookingClassPage = () => {
                       setShowButtonForTeamClass(!showButtonForTeamClass);
                     }}
                   >
-                    <div className="text-center ls-2 mb-4">
+                    <div className="text-center ls-2 mb-4 py-2">
                       ••Team Building per Aziende••{" "}
                     </div>
                     <div className="text-center small">
@@ -539,29 +547,29 @@ const CookingClassPage = () => {
                 <Row className="d-block d-md-none">
                   <Carousel controls={false} indicators={false} fade>
                     <Carousel.Item>
-                      <div className="text-center ls-2 mb-4 py-4">
+                      <div className="fs-6 text-center ls-2 mb-4">
                         ••Lezioni Private••{" "}
                       </div>
                       <div className="text-center">
-                        <div className="small mb-3">
+                        <div className=" mb-3">
                           Se preferisci un{"'"}attenzione più personalizzata, le
                           mie lezioni private sono perfette per te.
                         </div>
-                        <div className="small">
+                        <div className="">
                           Potrai scegliere il menu e il ritmo della lezione,
                           adattandola alle tue esigenze e preferenze.
                         </div>
                       </div>
                     </Carousel.Item>
                     <Carousel.Item>
-                      <div className="text-center ls-2 mb-4 py-4">
+                      <div className="fs-6 text-center ls-2 mb-4">
                         ••Team Building per Aziende••{" "}
                       </div>
                       <div className="text-center">
-                        <div className="small mb-3">
+                        <div className=" mb-3">
                           Rafforza i legami del tuo team attraverso la cucina.
                         </div>
-                        <div className="small">
+                        <div className="">
                           I miei laboratori di team building incoraggiano la
                           collaborazione e la creatività mentre imparano a
                           preparare piatti italiani insieme. Un modo delizioso
@@ -570,15 +578,15 @@ const CookingClassPage = () => {
                       </div>
                     </Carousel.Item>
                     <Carousel.Item>
-                      <div className="text-center ls-2 mb-4 py-4">
+                      <div className="fs-6 text-center ls-2 mb-4">
                         ••Corsi di Gruppo••{" "}
                       </div>
                       <div className="text-center">
-                        <div className="small mb-3">
+                        <div className=" mb-3">
                           Le mie lezioni di gruppo sono aperte al pubblico, il
                           che significa che chiunque può iscriversi.
                         </div>
-                        <div className="small">
+                        <div className="">
                           Unisciti all
                           {"'"}esperienza e conosci nuove persone mentre ti godi
                           un
