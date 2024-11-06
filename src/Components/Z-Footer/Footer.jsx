@@ -52,11 +52,7 @@ const Footer = () => {
   const dispatch = useDispatch();
   return (
     <Container fluid className="p-0 bg-dark">
-      <div className="ShadowEffectTop py-2">
-        <SocialStripe />
-      </div>
-
-      <div className="d-flex text-Dark bg-smoke ShadowLightEffect">
+      <div className="d-flex text-Dark bg-smoke ShadowLightEffect text-center">
         <div className="d-flex flex-lg-row flex-column w-100 justify-content-around">
           <div className="p-2">
             <div className="text-end fs-small">
@@ -75,7 +71,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="d-flex flex-column h-100 justify-content-center">
-            <div className="d-flex align-items-center p-2">
+            <div className="d-flex align-items-center justify-content-center p-2">
               <Whatsapp
                 className="fs-6 me-2 cursorOnHover icon-dancing"
                 onClick={() => {
@@ -103,7 +99,7 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            <div className="d-flex align-items-center p-2">
+            <div className="d-flex align-items-center justify-content-center p-2">
               <EnvelopeAtFill
                 className="fs-6 me-2 cursorOnHover icon-dancing"
                 onClick={() => {
@@ -130,11 +126,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
-      <div
-        className="ShadowEffectBott {
-"
-      >
+      <div className="ShadowEffectBott py-2">
+        <SocialStripe />
+      </div>
+      <div>
         <DedicateTo />
       </div>
     </Container>

@@ -537,3 +537,26 @@
     opacity: 0;
   }
 }
+
+.bouncing {
+  animation: bouncing 2s linear infinite;
+}
+@keyframes bouncing {
+  0% {
+    position: relative;
+    top: 0px;
+  }
+  25% {
+    position: relative;
+    top: -10px;
+  }
+  75% {
+    position: relative;
+    top: 10px;
+  }
+
+  100% {
+    position: relative;
+    top: 0px;
+  }
+}

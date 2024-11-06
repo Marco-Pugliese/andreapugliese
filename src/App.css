@@ -15,7 +15,6 @@
   --contrast: #e3d26f;
 }
 #root {
-  width: 100vw;
   overflow-x: hidden;
 }
 body {
@@ -75,7 +74,7 @@ body {
   color: var(--contrast) !important;
 }
 .iconFooter {
-  color: var(--dark2);
+  color: var(--light);
   transition: all 0.8s;
 }
 .iconFooter:hover {
@@ -88,8 +87,4 @@ body {
 
 .ShadowLightEffect {
   box-shadow: 0 0 25px 1px rgba(255, 255, 255, 0.5);
-}
-
-.ShadowEffectTop {
-  background: #e3d26f;
 }

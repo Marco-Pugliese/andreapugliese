@@ -1,17 +1,15 @@
 import { Col, Row } from "react-bootstrap";
-import { Instagram, Tiktok, Youtube } from "react-bootstrap-icons";
+import { Globe2, Instagram, Tiktok, Youtube } from "react-bootstrap-icons";
 
 const SocialStripe = () => {
   return (
-    <div className="py-3 ShadowEffectTop">
+    <div className="py-3 border-bottom ">
       <Row>
         <Col className="text-center d-none d-lg-flex align-items-center justify-content-center ">
-          <img
-            src="/public/assets/img/icon.png"
-            alt="icon"
-            style={{ width: "25px" }}
-          />
-          <span className="small ">andreapugliesecocina</span>
+          <span className="small text-Light d-flex align-items-center ls-2">
+            S<Globe2 className="me-2 bouncing" />
+            CIAL
+          </span>
         </Col>
 
         <Col className="d-flex  align-items-center justify-content-around">
