@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <Container fluid className="text-Dark p-0" id="generalheader">
-      <Row className="fs-4 d-flex align-items-center justify-content-center mh-10">
+      <Row className="fs-4 d-flex align-items-center mh-10">
         <Col className="col-4 col-xl-5 ms-2">
           <Link
             to={"/"}
@@ -39,7 +39,7 @@ const Header = () => {
                   : null;
               }
             }}
-            className="nav-link"
+            className="nav-link w-100"
           >
             <Logo />
           </Link>

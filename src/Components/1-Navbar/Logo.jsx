@@ -5,6 +5,7 @@ const Logo = () => {
         src="./assets/img/logo-andreapugliese.png"
         alt="logo"
         id="img-logo"
+        className="w-100"
       />
     </div>
   );

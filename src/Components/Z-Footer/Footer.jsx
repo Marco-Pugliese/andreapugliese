@@ -57,7 +57,7 @@ const Footer = () => {
       </div>
 
       <div className="d-flex text-Dark bg-smoke ShadowLightEffect">
-        <div className="d-flex flex-row w-100 justify-content-around">
+        <div className="d-flex flex-lg-row flex-column w-100 justify-content-around">
           <div className="p-2">
             <div className="text-end fs-small">
               <span className="fs-small">©{thisYear}</span>
