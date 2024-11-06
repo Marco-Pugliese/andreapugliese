@@ -53,7 +53,8 @@
   min-height: 10vh;
 }
 #generalheader > div {
-  width: 100vw;
+  width: 100%;
+  padding: 0px;
 }
 #generalheader {
   min-height: 10vh;
@@ -61,7 +62,7 @@
   background: whitesmoke;
   position: fixed;
   top: 0;
+  width: 100vw;
   z-index: 1111;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.8);
-  width: 100vw;
 }

@@ -1,5 +1,6 @@
 #generalHero {
   height: 90vh;
+  width: 100vw;
   background: whitesmoke;
   /* background-image: url("../../../public/assets/andreapugliese/andreap2.jpeg"); */
   /* background-image: url("../../../public/assets/andreapugliese/andreap6.jpeg"); */
@@ -7,7 +8,7 @@
   background-image: url("../../../public/assets/andreapugliese/andreap.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
 }
 
 .filterblue {
