@@ -339,7 +339,7 @@
   100% {
     height: 0vh !important;
     color: transparent;
-    display: none;
+    display: none !important;
   }
 }
 .slide-in-blurred-top {

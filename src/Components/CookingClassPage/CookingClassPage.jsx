@@ -108,8 +108,10 @@ const CookingClassPage = () => {
         <div className="filterdark2 text-Light h-100 d-flex flex-column align-items-center justify-content-between px-5 ">
           {LangInUse === "Esp" && (
             <Row className="d-flex align-items-around justify-content-center flex-grow-1">
-              <Col className="col-12 col-xl-10 col-xxl-8 ls-2 text-center">
-                ¡Descubre la Cocina Italiana Conmigo!
+              <Col className="col-12 col-xl-10 col-xxl-8 ls-2 text-center txt-shadow">
+                <span className="heroPhrase">
+                  ¡Descubre la Cocina Italiana Conmigo!
+                </span>
                 <br />
                 <br />
                 ¿Te gustaría aprender a preparar auténticos platos italianos en
@@ -276,8 +278,10 @@ const CookingClassPage = () => {
 
           {LangInUse === "Eng" && (
             <Row className="d-flex align-items-around justify-content-center flex-grow-1">
-              <Col className="col-12 col-xl-10 col-xxl-8 ls-2 text-center">
-                Discover Italian Cuisine with Me! <br />
+              <Col className="col-12 col-xl-10 col-xxl-8 ls-2 text-center txt-shadow">
+                <span className="heroPhrase">
+                  Discover Italian Cuisine with Me! <br />
+                </span>
                 <br />
                 Would you like to learn how to prepare authentic Italian dishes
                 in a fun and welcoming environment? You’re in the right place!{" "}
@@ -437,8 +441,11 @@ const CookingClassPage = () => {
 
           {LangInUse === "Ita" && (
             <Row className="d-flex align-items-around justify-content-center flex-grow-1">
-              <Col className="col-12 col-xl-10 col-xxl-8 ls-2 text-center">
-                Scopri la Cucina Italiana con Me! <br />
+              <Col className="col-12 col-xl-10 col-xxl-8 ls-2 text-center txt-shadow">
+                <span className="heroPhrase">
+                  Scopri la Cucina Italiana con Me!
+                </span>
+                <br />
                 <br /> Ti piacerebbe imparare a preparare autentici piatti
                 italiani in un ambiente divertente e accogliente? Sei nel posto
                 giusto! <br />

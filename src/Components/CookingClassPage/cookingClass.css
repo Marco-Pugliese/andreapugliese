@@ -123,3 +123,11 @@
   scale: 1 !important;
   color: var(--light) !important;
 }
+.heroPhrase {
+  font-size: 1.2em;
+  text-shadow: 0 0 10px white;
+  border-bottom: 1px solid;
+}
+.txt-shadow {
+  text-shadow: 0 0 20px black;
+}

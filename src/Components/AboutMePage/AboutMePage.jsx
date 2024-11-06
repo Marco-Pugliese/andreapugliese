@@ -10,10 +10,10 @@ const AboutMePage = () => {
 
   return (
     <>
-      <div id="aboutMe" className="">
-        <Row className="filterdark2 p-5 justify-content-center align-items-around">
+      <div id="aboutMe" className="p-0 m-0">
+        <div className="p-5 filterdark2 justify-content-center align-items-around">
           {LangInUse === "Eng" && (
-            <>
+            <Row>
               <Col className="col-12 col-lg-9 col-xxl-7 d-flex  flex-column d-flex justify-content-center">
                 <div className="fs-1 text-center mb-5 ls-2">
                   From Naples to Valencia
@@ -49,10 +49,10 @@ const AboutMePage = () => {
                   you.
                 </div>
               </Col>
-            </>
+            </Row>
           )}
           {LangInUse === "Esp" && (
-            <>
+            <Row>
               <Col className="col-12 col-lg-9 col-xxl-7 d-flex flex-column d-flex justify-content-center">
                 <div className="fs-1 text-center mb-5 ls-2">
                   Desde Nápoles a Valencia
@@ -87,10 +87,10 @@ const AboutMePage = () => {
                   cocina italiana contigo.
                 </div>
               </Col>
-            </>
+            </Row>
           )}
           {LangInUse === "Ita" && (
-            <>
+            <Row>
               <Col className="col-12 col-lg-9 col-xxl-7 d-flex flex-column d-flex justify-content-center">
                 <div className="fs-1 text-center mb-5 ls-2">
                   Da Napoli a Valencia
@@ -127,9 +127,9 @@ const AboutMePage = () => {
                   cucina italiana con te.
                 </div>
               </Col>
-            </>
+            </Row>
           )}
-        </Row>
+        </div>
       </div>
       <section className="bg-smokegray">
         <div className="p-5 ">

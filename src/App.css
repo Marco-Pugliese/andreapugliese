@@ -39,6 +39,16 @@ body {
 .mtNeces {
   margin-top: 10vh;
 }
+@media screen and (orientation: landscape) {
+  .mtNeces {
+    margin-top: 25vh;
+  }
+}
+@media screen and (orientation: potrait) {
+  .mtNeces {
+    margin-top: 10vh;
+  }
+}
 .bg-Dark {
   background: var(--dark) !important;
 }
