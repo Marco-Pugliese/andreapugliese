@@ -502,7 +502,7 @@
     color: var(--dark2);
   }
 }
-.showMeDisappear > * {
+.showMeDisappear > * > * {
   display: none;
 }
 .showMeDisappear {
