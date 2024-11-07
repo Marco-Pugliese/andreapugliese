@@ -502,9 +502,10 @@
     color: var(--dark2);
   }
 }
-.showMeDisappear .nav-link {
-  -webkit-animation: justDisappear 0.5s linear;
-  animation: justDisappear 0.5s linear;
+.showMeDisappear .row .col {
+  /* -webkit-animation: justDisappear 0.5s linear;
+  animation: justDisappear 0.5s linear; */
+  display: none;
 }
 @-webkit-keyframes justDisappear {
   0% {
