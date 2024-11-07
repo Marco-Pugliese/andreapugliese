@@ -505,7 +505,7 @@
 .showMeDisappear .row .col {
   /* -webkit-animation: justDisappear 0.5s linear;
   animation: justDisappear 0.5s linear; */
-  display: none;
+  display: none !important;
 }
 @-webkit-keyframes justDisappear {
   0% {
