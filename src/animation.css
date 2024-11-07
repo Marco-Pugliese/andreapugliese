@@ -325,6 +325,7 @@
 }
 @keyframes justDisappear {
   0% {
+    height: 28.6vh !important;
     color: transparent;
     display: none !important;
   }
