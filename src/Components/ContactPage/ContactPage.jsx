@@ -79,7 +79,7 @@ const ContactPage = () => {
                     setMailIsHovered(false);
                   }}
                 >
-                  <div className="small">
+                  <div className="small d-flex w-100 justify-content-center align-items-center">
                     <EnvelopeAtFill
                       className={
                         mailIsHovered === true
@@ -127,7 +127,7 @@ const ContactPage = () => {
                     setPhoneIsHovered(false);
                   }}
                 >
-                  <div className="small">
+                  <div className="small d-flex w-100 justify-content-center align-items-center">
                     <Whatsapp
                       className={
                         phoneIsHovered === true
@@ -167,6 +167,7 @@ const ContactPage = () => {
                   </div>
                 </div>
               </>
+              {/* ---------INSTAGRAM------------- */}
               <>
                 <div
                   className="d-flex align-items-center justify-content-center w-100 py-2 cursorOnHover2 miniscale"
@@ -208,6 +209,8 @@ const ContactPage = () => {
                   />
                 </div>
               </>
+              {/* ---------YOUTUBE------------- */}
+
               <>
                 <div
                   className="d-flex align-items-center justify-content-center w-100 py-2 cursorOnHover2 miniscale"
@@ -249,7 +252,7 @@ const ContactPage = () => {
                   />
                 </div>
               </>
-
+              {/* ---------TIKTOK------------- */}
               <>
                 <div
                   className="d-flex align-items-center justify-content-center w-100 py-2 cursorOnHover2 miniscale"
