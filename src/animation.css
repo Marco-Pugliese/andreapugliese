@@ -510,13 +510,13 @@
 }
 @keyframes justDisappear {
   0% {
-    height: 28.6vh;
+    height: 28.6vh !important;
   }
   99% {
     height: 0vh !important;
   }
   100% {
-    display: none;
+    display: none !important;
   }
 }
 @-webkit-keyframes justDisappear {
@@ -527,7 +527,7 @@
     height: 0vh !important;
   }
   100% {
-    display: none;
+    display: none !important;
   }
 }
 .showMeDisappear {
