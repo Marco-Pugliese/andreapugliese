@@ -502,8 +502,8 @@
     color: var(--dark2);
   }
 }
-.showMeDisappear * {
-  display: none;
+.showMeDisappear > * > * {
+  display: none !important;
 }
 .showMeDisappear {
   animation: showMeDisappear 0.5s linear both;
