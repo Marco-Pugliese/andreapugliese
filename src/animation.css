@@ -511,7 +511,6 @@
 @keyframes justDisappear {
   0% {
     height: 28.6vh;
-    display: flex;
   }
   99% {
     height: 0vh !important;
@@ -522,13 +521,10 @@
 }
 @-webkit-keyframes justDisappear {
   0% {
-    display: flex;
+    height: 28.6vh;
   }
   99% {
     height: 0vh !important;
-  }
-  100% {
-    display: none !important;
   }
   100% {
     display: none !important;
