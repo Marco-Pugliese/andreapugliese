@@ -44,11 +44,6 @@ body {
     margin-top: 25vh;
   }
 }
-@media screen and (orientation: potrait) {
-  .mtNeces {
-    margin-top: 10vh;
-  }
-}
 .bg-Dark {
   background: var(--dark) !important;
 }
