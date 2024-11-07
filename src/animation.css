@@ -502,35 +502,16 @@
     color: var(--dark2);
   }
 }
-.showMeDisappear * {
-  -webkit-animation: justDisappear 0.5s linear both;
-  animation: justDisappear 0.5s linear both;
-  /* display: none; */
+.showMeDisappear > * {
+  display: none;
 }
-@keyframes justDisappear {
-  0% {
-    display: inherit;
-  }
-  100% {
-    display: none;
-  }
-}
-@-webkit-keyframes justDisappear {
-  0% {
-    display: inherit;
-  }
-  100% {
-    display: none;
-  }
-}
-
 .showMeDisappear {
   animation: showMeDisappear 0.5s linear both;
   -webkit-animation: showMeDisappear 0.5s linear both;
 }
 @-webkit-keyframes showMeDisappear {
   0% {
-    height: 28.6vh;
+    height: 28.6vh !important;
 
     color: var(--dark2);
   }
@@ -538,7 +519,7 @@
     color: transparent;
   }
   10% {
-    height: 28.6vh;
+    height: 28.6vh !important;
   }
   100% {
     height: 0vh !important;
@@ -548,7 +529,7 @@
 }
 @keyframes showMeDisappear {
   0% {
-    height: 28.6vh;
+    height: 28.6vh !important;
 
     color: var(--dark2);
   }
@@ -556,7 +537,7 @@
     color: transparent;
   }
   10% {
-    height: 28.6vh;
+    height: 28.6vh !important;
   }
   100% {
     height: 0vh !important;
