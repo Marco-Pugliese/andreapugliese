@@ -11,16 +11,30 @@ const Header = () => {
   const dispatch = useDispatch();
   const [openNav, setOpenNav] = useState(false);
   const LangInUse = useSelector((state) => state.Lang.lang);
-  const SelectedPage = useSelector((state) => state.Page.page);
+  // const SelectedPage = useSelector((state) => state.Page.page);
+
+  //
+
+  const [hide, setIsToBeHidden] = useState(true);
+  const changedLoadedTrue = () => {
+    setIsToBeHidden(true);
+    console.log("do i have to hide this part?" + hide);
+  };
+  const changedLoadedFalse = () => {
+    setIsToBeHidden(false);
+    console.log("do i have to hide this part?" + hide);
+  };
+  const changeStatusTrue = () => {
+    setTimeout(changedLoadedTrue, 500);
+  };
+  const changeStatusFalse = () => {
+    setTimeout(changedLoadedFalse, 500);
+  };
   useEffect(() => {
-    console.log("Lang In Use: " + LangInUse);
-  }, [LangInUse]);
-  useEffect(() => {
-    console.log("Selected Page: " + SelectedPage);
-  }, [SelectedPage]);
-  useEffect(() => {
-    console.log("Nav is Opened? " + openNav);
+    openNav === false ? changeStatusFalse() : null;
+    openNav === true ? changeStatusTrue() : null;
   }, [openNav]);
+  //
 
   return (
     <Container fluid className="text-Dark p-0" id="generalheader">
@@ -49,6 +63,7 @@ const Header = () => {
             className="w-100 fs-small d-flex align-items-center justify-content-center text-center"
             id="headermenu"
           >
+            {/* FISARMONICA */}
             <>
               {LangInUse === "Eng" ? (
                 <>
@@ -115,7 +130,13 @@ const Header = () => {
                 </>
               ) : LangInUse === "Esp" ? (
                 <>
-                  <Col>
+                  <Col
+                    className={
+                      hide === false
+                        ? "d-none"
+                        : "d-flex align-items-center justify-content-center col-12 text-center"
+                    }
+                  >
                     <Link
                       to={"/aboutMe"}
                       onClick={() => {
@@ -134,7 +155,13 @@ const Header = () => {
                       Sobre me
                     </Link>
                   </Col>
-                  <Col>
+                  <Col
+                    className={
+                      hide === false
+                        ? "d-none"
+                        : "d-flex align-items-center justify-content-center col-12 text-center"
+                    }
+                  >
                     <Link
                       to={"/cookingClass"}
                       onClick={() => {
@@ -154,7 +181,13 @@ const Header = () => {
                     </Link>
                   </Col>
 
-                  <Col>
+                  <Col
+                    className={
+                      hide === false
+                        ? "d-none"
+                        : "d-flex align-items-center justify-content-center col-12 text-center"
+                    }
+                  >
                     {" "}
                     <Link
                       to={"/contacts"}
@@ -177,7 +210,13 @@ const Header = () => {
                 </>
               ) : LangInUse === "Ita" ? (
                 <>
-                  <Col>
+                  <Col
+                    className={
+                      hide === false
+                        ? "d-none"
+                        : "d-flex align-items-center justify-content-center col-12 text-center"
+                    }
+                  >
                     <Link
                       to={"/aboutMe"}
                       onClick={() => {
@@ -196,7 +235,13 @@ const Header = () => {
                       Su di me
                     </Link>
                   </Col>
-                  <Col>
+                  <Col
+                    className={
+                      hide === false
+                        ? "d-none"
+                        : "d-flex align-items-center justify-content-center col-12 text-center"
+                    }
+                  >
                     <Link
                       to={"/cookingClass"}
                       onClick={() => {
@@ -216,7 +261,13 @@ const Header = () => {
                     </Link>
                   </Col>
 
-                  <Col>
+                  <Col
+                    className={
+                      hide === false
+                        ? "d-none"
+                        : "d-flex align-items-center justify-content-center col-12 text-center"
+                    }
+                  >
                     {" "}
                     <Link
                       to={"/contacts"}
@@ -316,7 +367,13 @@ const Header = () => {
         <Row className="h-100">
           {LangInUse === "Eng" && (
             <>
-              <Col className="d-flex align-items-center justify-content-center col-12 text-center">
+              <Col
+                className={
+                  hide === false
+                    ? "d-none"
+                    : "d-flex align-items-center justify-content-center col-12 text-center"
+                }
+              >
                 <Link
                   to={"/aboutMe"}
                   onClick={() => {
@@ -329,7 +386,13 @@ const Header = () => {
                   About me
                 </Link>
               </Col>
-              <Col className="d-flex align-items-center justify-content-center col-12 text-center">
+              <Col
+                className={
+                  hide === false
+                    ? "d-none"
+                    : "d-flex align-items-center justify-content-center col-12 text-center"
+                }
+              >
                 <Link
                   to={"/cookingClass"}
                   onClick={() => {
@@ -343,7 +406,13 @@ const Header = () => {
                 </Link>
               </Col>
 
-              <Col className="d-flex align-items-center justify-content-center col-12 text-center">
+              <Col
+                className={
+                  hide === false
+                    ? "d-none"
+                    : "d-flex align-items-center justify-content-center col-12 text-center"
+                }
+              >
                 <Link
                   to={"/contacts"}
                   onClick={() => {
