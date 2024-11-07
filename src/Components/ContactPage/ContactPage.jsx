@@ -99,8 +99,8 @@ const ContactPage = () => {
                       }
                       className={
                         mailIsHovered === true
-                          ? "changeColor2 px-3"
-                          : "text-Dark2 px-3"
+                          ? "changeColor2 px-3 small"
+                          : "text-Dark2 px-3 small"
                       }
                     >
                       andreapugliesecocina@yahoo.com

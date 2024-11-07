@@ -505,31 +505,25 @@
 .showMeDisappear * {
   -webkit-animation: justDisappear 0.5s linear both;
   animation: justDisappear 0.5s linear both;
-  /* display: none !important; */
-  /* display working */
+  /* display: none; */
 }
 @keyframes justDisappear {
   0% {
-    height: 28.6vh !important;
-  }
-  99% {
-    height: 0vh !important;
+    display: inherit;
   }
   100% {
-    display: none !important;
+    display: none;
   }
 }
 @-webkit-keyframes justDisappear {
   0% {
-    height: 28.6vh;
+    display: inherit;
   }
   100% {
-    height: 0vh !important;
-  }
-  100% {
-    display: none !important;
+    display: none;
   }
 }
+
 .showMeDisappear {
   animation: showMeDisappear 0.5s linear both;
   -webkit-animation: showMeDisappear 0.5s linear both;
