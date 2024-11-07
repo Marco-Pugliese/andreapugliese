@@ -512,22 +512,16 @@
   0% {
     height: 28.6vh;
   }
-  99% {
-    height: 0vh !important;
-  }
   100% {
-    display: none !important;
+    height: 0vh !important;
   }
 }
 @-webkit-keyframes justDisappear {
   0% {
     height: 28.6vh;
   }
-  99% {
-    height: 0vh !important;
-  }
   100% {
-    display: none !important;
+    height: 0vh !important;
   }
 }
 .showMeDisappear {
