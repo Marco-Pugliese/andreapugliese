@@ -138,7 +138,7 @@ const PrivateChefPage = () => {
         </Row>
 
         <Row className="fs-4 bg-menu m-0 p-0 w-100">
-          <Col className="py-5">
+          <Col className="py-5 px-4">
             {/* MENU ITALIANO */}
             {LangInUse === "Ita" && (
               <>
@@ -156,21 +156,21 @@ const PrivateChefPage = () => {
                     <div
                       className={
                         whatIsSelected === "3Course"
-                          ? "py-2 selectedSection d-flex flex-column"
-                          : "py-2 d-flex flex-column"
+                          ? "py-2 selectedSection d-flex flex-column py-4"
+                          : "py-2 d-flex flex-column py-4"
                       }
                       onClick={() => {
                         clearSelection();
                         set3CourseMenuSelected(!threecourseMenuSelected);
                       }}
                     >
-                      <div>
+                      <div className="fs-3 d-flex flex-column">
                         MENU 3 PORTATE
-                        <span className="px-2">
+                        <span className="px-2 fs-6 text-decoration-underline">
                           Disponibile per 2 a 6 persone
                         </span>
                       </div>
-                      <div className="fs-6">
+                      <div className="small">
                         ANTIPASTO - PRIMO o SECONDO - DOLCE
                       </div>
                     </div>
@@ -179,21 +179,21 @@ const PrivateChefPage = () => {
                     <div
                       className={
                         whatIsSelected === "4Course"
-                          ? "py-2 selectedSection d-flex flex-column"
-                          : "py-2 d-flex flex-column"
+                          ? "py-2 selectedSection d-flex flex-column py-4"
+                          : "py-2 d-flex flex-column py-4"
                       }
                       onClick={() => {
                         clearSelection();
                         set4CourseMenuSelected(!fourcourseMenuSelected);
                       }}
                     >
-                      <div className="fs-4">
+                      <div className="fs-3 d-flex flex-column">
                         MENU 4 PORTATE{" "}
-                        <span className="px-2">
+                        <span className="px-2 fs-6 text-decoration-underline">
                           Disponibile per 2 a 6 persone
                         </span>
                       </div>
-                      <div className="fs-6">
+                      <div className="small">
                         ANTIPASTO - PRIMO - SECONDO - DOLCE
                       </div>
                     </div>
@@ -202,21 +202,21 @@ const PrivateChefPage = () => {
                     <div
                       className={
                         whatIsSelected === "5Course"
-                          ? "py-2 selectedSection d-flex flex-column"
-                          : "py-2 d-flex flex-column"
+                          ? "py-2 selectedSection d-flex flex-column py-4"
+                          : "py-2 d-flex flex-column py-4"
                       }
                       onClick={() => {
                         clearSelection();
                         set5CourseMenuSelected(!fivecourseMenuSelected);
                       }}
                     >
-                      <div className="fs-4">
+                      <div className="fs-3 d-flex flex-column">
                         MENU 5 PORTATE{" "}
-                        <span className="px-2">
+                        <span className="px-2 fs-6 text-decoration-underline">
                           Disponibile per 2 a 6 persone
                         </span>
                       </div>
-                      <div className="fs-6">
+                      <div className="small">
                         ANTIPASTO - APERITIVO - PRIMO - SECONDO - DOLCE
                       </div>
                     </div>
@@ -225,21 +225,21 @@ const PrivateChefPage = () => {
                     <div
                       className={
                         whatIsSelected === "Aperitivo"
-                          ? "py-2 selectedSection d-flex flex-column"
-                          : "py-2 d-flex flex-column"
+                          ? "py-2 selectedSection d-flex flex-column py-4"
+                          : "py-2 d-flex flex-column py-4"
                       }
                       onClick={() => {
                         clearSelection();
                         setAperitivoMenuSelected(!aperitivocourseMenuSelected);
                       }}
                     >
-                      <div className="fs-4">
+                      <div className="fs-3 d-flex flex-column">
                         SOLO APERITIVO E FINGER FOOD
-                        <span className="px-2">
+                        <span className="px-2 fs-6 text-decoration-underline">
                           Disponibile per 6 a 20 persone
                         </span>
                       </div>
-                      <div className="fs-6">
+                      <div className="small">
                         Tutti gli aperitivi sono serviti su deliziosi canapè
                         fatti in casa.
                       </div>
@@ -265,21 +265,21 @@ const PrivateChefPage = () => {
                     <div
                       className={
                         whatIsSelected === "3Course"
-                          ? "py-2 selectedSection d-flex flex-column"
-                          : "py-2 d-flex flex-column"
+                          ? "py-2 selectedSection d-flex flex-column py-4"
+                          : "py-2 d-flex flex-column py-4"
                       }
                       onClick={() => {
                         clearSelection();
                         set3CourseMenuSelected(!threecourseMenuSelected);
                       }}
                     >
-                      <div className="fs-4">
+                      <div className="fs-3 d-flex flex-column">
                         MENÚ DE 3 PLATOS{" "}
-                        <span className="px-2">
+                        <span className="px-2 fs-6 text-decoration-underline">
                           Disponible para 2 a 6 personas
                         </span>
                       </div>
-                      <div className="fs-6">
+                      <div className="small">
                         ANTIPASTO - PRIMO o SECONDO - DOLCE
                       </div>
                     </div>
@@ -288,21 +288,21 @@ const PrivateChefPage = () => {
                     <div
                       className={
                         whatIsSelected === "4Course"
-                          ? "py-2 selectedSection d-flex flex-column"
-                          : "py-2 d-flex flex-column"
+                          ? "py-2 selectedSection d-flex flex-column py-4"
+                          : "py-2 d-flex flex-column py-4"
                       }
                       onClick={() => {
                         clearSelection();
                         set4CourseMenuSelected(!fourcourseMenuSelected);
                       }}
                     >
-                      <div className="fs-4">
+                      <div className="fs-3 d-flex flex-column">
                         MENÚ DE 4 PLATOS{" "}
-                        <span className="px-2">
+                        <span className="px-2 fs-6 text-decoration-underline">
                           Disponible para 2 a 6 personas
                         </span>
                       </div>
-                      <div className="fs-6">
+                      <div className="small">
                         ANTIPASTO - PRIMO - SECONDO - DOLCE
                       </div>
                     </div>
@@ -311,21 +311,21 @@ const PrivateChefPage = () => {
                     <div
                       className={
                         whatIsSelected === "5Course"
-                          ? "py-2 selectedSection d-flex flex-column"
-                          : "py-2 d-flex flex-column"
+                          ? "py-2 selectedSection d-flex flex-column py-4"
+                          : "py-2 d-flex flex-column py-4"
                       }
                       onClick={() => {
                         clearSelection();
                         set5CourseMenuSelected(!fivecourseMenuSelected);
                       }}
                     >
-                      <div className="fs-4">
+                      <div className="fs-3 d-flex flex-column">
                         MENÚ DE 5 PLATOS{" "}
-                        <span className="px-2">
+                        <span className="px-2 fs-6 text-decoration-underline">
                           Disponible para 2 a 6 personas
                         </span>
                       </div>
-                      <div className="fs-6">
+                      <div className="small">
                         ANTIPASTO - APERITIVO - PRIMO - SECONDO - DOLCE
                       </div>
                     </div>
@@ -334,21 +334,21 @@ const PrivateChefPage = () => {
                     <div
                       className={
                         whatIsSelected === "Aperitivo"
-                          ? "py-2 selectedSection d-flex flex-column"
-                          : "py-2 d-flex flex-column"
+                          ? "py-2 selectedSection d-flex flex-column py-4"
+                          : "py-2 d-flex flex-column py-4"
                       }
                       onClick={() => {
                         clearSelection();
                         setAperitivoMenuSelected(!aperitivocourseMenuSelected);
                       }}
                     >
-                      <div className="fs-4">
+                      <div className="fs-3 d-flex flex-column">
                         SOLO APERITIVO Y FINGER FOOD
-                        <span className="px-2">
+                        <span className="px-2 fs-6 text-decoration-underline">
                           Disponible para 6 a 20 personas
                         </span>
                       </div>
-                      <div className="fs-6">
+                      <div className="small">
                         Todos los aperitivos se sirven sobre deliciosos canapés
                         caseros.
                       </div>
@@ -374,21 +374,21 @@ const PrivateChefPage = () => {
                     <div
                       className={
                         whatIsSelected === "3Course"
-                          ? "py-2 selectedSection d-flex flex-column"
-                          : "py-2 d-flex flex-column"
+                          ? "py-2 selectedSection d-flex flex-column py-4"
+                          : "py-2 d-flex flex-column py-4"
                       }
                       onClick={() => {
                         clearSelection();
                         set3CourseMenuSelected(!threecourseMenuSelected);
                       }}
                     >
-                      <div className="fs-4">
+                      <div className="fs-3 d-flex flex-column">
                         3-COURSE MENU{" "}
-                        <span className="px-2">
+                        <span className="px-2 fs-6 text-decoration-underline">
                           Available for 2 to 6 people
                         </span>
                       </div>
-                      <div className="fs-6">
+                      <div className="small">
                         ANTIPASTO - PRIMO or SECONDO - DOLCE
                       </div>
                     </div>
@@ -397,21 +397,21 @@ const PrivateChefPage = () => {
                     <div
                       className={
                         whatIsSelected === "4Course"
-                          ? "py-2 selectedSection d-flex flex-column"
-                          : "py-2 d-flex flex-column"
+                          ? "py-2 selectedSection d-flex flex-column py-4"
+                          : "py-2 d-flex flex-column py-4"
                       }
                       onClick={() => {
                         clearSelection();
                         set4CourseMenuSelected(!fourcourseMenuSelected);
                       }}
                     >
-                      <div className="fs-4">
+                      <div className="fs-3 d-flex flex-column">
                         4-COURSE MENU{" "}
-                        <span className="px-2">
+                        <span className="px-2 fs-6 text-decoration-underline">
                           Available for 2 to 6 people
                         </span>
                       </div>
-                      <div className="fs-6">
+                      <div className="small">
                         ANTIPASTO - PRIMO - SECONDO - DOLCE
                       </div>
                     </div>
@@ -420,40 +420,44 @@ const PrivateChefPage = () => {
                     <div
                       className={
                         whatIsSelected === "5Course"
-                          ? "py-2 selectedSection d-flex flex-column"
-                          : "py-2 d-flex flex-column"
+                          ? "py-2 selectedSection d-flex flex-column py-4"
+                          : "py-2 d-flex flex-column py-4"
                       }
                       onClick={() => {
                         clearSelection();
                         set5CourseMenuSelected(!fivecourseMenuSelected);
                       }}
                     >
-                      <div className="fs-4">
+                      <div className="fs-3 d-flex flex-column">
                         5-COURSE MENU{" "}
-                        <span className="px-2">
+                        <span className="px-2 fs-6 text-decoration-underline">
                           Available for 2 to 6 people
                         </span>
                       </div>
-                      <div className="fs-6">
+                      <div className="small">
                         ANTIPASTO - APERITIVO - PRIMO - SECONDO - DOLCE
                       </div>
                     </div>
                   </>
                   <>
                     <div
-                      className="d-flex flex-column"
+                      className={
+                        whatIsSelected === "Aperitivo"
+                          ? "py-2 selectedSection d-flex flex-column py-4"
+                          : "py-2 d-flex flex-column py-4"
+                      }
                       onClick={() => {
                         clearSelection();
                         setAperitivoMenuSelected(true);
                       }}
                     >
-                      <div className="fs-4">
+                      <div className="fs-3 d-flex flex-column">
                         APERITIVO AND FINGER FOOD ONLY
-                        <span className="px-2">
+                        <span className="px-2 fs-6 text-decoration-underline">
                           Available for 6 to 20 people
                         </span>
                       </div>
-                      <div className="fs-6">
+                      <div className="small">
                         All aperitifs are served on delicious homemade canapés.
                       </div>
                     </div>

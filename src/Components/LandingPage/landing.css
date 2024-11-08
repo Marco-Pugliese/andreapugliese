@@ -253,7 +253,7 @@
 .text-Italy {
   position: relative;
   z-index: 1;
-  padding: 20px;
+  padding: 5px;
   border-radius: 8px;
 }
 
@@ -277,7 +277,7 @@
 .text-Spain {
   position: relative;
   z-index: 1;
-  padding: 20px;
+  padding: 5px;
   border-radius: 8px;
 }
 
@@ -302,7 +302,7 @@
 .text-Argentina {
   position: relative;
   z-index: 1;
-  padding: 20px;
+  padding: 5px;
   border-radius: 8px;
 }
 

@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <div id="generalHero" className="p-0 position-relative filterSwap">
       <div className="h-100 filterblue">
-        <div className="position-absolute top-50 w-100 bg-effect1 translate-middle-y d-flex justify-content-center align-items-center">
+        <div className="position-absolute top-50 p-0 w-100 bg-effect1 translate-middle-y d-flex justify-content-center align-items-center">
           <div className="phraseContainer">
             <span className="puff-in-center1 shadow-Light">
               ANDREA PUGLIESE - CHEF
