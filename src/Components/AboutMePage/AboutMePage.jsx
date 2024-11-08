@@ -13,8 +13,8 @@ const AboutMePage = () => {
       <div id="aboutMe" className="p-0 m-0">
         <div className="p-5 filterdark2 justify-content-center align-items-around">
           {LangInUse === "Eng" && (
-            <Row>
-              <Col className="col-12 col-lg-9 col-xxl-7 d-flex  flex-column d-flex justify-content-center">
+            <Row className="justify-content-center w-100">
+              <Col className="col-12 col-lg-9 col-xxl-7 d-flex flex-column justify-content-center">
                 <div className="fs-1 text-center mb-5 ls-2">
                   From Naples to Valencia
                 </div>
@@ -52,8 +52,8 @@ const AboutMePage = () => {
             </Row>
           )}
           {LangInUse === "Esp" && (
-            <Row>
-              <Col className="col-12 col-lg-9 col-xxl-7 d-flex flex-column d-flex justify-content-center">
+            <Row className="justify-content-center w-100">
+              <Col className="col-12 col-lg-9 col-xxl-7 d-flex flex-column justify-content-center">
                 <div className="fs-1 text-center mb-5 ls-2">
                   Desde Nápoles a Valencia
                 </div>
@@ -90,8 +90,8 @@ const AboutMePage = () => {
             </Row>
           )}
           {LangInUse === "Ita" && (
-            <Row>
-              <Col className="col-12 col-lg-9 col-xxl-7 d-flex flex-column d-flex justify-content-center">
+            <Row className="justify-content-center w-100">
+              <Col className="col-12 col-lg-9 col-xxl-7 d-flex flex-column justify-content-center">
                 <div className="fs-1 text-center mb-5 ls-2">
                   Da Napoli a Valencia
                 </div>

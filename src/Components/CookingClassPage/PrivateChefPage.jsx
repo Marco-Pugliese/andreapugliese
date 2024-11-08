@@ -137,7 +137,7 @@ const PrivateChefPage = () => {
           </Col>
         </Row>
 
-        <Row className="fs-4 bg-menu">
+        <Row className="fs-4 bg-menu m-0 p-0 w-100">
           <Col className="py-5">
             {/* MENU ITALIANO */}
             {LangInUse === "Ita" && (
