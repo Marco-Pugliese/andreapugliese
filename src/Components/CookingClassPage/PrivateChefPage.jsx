@@ -129,7 +129,7 @@ const PrivateChefPage = () => {
   return (
     <>
       <Container id="PrivateChef" fluid className="text-center fs-3 p-0">
-        <Row>
+        <Row className="m-0 p-0 w-100">
           <Col className="fs-1 py-5 bg-lightGrey">
             {LangInUse === "Esp" && <>Servicio de Chef privado</>}
             {LangInUse === "Ita" && <>Servizio di Chef privato</>}
