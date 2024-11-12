@@ -33,6 +33,7 @@ const Header = () => {
   useEffect(() => {
     openNav === false ? changeStatusFalse() : null;
     openNav === true ? changeStatusTrue() : null;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [openNav]);
   //
 
