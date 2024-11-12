@@ -128,15 +128,10 @@ const Header = () => {
                     </Link>
                   </Col>
                 </>
-              ) : LangInUse === "Esp" ? (
+              ) : null}
+              {LangInUse === "Esp" ? (
                 <>
-                  <Col
-                    className={
-                      hide === false
-                        ? "d-none"
-                        : "d-flex align-items-center justify-content-center col-12 text-center"
-                    }
-                  >
+                  <Col>
                     <Link
                       to={"/aboutMe"}
                       onClick={() => {
@@ -155,13 +150,7 @@ const Header = () => {
                       Sobre me
                     </Link>
                   </Col>
-                  <Col
-                    className={
-                      hide === false
-                        ? "d-none"
-                        : "d-flex align-items-center justify-content-center col-12 text-center"
-                    }
-                  >
+                  <Col>
                     <Link
                       to={"/cookingClass"}
                       onClick={() => {
@@ -180,15 +169,7 @@ const Header = () => {
                       Clases de Cocina Y Chef Privado
                     </Link>
                   </Col>
-
-                  <Col
-                    className={
-                      hide === false
-                        ? "d-none"
-                        : "d-flex align-items-center justify-content-center col-12 text-center"
-                    }
-                  >
-                    {" "}
+                  <Col>
                     <Link
                       to={"/contacts"}
                       onClick={() => {
@@ -208,15 +189,10 @@ const Header = () => {
                     </Link>
                   </Col>
                 </>
-              ) : LangInUse === "Ita" ? (
+              ) : null}
+              {LangInUse === "Ita" ? (
                 <>
-                  <Col
-                    className={
-                      hide === false
-                        ? "d-none"
-                        : "d-flex align-items-center justify-content-center col-12 text-center"
-                    }
-                  >
+                  <Col>
                     <Link
                       to={"/aboutMe"}
                       onClick={() => {
@@ -235,13 +211,7 @@ const Header = () => {
                       Su di me
                     </Link>
                   </Col>
-                  <Col
-                    className={
-                      hide === false
-                        ? "d-none"
-                        : "d-flex align-items-center justify-content-center col-12 text-center"
-                    }
-                  >
+                  <Col>
                     <Link
                       to={"/cookingClass"}
                       onClick={() => {
@@ -261,14 +231,7 @@ const Header = () => {
                     </Link>
                   </Col>
 
-                  <Col
-                    className={
-                      hide === false
-                        ? "d-none"
-                        : "d-flex align-items-center justify-content-center col-12 text-center"
-                    }
-                  >
-                    {" "}
+                  <Col>
                     <Link
                       to={"/contacts"}
                       onClick={() => {
@@ -292,6 +255,7 @@ const Header = () => {
             </>
           </Row>
         </Col>
+        {/* HAMBURGER */}
         <Col
           onClick={() => {
             setIsClosed(!isClosed);
@@ -336,10 +300,12 @@ const Header = () => {
             </span>
           </div>
         </Col>
+        {/* HAMBURGER */}
+        {/* FLAGS */}
         <Col className="d-flex flex-column align-items-center fs-6">
           <span
             onClick={() => dispatch(setLangAction("Eng"))}
-            className="flags "
+            className="flags"
           >
             🇬🇧
           </span>
@@ -356,6 +322,7 @@ const Header = () => {
             🇮🇹
           </span>
         </Col>
+        {/* FLAGS */}
       </Row>
       <div
         className={
@@ -364,6 +331,7 @@ const Header = () => {
             : "showMeDisappear bg-smoke d-lg-none"
         }
       >
+        {/* FISARMONICA */}
         <Row className="h-100">
           {LangInUse === "Eng" && (
             <>
@@ -517,6 +485,7 @@ const Header = () => {
             </>
           )}
         </Row>
+        {/* FISARMONICA */}
       </div>
     </Container>
   );
