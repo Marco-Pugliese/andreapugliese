@@ -126,8 +126,16 @@
 .heroPhrase {
   font-size: 1.2em;
   text-shadow: 0 0 10px white;
-  border-bottom: 1px solid;
+  /* border-bottom: 1px solid; */
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
 }
 .txt-shadow {
   text-shadow: 0 0 20px black;
+}
+.abitsmaller {
+  font-size: 0.93em;
+}
+.ls-3 {
+  letter-spacing: 0.25em;
 }

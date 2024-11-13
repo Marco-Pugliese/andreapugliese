@@ -1,7 +1,7 @@
 import { SET_LANG } from "../Actions";
 
 const initialState = {
-  lang: "Eng",
+  lang: "Esp",
 };
 
 const Lang = (state = initialState, action) => {
