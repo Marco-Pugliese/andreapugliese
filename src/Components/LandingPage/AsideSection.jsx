@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { useState } from "react";
 
-import { Button, Modal } from "react-bootstrap";
+import { Button, Container, Modal } from "react-bootstrap";
 import {
   EnvelopeAtFill,
   Instagram,
@@ -28,7 +28,7 @@ const AsideSection = () => {
   const handleShow = () => setShow(true);
   return (
     <div id="Aside" className="bg-dark">
-      <div className="w-100 text-center py-5 fs-3 px-4">
+      <div className="w-100 text-center py-5 fs-3 px-1">
         <section className="my-5 py-5 ">
           <div className="py-4">
             <span className="text-changing">
@@ -58,84 +58,91 @@ const AsideSection = () => {
             </span>
           </div>
 
-          <Modal show={show} onHide={handleClose} id="contactInfoContainer">
-            <Modal.Header closeButton>
-              <Modal.Title>Info</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-              <div id="contactInfo">
-                <div className="d-flex small justify-content-between align-items-center my-2">
-                  <EnvelopeAtFill className="fs-6 ms-4" />
-                  <div className="small">
-                    {" "}
-                    <a
-                      href={mailtoLink}
-                      className="text-dark px-1"
-                      style={{ textDecoration: "none" }}
-                    >
-                      andreapugliesecocina@yahoo.com
-                    </a>
+          <Modal
+            show={show}
+            onHide={handleClose}
+            id="contactInfoContainer"
+            className="d-flex justify-content-center"
+          >
+            <Container>
+              <Modal.Header closeButton>
+                <Modal.Title>Info</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <div id="contactInfo">
+                  <div className="d-flex small justify-content-between align-items-center my-2">
+                    <EnvelopeAtFill className="fs-6 ms-4" />
+                    <div className="small">
+                      {" "}
+                      <a
+                        href={mailtoLink}
+                        className="text-dark px-3"
+                        style={{ textDecoration: "none" }}
+                      >
+                        andreapugliesecocina@yahoo.com
+                      </a>
+                    </div>
+                    <EnvelopeAtFill className="fs-6 me-4" />
                   </div>
-                  <EnvelopeAtFill className="fs-6 me-4" />
-                </div>
-                <div className="d-flex small justify-content-between align-items-center my-2">
-                  <Whatsapp className="fs-6 ms-4" />
+                  <div className="d-flex small justify-content-between align-items-center my-2">
+                    <Whatsapp className="fs-6 ms-4" />
 
-                  <div className="small">
+                    <div className="small">
+                      <a
+                        href={whatsappLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-dark px-3"
+                        style={{ textDecoration: "none" }}
+                      >
+                        +34 600539809
+                      </a>
+                    </div>
+                    <Whatsapp className="fs-6 me-4" />
+                  </div>
+                  <div className="d-flex small justify-content-between align-items-center my-2">
+                    <Instagram className="fs-6 ms-4" />
                     <a
-                      href={whatsappLink}
+                      href="https://www.instagram.com/andreapugliesecocina?igsh=cXM2d2xxOXMzMW1p"
                       target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-dark px-1"
-                      style={{ textDecoration: "none" }}
+                      className="text-black text-decoration-none"
                     >
-                      +34 600539809
+                      <div className="small"> @andreapugliesecocina</div>
                     </a>
+                    <Instagram className="fs-6 me-4" />
                   </div>
-                  <Whatsapp className="fs-6 me-4" />
-                </div>
-                <div className="d-flex small justify-content-between align-items-center my-2">
-                  <Instagram className="fs-6 ms-4" />
-                  <a
-                    href="https://www.instagram.com/andreapugliesecocina?igsh=cXM2d2xxOXMzMW1p"
-                    target="_blank"
-                    className="text-black text-decoration-none"
-                  >
-                    <div className="small"> @andreapugliesecocina</div>
-                  </a>
-                  <Instagram className="fs-6 me-4" />
-                </div>
 
-                {/* //////////////////////////////////////////////////////////////////////////////////// */}
-                <div className="d-flex small justify-content-between align-items-center my-2">
-                  <Youtube className="fs-6 ms-4" />
-                  <a
-                    href="https://youtube.com/@andreapugliesecocina?si=OnLXbFGqKFJZL4dC"
-                    target="_blank"
-                    className="text-black text-decoration-none"
-                  >
-                    <div className="small"> @andreapugliesecocina</div>
-                  </a>
-                  <Youtube className="fs-6 me-4" />
+                  {/* //////////////////////////////////////////////////////////////////////////////////// */}
+                  <div className="d-flex small justify-content-between align-items-center my-2">
+                    <Youtube className="fs-6 ms-4" />
+                    <a
+                      href="https://youtube.com/@andreapugliesecocina?si=OnLXbFGqKFJZL4dC"
+                      target="_blank"
+                      className="text-black text-decoration-none"
+                    >
+                      <div className="small"> @andreapugliesecocina</div>
+                    </a>
+                    <Youtube className="fs-6 me-4" />
+                  </div>
+                  <div className="d-flex small justify-content-between align-items-center my-2">
+                    <Tiktok className="fs-6 ms-4" />
+                    <a
+                      href="https://www.tiktok.com/@andreapugliesecocina?_t=8r1oOxL9Qrw&_r=1"
+                      target="_blank"
+                      className="text-black text-decoration-none"
+                    >
+                      <div className="small"> @andreapugliesecocina</div>
+                    </a>
+                    <Tiktok className="fs-6 me-4" />
+                  </div>
                 </div>
-                <div className="d-flex small justify-content-between align-items-center my-2">
-                  <Tiktok className="fs-6 ms-4" />
-                  <a
-                    href="https://www.tiktok.com/@andreapugliesecocina?_t=8r1oOxL9Qrw&_r=1"
-                    target="_blank"
-                    className="text-black text-decoration-none"
-                  >
-                    <div className="small"> @andreapugliesecocina</div>
-                  </a>
-                  <Tiktok className="fs-6 me-4" />
-                </div>
-              </div>
-            </Modal.Body>
-            <Modal.Footer>
-              <Button variant="secondary" onClick={handleClose}>
-                Close
-              </Button>
-            </Modal.Footer>
+              </Modal.Body>
+              <Modal.Footer>
+                <Button variant="secondary" onClick={handleClose}>
+                  Close
+                </Button>
+              </Modal.Footer>
+            </Container>
           </Modal>
         </section>
         {/* <SliderContainer /> */}

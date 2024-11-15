@@ -57,7 +57,6 @@
   padding: 0px;
 }
 #generalheader {
-  min-height: 10vh;
   justify-content: space-between;
   background: whitesmoke;
   position: fixed;
@@ -65,4 +64,35 @@
   width: 100vw;
   z-index: 1111;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.8);
+}
+#generalheader,
+#generalheader > * {
+  animation: headerShowUp 2s linear forwards;
+}
+@keyframes headerShowUp {
+  0% {
+    height: 0vh;
+    color: transparent;
+  }
+  98% {
+    color: transparent;
+  }
+  100% {
+    min-height: 10vh;
+  }
+}
+
+#generalheader img {
+  animation: showUp 2s linear forwards;
+}
+@keyframes showUp {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

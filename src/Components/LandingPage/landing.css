@@ -1,5 +1,5 @@
 #generalHero {
-  height: 90vh;
+  /* height: 90vh; */
   width: 100vw;
   background: whitesmoke;
   /* background-image: url("../../../public/assets/andreapugliese/andreap2.jpeg"); */
@@ -9,6 +9,15 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  animation: HeroChanginHeight 2s linear forwards;
+}
+@keyframes HeroChanginHeight {
+  0% {
+    height: 100vh;
+  }
+  100% {
+    height: 100vh;
+  }
 }
 
 .filterblue {
@@ -225,7 +234,7 @@
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
 }
 #contactInfoContainer {
-  margin-top: 150px;
+  margin-top: 200px;
 }
 .cursorOnHover:hover {
   scale: 1.5;
