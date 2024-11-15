@@ -67,13 +67,16 @@
 }
 
 #generalheader img {
-  animation: showUp 1s linear;
+  animation: showUp 1.5s linear;
 }
 #generalheader .nav-link {
-  animation: showUp2 1s linear;
+  animation: showUp2 1.5s linear;
 }
 @keyframes showUp {
   0% {
+    opacity: 0;
+  }
+  33% {
     opacity: 0;
   }
   100% {
@@ -82,6 +85,9 @@
 }
 @keyframes showUp2 {
   0% {
+    color: transparent;
+  }
+  33% {
     color: transparent;
   }
 }
