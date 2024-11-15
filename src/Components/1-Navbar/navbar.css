@@ -65,32 +65,19 @@
   z-index: 1111;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.8);
 }
-#generalheader,
-#generalheader > * {
-  animation: headerShowUp 2s linear forwards;
-}
-@keyframes headerShowUp {
-  0% {
-    height: 0vh;
-    color: transparent;
-  }
-  98% {
-    color: transparent;
-  }
-  100% {
-    min-height: 10vh;
-  }
-}
 
-#generalheader img {
-  animation: showUp 2s linear forwards;
+#generalheader img,
+#generalheader > div:first-of-type {
+  animation: showUp 1.5s linear forwards;
 }
 @keyframes showUp {
   0% {
     opacity: 0;
+    color: transparent;
   }
   60% {
     opacity: 0;
+    color: transparent;
   }
   100% {
     opacity: 1;
