@@ -370,8 +370,8 @@
 }
 
 .bg-effect1 {
-  animation: bg-effect 1.5s linear both;
-  -webkit-animation: bg-effect 1.5s linear both;
+  animation: bg-effect 1.5s linear forwards;
+  -webkit-animation: bg-effect 1.5s linear forwards;
   color: var(--light);
   font-size: 0.9em !important;
   letter-spacing: 1.1em;
@@ -388,7 +388,6 @@
 
   100% {
     height: 13vh;
-
     margin-top: 0vh;
     padding: 5vh;
   }
@@ -401,7 +400,6 @@
 
   100% {
     height: 13vh;
-
     margin-top: 0vh;
     padding: 5vh;
   }
@@ -829,5 +827,19 @@
   100% {
     position: relative;
     top: 0px;
+  }
+}
+.opacityChange {
+  animation: opacityChanging 18s linear forwards;
+}
+@keyframes opacityChanging {
+  0% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

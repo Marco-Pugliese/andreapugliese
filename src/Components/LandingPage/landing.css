@@ -237,13 +237,22 @@
 .phraseContainer {
   position: relative;
   width: 100vw;
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+@keyframes hideMe {
+  0% {
+    display: flex !important;
+  }
+  100% {
+    display: none !important;
+  }
+}
 .phraseContainer > span {
   position: absolute;
+
   width: 100%;
   text-align: center;
   font-size: 1.3em;
