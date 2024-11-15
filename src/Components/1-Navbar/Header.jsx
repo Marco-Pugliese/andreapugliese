@@ -30,6 +30,7 @@ const Header = () => {
   const changeStatusFalse = () => {
     setTimeout(changedLoadedFalse, 500);
   };
+
   useEffect(() => {
     openNav === false ? changeStatusFalse() : null;
     openNav === true ? changeStatusTrue() : null;
@@ -333,7 +334,7 @@ const Header = () => {
         }
       >
         {/* FISARMONICA */}
-        <Row className="h-100">
+        <Row className={hide === false ? "d-none" : "h-100"}>
           {LangInUse === "Eng" && (
             <>
               <Col
