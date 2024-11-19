@@ -4,12 +4,14 @@ const EmbedInstaVideo = ({ postUrl, lastPart }) => {
   const embedUrl = postUrl.replace(lastPartInside, "embed");
 
   return (
-    <iframe
-      height="565px"
-      src={embedUrl}
-      allowFullScreen
-      className="m-4 littleShadow"
-    ></iframe>
+    <div className="littleShadow m-4">
+      <iframe
+        height="565px"
+        src={embedUrl}
+        allowFullScreen
+        className="w-100"
+      ></iframe>
+    </div>
   );
 };
 EmbedInstaVideo.propTypes = {

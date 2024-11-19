@@ -4,9 +4,9 @@ import { useSelector } from "react-redux";
 const CookingAside = () => {
   const LangInUse = useSelector((state) => state.Lang.lang);
   return (
-    <div id="cookingAside">
-      <div className="py-5">
-        <Row>
+    <div id="cookingAside" className="w-100">
+      <div className="py-5 d-flex justify-content-center">
+        <Row className="m-0">
           {LangInUse === "Ita" && (
             <>
               <Col className="pb-5 fs-5 text-center col-12">
@@ -31,7 +31,7 @@ const CookingAside = () => {
             </>
           )}
         </Row>
-        <Row>
+        <Row className="m-0">
           {LangInUse === "Eng" && (
             <>
               <Col className="pb-5 fs-5 text-center col-12">Why choose me?</Col>
@@ -52,7 +52,7 @@ const CookingAside = () => {
             </>
           )}
         </Row>
-        <Row>
+        <Row className="m-0">
           {LangInUse === "Esp" && (
             <>
               <Col className="pb-5 fs-5 text-center col-12">

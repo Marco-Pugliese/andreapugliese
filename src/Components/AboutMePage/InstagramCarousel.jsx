@@ -34,6 +34,7 @@ const InstagramCarousel = () => {
             }}
             onMouseLeave={() => setIsClicked(false)}
             interval={isClicked === true ? 60000 : 6000}
+            className=""
           >
             <div
               onMouseEnter={() => {
@@ -48,6 +49,7 @@ const InstagramCarousel = () => {
                 setIsClicked(true);
                 console.log("end from instagram carousel.item");
               }}
+              className="flexsize mx-auto"
             >
               <EmbedInstaVideo postUrl={singleVideo.url} lastPart={finalPart} />
             </div>

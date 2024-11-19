@@ -31,6 +31,7 @@ const YouTubeCarousel = () => {
                 console.log("interval set back at 6000");
                 setIsClicked(false);
               }}
+              className="flexsize mx-auto"
             >
               <EmbedVideo url={singleReel} />
             </div>
