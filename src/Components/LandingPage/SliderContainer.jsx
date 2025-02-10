@@ -4,33 +4,34 @@ const SliderContainer = () => {
   return (
     <>
       <section id="sliderContainer">
-        <Container fluid id="slide" className="p-0 py-5 position-relative">
-          <div className="row1 d-flex flex-row">
+        <Container fluid id="slide" className="p-0 position-relative">
+          <div className="row1 d-flex flex-row align-items-center w-100 h-100">
             <div className="slidingbg">
-              <div className="w-100 h-100 chef1"></div>
+              <div className="chef1 w-100 h-100"></div>
             </div>
             <div className="slidingbg">
-              <div className="w-100 h-100 chef2"></div>
+              <div className="chef2 w-100 h-100"></div>
             </div>
             <div className="slidingbg">
-              <div className="w-100 h-100 chef3"></div>
+              <div className="chef3 w-100 h-100"></div>
             </div>
             <div className="slidingbg">
-              <div className="w-100 h-100 chef4"></div>
+              <div className="chef4 w-100 h-100"></div>
             </div>
           </div>
-          <div className="row2 d-flex flex-row">
+
+          <div className="row2 d-flex flex-row align-items-center w-100 h-100">
             <div className="slidingbg">
-              <div className="w-100 h-100 chef5"></div>
+              <div className="chef5 w-100 h-100"></div>
             </div>
             <div className="slidingbg">
-              <div className="w-100 h-100 chef6"></div>
+              <div className="chef2 w-100 h-100"></div>
             </div>
             <div className="slidingbg">
-              <div className="w-100 h-100 chef3"></div>
+              <div className="chef3 w-100 h-100"></div>
             </div>
             <div className="slidingbg">
-              <div className="w-100 h-100 chef5"></div>
+              <div className="chef4 w-100 h-100"></div>
             </div>
           </div>
         </Container>
