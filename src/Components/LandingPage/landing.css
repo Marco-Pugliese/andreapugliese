@@ -72,46 +72,46 @@
   0% {
     opacity: 1;
     position: absolute;
-    right: -200vw;
+    right: -100vw;
   }
   100% {
     opacity: 1;
     position: absolute;
-    right: 200vw;
+    right: 100vw;
   }
 }
 @-webkit-keyframes slide2 {
   0% {
     opacity: 1;
     position: absolute;
-    right: -200vw;
+    right: -100vw;
   }
   100% {
     opacity: 1;
     position: absolute;
-    right: 200vw;
+    right: 100vw;
   }
 }
 
 @keyframes slide1 {
   0% {
     position: absolute;
-    right: -200vw;
+    right: -100vw;
   }
   100% {
     position: absolute;
-    right: 200vw;
+    right: 100vw;
   }
 }
 
 @-webkit-keyframes slide1 {
   0% {
     position: absolute;
-    right: -200vw;
+    right: -100vw;
   }
   100% {
     position: absolute;
-    right: 200vw;
+    right: 100vw;
   }
 }
 
