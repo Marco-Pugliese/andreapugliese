@@ -53,10 +53,19 @@
 }
 
 .slidingbg {
-  height: 55vh !important;
-  min-width: 40vw;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  height: 65vh !important;
+  min-width: 44vw;
+  padding: 10vh 0;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+@media screen and (min-width: 1000px) {
+  .slidingbg {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    min-width: 30vw;
+    padding: 10vh 0;
+  }
 }
 
 @keyframes slide2 {
@@ -94,6 +103,7 @@
     right: 200vw;
   }
 }
+
 @-webkit-keyframes slide1 {
   0% {
     position: absolute;
@@ -126,6 +136,7 @@
 .chef6 {
   background: url("../../../public/assets/andreapugliese/chef7.jpeg");
 }
+
 .chef1,
 .chef2,
 .chef3,
@@ -133,9 +144,9 @@
 .chef5,
 .chef6 {
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  filter: grayscale(1) sepia(0.1);
+  filter: grayscale(1);
   transition: all 0.8s;
   z-index: 0;
 }
@@ -150,12 +161,16 @@
   cursor: pointer;
 }
 #sliderContainer {
-  min-height: 70vh;
   display: flex;
+  padding: 5vh 0;
+  background: #f5f5f5;
+  transition: all 0.8s;
+}
+#sliderContainer:hover {
+  background: rgb(27, 25, 25);
 }
 #slide {
   min-height: 50vh;
-
   align-items: center;
 }
 .chef1:hover,
@@ -168,6 +183,7 @@
   filter: grayscale(0) sepia(0);
   scale: 1.07;
   z-index: 1111;
+  box-shadow: 0 0 25px 10px rgba(102, 101, 101, 0.4);
 }
 #subHero {
   width: 100vw;
