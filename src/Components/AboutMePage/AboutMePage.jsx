@@ -131,7 +131,7 @@ const AboutMePage = () => {
           )}
         </div>
       </div>
-      <section className="bg-smokegray">
+      <section id="cookieContent" className="bg-smokegray">
         <div className="p-5 ">
           <Row className="">
             <Col className="d-flex col-12 col-xl-6 text-center align-items-center justify-content-center ">

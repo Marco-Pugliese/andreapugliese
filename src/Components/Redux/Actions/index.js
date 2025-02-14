@@ -14,3 +14,11 @@ export const SetPageAction = (payload) => {
     payload: payload,
   };
 };
+export const SET_COOKIE = "SET_COOKIE";
+
+export const SetCookieAction = (payload) => {
+  return {
+    type: SET_COOKIE,
+    payload: payload,
+  };
+};
