@@ -1,12 +1,12 @@
 import { SET_COOKIE } from "../Actions";
 
 const initialState = {
-  isAccepted: false,
+  isAccepted: "waitingToBeAccepted",
 };
 
 const Lang = (state = initialState, action) => {
   switch (action.type) {
-    case SET_LANG:
+    case SET_COOKIE:
       return {
         isAccepted: action.payload,
       };

@@ -8,20 +8,15 @@ import CookingClassPage from "./Components/CookingClassPage/CookingClassPage";
 import { useEffect, useState } from "react";
 import Loading from "./Components/LoadingPage/Loading";
 import ContactPage from "./Components/ContactPage/ContactPage";
+import { useSelector } from "react-redux";
+import CookieManager from "./Components/CookieManager/CookieManager";
+import CookieIcon from "./Components/CookieManager/CookieIcon";
 
 function App() {
   const [loaded, setIsLoaded] = useState(false);
-  const [cookiesAccepted, setCookiesAccepted] = useState(false);
-  useEffect(() => {
-    const accepted = localStorage.getItem("cookiesAccepted");
-    if (accepted === "true") {
-      setCookiesAccepted(true);
-    }
-  }, []);
-  const handleAcceptCookies = () => {
-    setCookiesAccepted(true);
-    localStorage.setItem("cookiesAccepted", "true");
-  };
+  // const [cookiesAccepted, setCookiesAccepted] = useState(false);
+  const isCookieAccepted = useSelector((state) => state.Cookie.isAccepted);
+
   const changedLoaded = () => {
     setIsLoaded(true);
   };
@@ -43,7 +38,11 @@ function App() {
       ) : (
         <>
           <Header />
-
+          {isCookieAccepted === "Declined" ? (
+            <CookieIcon />
+          ) : isCookieAccepted === "waitingToBeAccepted" ? (
+            <CookieManager />
+          ) : null}
           <div className="mtNeces">
             <Routes>
               <Route path="/aboutMe" element={<AboutMePage />} />
@@ -52,7 +51,6 @@ function App() {
               <Route path="/" element={<LandingPage />} />
             </Routes>
           </div>
-
           <Footer />
         </>
       )}

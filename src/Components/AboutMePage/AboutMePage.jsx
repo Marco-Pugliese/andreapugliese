@@ -2,11 +2,13 @@ import { Col, Row } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import SliderContainer from "../LandingPage/SliderContainer";
 import YouTubeCarousel from "./YouTubeCarousel";
+import CookieMessage from "./CookieMessage";
 
 import InstagramCarousel from "./InstagramCarousel";
 
 const AboutMePage = () => {
   const LangInUse = useSelector((state) => state.Lang.lang);
+  const isCookieAccepted = useSelector((state) => state.Cookie.isAccepted);
 
   return (
     <>
@@ -149,13 +151,14 @@ const AboutMePage = () => {
               </a>
             </Col>
             <Col className="col-12 col-xl-6 text-center ">
-              <YouTubeCarousel />
+              {isCookieAccepted === "Declined" && <CookieMessage />}
+              {isCookieAccepted === "Accepted" && <YouTubeCarousel />}
             </Col>
           </Row>
         </div>
         <div className="p-5 ">
-          <Row>
-            <Col className="col-12 col-xl-6 d-flex d-xl-none py-4 mt-2 text-center align-items-center justify-content-center">
+          <Row className="py-4">
+            <Col className="col-12 col-xl-6 d-flex d-xl-none text-center align-items-center justify-content-center">
               <a
                 href="https://www.instagram.com/andreapugliesecocina?igsh=cXM2d2xxOXMzMW1p"
                 target="_blank"
@@ -171,7 +174,8 @@ const AboutMePage = () => {
             <Col className="col-12 col-xl-6 text-center">
               <Row>
                 <Col>
-                  <InstagramCarousel />
+                  {isCookieAccepted === "Declined" && <CookieMessage />}
+                  {isCookieAccepted === "Accepted" && <InstagramCarousel />}
                 </Col>
               </Row>
             </Col>

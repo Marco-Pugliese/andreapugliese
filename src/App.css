@@ -7,6 +7,7 @@
 @import url("../src/Components/CookingClassPage/cookingClass.css");
 @import url("../src/Components/LoadingPage/loading.css");
 @import url("../src/Components/ContactPage/contactPage.css");
+@import url("../src/Components/CookieManager/Cookie.css");
 :root {
   --dark: #131d3a;
   --dark2: #080f22;

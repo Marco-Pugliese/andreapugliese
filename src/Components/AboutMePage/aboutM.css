@@ -141,3 +141,11 @@ iframe > * {
     width: 55%;
   }
 }
+.Qui:hover {
+  color: whitesmoke !important;
+  background: green !important;
+  cursor: pointer;
+}
+.Qui {
+  transition: all 0.9s;
+}

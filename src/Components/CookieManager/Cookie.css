@@ -1,0 +1,37 @@
+#CookieModal {
+  display: flex;
+  margin-top: 30vh;
+  min-height: 25vh;
+}
+.nav-privacy-link {
+  color: blue;
+  text-decoration: none;
+}
+.list {
+  list-style-type: square;
+}
+#CookieIcon {
+  position: fixed;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10vw;
+  top: 88vh;
+  border-radius: 50%;
+  left: 88vw;
+  z-index: 1717178318272187;
+}
+.bg-cookie {
+  background: burlywood;
+  transition: 0.9s;
+  box-shadow: 0 0 20px 5px burlywood;
+}
+.bg-cookie:hover {
+  cursor: pointer;
+}
+.rotate {
+  transform: rotateZ(666deg);
+  scale: 1.5;
+  box-shadow: 0 0 20px 5px burlywood;
+}
