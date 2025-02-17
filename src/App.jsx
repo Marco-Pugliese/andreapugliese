@@ -11,7 +11,17 @@ import ContactPage from "./Components/ContactPage/ContactPage";
 
 function App() {
   const [loaded, setIsLoaded] = useState(false);
-
+  const [cookiesAccepted, setCookiesAccepted] = useState(false);
+  useEffect(() => {
+    const accepted = localStorage.getItem("cookiesAccepted");
+    if (accepted === "true") {
+      setCookiesAccepted(true);
+    }
+  }, []);
+  const handleAcceptCookies = () => {
+    setCookiesAccepted(true);
+    localStorage.setItem("cookiesAccepted", "true");
+  };
   const changedLoaded = () => {
     setIsLoaded(true);
   };
@@ -22,7 +32,7 @@ function App() {
     changeStatus();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  const [cookiesAccepted, setCookiesAccepted] = useState(false);
+
   useEffect(() => {
     console.log("the page is loaded?:" + loaded);
   }, [loaded]);
