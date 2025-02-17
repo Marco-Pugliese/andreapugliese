@@ -4,11 +4,12 @@
   min-height: 25vh;
 }
 .nav-privacy-link {
-  color: blue;
+  color: indianred;
   text-decoration: none;
+  font-size: 0.8em;
 }
 .list {
-  list-style-type: square;
+  list-style-type: none;
 }
 #CookieIcon {
   position: fixed;

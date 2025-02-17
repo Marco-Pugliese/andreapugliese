@@ -13,7 +13,7 @@ const CookieManager = () => {
   return (
     <>
       <Modal id="CookieModal" show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
+        <Modal.Header>
           <Modal.Title>
             {LangInUse === "Eng" && <>Cookie Manager</>}
             {LangInUse === "Esp" && <>Gestión de Cookies</>}
@@ -41,7 +41,7 @@ const CookieManager = () => {
                   </li>
                   <li>
                     <a
-                      href="https://privacy.meta.com/policies/privacy-policy/"
+                      href=" https://about.instagram.com/it-it/blog/announcements/instagram-community-data-policy"
                       className="nav-privacy-link"
                     >
                       Instagram Privacy Policy
@@ -73,7 +73,7 @@ const CookieManager = () => {
                   </li>
                   <li>
                     <a
-                      href="https://privacy.meta.com/policies/privacy-policy/"
+                      href=" https://about.instagram.com/it-it/blog/announcements/instagram-community-data-policy"
                       className="nav-privacy-link"
                     >
                       Instagram Privacy Policy
@@ -104,7 +104,7 @@ const CookieManager = () => {
                   </li>
                   <li>
                     <a
-                      href="https://privacy.meta.com/policies/privacy-policy/"
+                      href=" https://about.instagram.com/it-it/blog/announcements/instagram-community-data-policy"
                       className="nav-privacy-link"
                     >
                       Instagram Privacy Policy
