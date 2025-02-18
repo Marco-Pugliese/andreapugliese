@@ -25,13 +25,13 @@ const SliderContainer = () => {
               <div className="chef5 w-100 h-100"></div>
             </div>
             <div className="slidingbg">
-              <div className="chef2 w-100 h-100"></div>
+              <div className="chef6 w-100 h-100"></div>
             </div>
             <div className="slidingbg">
-              <div className="chef3 w-100 h-100"></div>
+              <div className="chef7 w-100 h-100"></div>
             </div>
             <div className="slidingbg">
-              <div className="chef4 w-100 h-100"></div>
+              <div className="chef8 w-100 h-100"></div>
             </div>
           </div>
         </Container>

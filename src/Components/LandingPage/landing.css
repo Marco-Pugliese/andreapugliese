@@ -2,17 +2,14 @@
   height: 90vh;
   width: 100vw;
   background: whitesmoke;
-  /* background-image: url("../../../public/assets/andreapugliese/andreap2.jpeg"); */
-  /* background-image: url("../../../public/assets/andreapugliese/andreap6.jpeg"); */
-  /* background-image: url("../../../public/assets/andreapugliese/andreap5.jpeg"); */
-  background-image: url("../../../public/assets/andreapugliese/andreap.jpeg");
+  background-image: url("../../../public/assets/andreapugliese/bg/bg-chef7.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
 }
 
 .filterblue {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.8);
 }
 
@@ -52,89 +49,32 @@
   }
 }
 
-.slidingbg {
-  height: 65vh !important;
-  min-width: 44vw;
-  padding: 10vh 0;
-  margin-left: 3vw;
-  margin-right: 3vw;
-}
-@media screen and (min-width: 1000px) {
-  .slidingbg {
-    margin-left: 10vw;
-    margin-right: 10vw;
-    min-width: 30vw;
-    padding: 10vh 0;
-  }
-}
-
-@keyframes slide2 {
-  0% {
-    opacity: 1;
-    position: absolute;
-    right: -100vw;
-  }
-  100% {
-    opacity: 1;
-    position: absolute;
-    right: 100vw;
-  }
-}
-@-webkit-keyframes slide2 {
-  0% {
-    opacity: 1;
-    position: absolute;
-    right: -100vw;
-  }
-  100% {
-    opacity: 1;
-    position: absolute;
-    right: 100vw;
-  }
-}
-
-@keyframes slide1 {
-  0% {
-    position: absolute;
-    right: -100vw;
-  }
-  100% {
-    position: absolute;
-    right: 100vw;
-  }
-}
-
-@-webkit-keyframes slide1 {
-  0% {
-    position: absolute;
-    right: -100vw;
-  }
-  100% {
-    position: absolute;
-    right: 100vw;
-  }
-}
-
 .slidingbg > div {
   border-radius: 5px;
 }
 .chef1 {
-  background: url("../../../public/assets/andreapugliese/chef1.jpeg");
-}
-.chef2 {
-  background: url("../../../public/assets/andreapugliese/chef2.jpeg");
-}
-.chef3 {
-  background: url("../../../public/assets/andreapugliese/chef3.jpeg");
-}
-.chef4 {
   background: url("../../../public/assets/andreapugliese/chef6.jpeg");
 }
+.chef2 {
+  background: url("../../../public/assets/andreapugliese/chef12.jpeg");
+}
+.chef3 {
+  background: url("../../../public/assets/andreapugliese/piatti/piatto2.jpg");
+}
+.chef4 {
+  background: url("../../../public/assets/andreapugliese/piatti/piatto4.jpg");
+}
 .chef5 {
-  background: url("../../../public/assets/andreapugliese/chef5.jpeg");
+  background: url("../../../public/assets/andreapugliese/piatti/piatto5.jpg");
 }
 .chef6 {
-  background: url("../../../public/assets/andreapugliese/chef7.jpeg");
+  background: url("../../../public/assets/andreapugliese/piatti/piatto6.jpg");
+}
+.chef7 {
+  background: url("../../../public/assets/andreapugliese/piatti/piatto7.jpg");
+}
+.chef8 {
+  background: url("../../../public/assets/andreapugliese/piatti/piatto9.jpg");
 }
 
 .chef1,
@@ -142,13 +82,29 @@
 .chef3,
 .chef4,
 .chef5,
-.chef6 {
+.chef6,
+.chef7,
+.chef8 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(1);
   transition: all 0.8s;
   z-index: 0;
+}
+.chef1:hover,
+.chef2:hover,
+.chef3:hover,
+.chef4:hover,
+.chef5:hover,
+.chef6:hover,
+.chef7:hover,
+.chef8:hover {
+  cursor: pointer;
+  filter: grayscale(0) sepia(0);
+  scale: 1.05;
+  z-index: 1111;
+  box-shadow: 0 0 25px 10px rgba(102, 101, 101, 0.4);
 }
 
 #requestButton {
@@ -173,18 +129,7 @@
   min-height: 50vh;
   align-items: center;
 }
-.chef1:hover,
-.chef2:hover,
-.chef3:hover,
-.chef4:hover,
-.chef5:hover,
-.chef6:hover {
-  cursor: pointer;
-  filter: grayscale(0) sepia(0);
-  scale: 1.07;
-  z-index: 1111;
-  box-shadow: 0 0 25px 10px rgba(102, 101, 101, 0.4);
-}
+
 #subHero {
   width: 100vw;
   margin-top: 20vh;
@@ -206,28 +151,29 @@
 }
 
 .imgbg1 {
-  background: url("../../../public/assets/andreapugliese/chef2.jpeg");
+  background: url("../../../public/assets/andreapugliese/piatti/piatto4.jpg");
 }
 .imgbg2 {
-  background: url("../../../public/assets/andreapugliese/chef15.jpeg");
+  background: url("../../../public/assets/andreapugliese/piatti/piatto6.jpg");
 }
 .imgbg3 {
-  background: url("../../../public/assets/andreapugliese/andreap4.jpeg");
+  background: url("../../../public/assets/andreapugliese/piatti/piatto7.jpg");
 }
 .imgbg1,
 .imgbg2,
 .imgbg3 {
   height: 45vh !important;
-  background-size: 68vh;
+  background-size: 50vh;
   background-position: center;
   transition: all 2.8s !important;
+  filter: grayscale(1);
 }
 .imgbg1:hover,
 .imgbg2:hover,
 .imgbg3:hover {
   cursor: pointer;
-  background-size: 88vh;
-  filter: grayscale(1);
+  filter: grayscale(0);
+  background-size: 60vh;
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
 }
 .btnLanding {
@@ -252,29 +198,30 @@
 }
 
 .imgbg1sm {
-  background: url("../../../public/assets/andreapugliese/chef2.jpeg");
+  background: url("../../../public/assets/andreapugliese/piatti/piatto4.jpg");
 }
 .imgbg2sm {
-  background: url("../../../public/assets/andreapugliese/chef6.jpeg");
+  background: url("../../../public/assets/andreapugliese/piatti/piatto6.jpg");
 }
 .imgbg3sm {
-  background: url("../../../public/assets/andreapugliese/andreap4.jpeg");
+  background: url("../../../public/assets/andreapugliese/piatti/piatto7.jpg");
 }
 
 .imgbg1sm,
 .imgbg2sm,
 .imgbg3sm {
   height: 45vh !important;
-  background-size: 93vh;
+  background-size: 63vh;
   background-position: center;
+  filter: grayscale(1);
   transition: all 2.8s !important;
 }
 .imgbg1sm:hover,
 .imgbg2sm:hover,
 .imgbg3sm:hover {
   cursor: pointer;
-  background-size: 115vh;
-  filter: grayscale(1);
+  background-size: 74vh;
+  filter: grayscale(0);
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
 }
 #contactInfoContainer {
@@ -395,4 +342,93 @@
 .imgbg1sm *:hover,
 .imgbg1sm *:hover {
   text-shadow: 0 0 10px black;
+}
+
+.row2 {
+  animation: slide2 20s linear infinite;
+  -webkit-animation: slide2 20s linear infinite;
+  animation-delay: 10s;
+  opacity: 0;
+  position: absolute;
+}
+.row1 {
+  animation: slide1 20s linear infinite;
+  -webkit-animation: slide1 20s linear infinite;
+  position: absolute;
+}
+@media screen and (min-width: 1000px) {
+  .row1 {
+    animation: slide1 40s linear infinite;
+    -webkit-animation: slide1 40s linear infinite;
+    position: absolute;
+  }
+  .row2 {
+    animation: slide2 40s linear infinite;
+    -webkit-animation: slide2 40s linear infinite;
+    animation-delay: 20s;
+    opacity: 0;
+    position: absolute;
+  }
+}
+.slidingbg {
+  height: 65vh !important;
+  min-width: 38vw;
+  padding: 10vw 0;
+  margin-left: 6vw;
+  margin-right: 6vw;
+}
+@media screen and (min-width: 1000px) {
+  .slidingbg {
+    height: 65vh !important;
+    min-width: 38vw;
+    padding: 10vh 0;
+    margin-left: 6vw;
+    margin-right: 6vw;
+  }
+}
+@keyframes slide2 {
+  0% {
+    opacity: 1;
+    position: absolute;
+    right: -200vw;
+  }
+  100% {
+    opacity: 1;
+    position: absolute;
+    right: 200vw;
+  }
+}
+@-webkit-keyframes slide2 {
+  0% {
+    opacity: 1;
+    position: absolute;
+    right: -200vw;
+  }
+  100% {
+    opacity: 1;
+    positi1n: absolute;
+    right: 200vw;
+  }
+}
+
+@keyframes slide1 {
+  0% {
+    position: absolute;
+    right: -200vw;
+  }
+  100% {
+    position: absolute;
+    right: 200vw;
+  }
+}
+
+@-webkit-keyframes slide1 {
+  0% {
+    position: absolute;
+    right: -200vw;
+  }
+  100% {
+    position: absolute;
+    right: 200vw;
+  }
 }

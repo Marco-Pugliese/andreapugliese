@@ -1,7 +1,8 @@
 #aboutMe {
   min-height: 90vh;
-  /* background-image: url("../../../public/assets/andreapugliese/andreap5.jpeg"); */
-  background-image: url("../../../public/assets/andreapugliese/chef13.jpeg");
+  background-image: url("../../../public/assets/andreapugliese/andreap.jpeg");
+  /* background-image: url("../../../public/assets/andreapugliese/chef13.jpeg");*/
+  /* background-image: url("../../../public/assets/andreapugliese/bg/bg-chef5.jpg"); */
   background-size: cover;
   background-position: center;
   color: var(--light);
@@ -10,11 +11,11 @@
 .filterdark2 {
   transition: all 0.8s;
   min-height: 90vh;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.75);
 }
 
 .filterdark2:hover {
-  background: rgba(0, 0, 0, 0.9) !important;
+  background: rgba(0, 0, 0, 0.85) !important;
 }
 
 .ls-2 {

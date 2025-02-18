@@ -259,32 +259,6 @@
     opacity: 0;
   }
 }
-.row2 {
-  animation: slide2 20s linear infinite;
-  -webkit-animation: slide2 20s linear infinite;
-  animation-delay: 10s;
-  opacity: 0;
-  position: absolute;
-}
-.row1 {
-  animation: slide1 20s linear infinite;
-  -webkit-animation: slide1 20s linear infinite;
-  position: absolute;
-}
-@media screen and (min-width: 1000px) {
-  .row1 {
-    animation: slide1 40s linear infinite;
-    -webkit-animation: slide1 40s linear infinite;
-    position: absolute;
-  }
-  .row2 {
-    animation: slide2 40s linear infinite;
-    -webkit-animation: slide2 40s linear infinite;
-    animation-delay: 20s;
-    opacity: 0;
-    position: absolute;
-  }
-}
 
 .bg-effect1 {
   animation: bg-effect 1.5s linear forwards;
