@@ -25,17 +25,22 @@
   border-radius: 50%;
   left: 88vw;
   z-index: 1717178318272187;
+  transition: all 0.9s;
+  opacity: 0.5;
+}
+#CookieIcon:hover {
+  opacity: 1;
 }
 .bg-cookie {
   background: burlywood;
   transition: 0.9s;
-  box-shadow: 0 0 20px 5px burlywood;
+  box-shadow: 0 0 20px 5px rgb(0, 0, 0);
 }
 .bg-cookie:hover {
   cursor: pointer;
 }
 .rotate {
-  transform: rotateZ(666deg);
+  transform: rotateZ(450deg);
   scale: 1.5;
   box-shadow: 0 0 20px 5px burlywood;
 }
