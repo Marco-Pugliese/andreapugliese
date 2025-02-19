@@ -105,7 +105,7 @@ const CookingClassPage = () => {
   return (
     <>
       <div id="cookingClass">
-        <div className="filterdark2 text-Light h-100 d-flex flex-column align-items-center justify-content-between px-5 ">
+        <div className="filterdark-cooking text-Light h-100 d-flex flex-column align-items-center justify-content-between px-5 ">
           {LangInUse === "Esp" && (
             <Row className="d-flex align-items-around justify-content-center flex-grow-1">
               <Col className="col-12 col-xl-10 col-xxl-8 ls-2 txt-shadow fs-6">

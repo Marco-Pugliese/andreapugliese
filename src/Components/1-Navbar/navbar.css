@@ -1,12 +1,13 @@
 .nav-link {
   transition: all 0.8s !important;
+  width: 100%;
 }
 .flags {
   transition: all 0.8s;
   font-size: 1.5em;
 }
 .nav-link:hover {
-  font-size: 1.02em !important;
+  font-size: 1.01em !important;
   color: var(--contrast) !important;
   /* text-shadow: 0 0px 15px rgba(0, 0, 0, 0.8); */
   cursor: pointer !important;

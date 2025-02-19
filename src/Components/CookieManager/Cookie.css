@@ -1,7 +1,10 @@
 #CookieModal {
   display: flex;
+  margin: 30vh auto;
   margin-top: 30vh;
   min-height: 25vh;
+  width: 66vw;
+  font-size: 0.9;
 }
 .nav-privacy-link {
   color: indianred;

@@ -41,7 +41,7 @@ const Header = () => {
   return (
     <Container fluid className="text-Dark p-0" id="generalheader">
       <Row className="fs-4 d-flex align-items-center mh-10">
-        <Col className="col-4 col-xl-5 ms-2">
+        <Col className="col-4 col-xl-5 ms-3">
           <Link
             to={"/"}
             onClick={() => {

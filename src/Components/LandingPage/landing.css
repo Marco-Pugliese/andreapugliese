@@ -166,15 +166,42 @@
   background-size: 50vh;
   background-position: center;
   transition: all 2.8s !important;
-  filter: grayscale(1);
+  filter: grayscale(0);
 }
 .imgbg1:hover,
 .imgbg2:hover,
 .imgbg3:hover {
   cursor: pointer;
-  filter: grayscale(0);
+  filter: grayscale(1);
   background-size: 60vh;
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+}
+.imgbg1sm {
+  background: url("../../../public/assets/andreapugliese/piatti/piatto4.jpg");
+}
+.imgbg2sm {
+  background: url("../../../public/assets/andreapugliese/piatti/piatto6.jpg");
+}
+.imgbg3sm {
+  background: url("../../../public/assets/andreapugliese/piatti/piatto7.jpg");
+}
+
+.imgbg1sm,
+.imgbg2sm,
+.imgbg3sm {
+  height: 45vh !important;
+  background-size: 63vh;
+  background-position: center;
+  filter: grayscale(0);
+  transition: all 2.8s !important;
+}
+.imgbg1sm:hover,
+.imgbg2sm:hover,
+.imgbg3sm:hover {
+  cursor: pointer;
+  filter: grayscale(1);
+  background-size: 74vh;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
 }
 .btnLanding {
   background: var(--dark);
@@ -197,33 +224,6 @@
   color: var(--dark2);
 }
 
-.imgbg1sm {
-  background: url("../../../public/assets/andreapugliese/piatti/piatto4.jpg");
-}
-.imgbg2sm {
-  background: url("../../../public/assets/andreapugliese/piatti/piatto6.jpg");
-}
-.imgbg3sm {
-  background: url("../../../public/assets/andreapugliese/piatti/piatto7.jpg");
-}
-
-.imgbg1sm,
-.imgbg2sm,
-.imgbg3sm {
-  height: 45vh !important;
-  background-size: 63vh;
-  background-position: center;
-  filter: grayscale(1);
-  transition: all 2.8s !important;
-}
-.imgbg1sm:hover,
-.imgbg2sm:hover,
-.imgbg3sm:hover {
-  cursor: pointer;
-  background-size: 74vh;
-  filter: grayscale(0);
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
-}
 #contactInfoContainer {
   margin-top: 200px;
 }

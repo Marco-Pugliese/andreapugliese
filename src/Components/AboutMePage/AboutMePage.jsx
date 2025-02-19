@@ -142,12 +142,20 @@ const AboutMePage = () => {
                 target="_blank"
                 rel="noopener"
               >
-                <img
-                  src="/assets/img/logo-garofalo.png"
-                  alt="logo garofalo"
-                  className="p-3"
-                  style={{ width: "275px" }}
-                />
+                <div className="d-flex flex-column align-items-center">
+                  <img
+                    src="/assets/img/logo-garofalo.png"
+                    alt="logo garofalo"
+                    className="p-3"
+                    style={{ width: "200px" }}
+                  />
+                  <img
+                    src="/assets/andreapugliese/bg/bg-chef13.jpg"
+                    alt="testimonial garofalo"
+                    className="p-3 rounded-5 d-none d-xl-block"
+                    style={{ width: "300px" }}
+                  />
+                </div>
               </a>
             </Col>
             <Col className="col-12 col-xl-6 text-center ">
@@ -164,11 +172,19 @@ const AboutMePage = () => {
                 target="_blank"
                 rel="noopener"
               >
-                <img
-                  src="/assets/img/logo-insta.png"
-                  alt="instagram logo"
-                  style={{ width: "275px" }}
-                />
+                <div className="d-flex flex-column align-items-center">
+                  <img
+                    src="/assets/img/logo-insta.png"
+                    alt="instagram logo"
+                    style={{ width: "275px" }}
+                  />
+                  <img
+                    src="/assets/andreapugliese/bg/piatto1.jpg"
+                    alt="testimonial garofalo"
+                    className="p-3 rounded-5 d-none d-xl-block"
+                    style={{ width: "300px" }}
+                  />
+                </div>
               </a>
             </Col>
             <Col className="col-12 col-xl-6 text-center">
@@ -180,11 +196,19 @@ const AboutMePage = () => {
               </Row>
             </Col>
             <Col className="col-12 col-xl-6 d-none d-xl-flex text-center align-items-center justify-content-center">
-              <img
-                src="/assets/img/logo-insta.png"
-                alt=""
-                style={{ width: "200px" }}
-              />
+              <div className="d-flex flex-column align-items-center">
+                <img
+                  src="/assets/img/logo-insta.png"
+                  alt="instagram logo"
+                  style={{ width: "275px" }}
+                />
+                <img
+                  src="/assets/andreapugliese/bg/piatto1.jpg"
+                  alt="testimonial garofalo"
+                  className="p-3 rounded-5 d-none d-xl-block"
+                  style={{ width: "300px" }}
+                />
+              </div>
             </Col>
           </Row>
         </div>

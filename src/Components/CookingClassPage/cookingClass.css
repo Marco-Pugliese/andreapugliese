@@ -1,8 +1,16 @@
 #cookingClass {
-  min-height: 90vh;
   background-image: url("../../../public/assets/andreapugliese/bg/bg-chef.jpg");
   background-size: cover;
   background-position: right;
+  height: 105vh;
+  transition: all 0.8s;
+}
+@media screen and (max-width: 700px) {
+  #cookingClass {
+    background-size: cover;
+    background-position: right;
+    height: 120vh;
+  }
 }
 .brightonhover {
   transition: all 0.8s;
@@ -13,6 +21,13 @@
   cursor: pointer;
   scale: 1.1;
   box-shadow: 0 0 10px 10px rgba(135, 135, 135, 0.2);
+}
+.filterdark-cooking {
+  background: rgba(0, 0, 0, 0.55);
+  transition: all 0.9s;
+}
+.filterdark-cooking:hover {
+  background: rgba(0, 0, 0, 0.75);
 }
 #cookingAside {
   /* background-image: url("../../../public/assets/img/bgabstract.avif"); */
