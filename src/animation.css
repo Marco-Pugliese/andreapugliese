@@ -721,7 +721,7 @@
   }
 }
 .opacityChange {
-  animation: opacityChanging 18s linear forwards;
+  animation: opacityChanging 6s linear forwards;
 }
 @keyframes opacityChanging {
   0% {

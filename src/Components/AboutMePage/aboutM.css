@@ -3,7 +3,7 @@
   /* background-image: url("../../../public/assets/andreapugliese/andreap.jpeg"); */
   background-image: url("../../../public/assets/andreapugliese/bg/bg-chef1.jpeg");
   background-size: cover;
-  background-position: center;
+  background-position: 70%;
   color: var(--light);
   transition: all 0.8s;
 }
