@@ -2,16 +2,10 @@
   background-image: url("../../../public/assets/andreapugliese/bg/bg-chef.jpg");
   background-size: cover;
   background-position: right;
-  height: 105vh;
+  min-height: 110vh;
   transition: all 0.8s;
 }
-@media screen and (max-width: 700px) {
-  #cookingClass {
-    background-size: cover;
-    background-position: right;
-    height: 120vh;
-  }
-}
+
 .brightonhover {
   transition: all 0.8s;
 }
