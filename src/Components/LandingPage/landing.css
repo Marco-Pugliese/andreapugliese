@@ -162,8 +162,8 @@
 .imgbg1,
 .imgbg2,
 .imgbg3 {
-  height: 45vh !important;
-  background-size: 50vh;
+  height: 50vh !important;
+  background-size: cover;
   background-position: center;
   transition: all 2.8s !important;
   filter: grayscale(0);
@@ -173,7 +173,6 @@
 .imgbg3:hover {
   cursor: pointer;
   filter: grayscale(1);
-  background-size: 60vh;
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
 }
 .imgbg1sm {
