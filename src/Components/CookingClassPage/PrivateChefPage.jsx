@@ -138,13 +138,13 @@ const PrivateChefPage = () => {
         </Row>
 
         <Row className="fs-4 bg-menu m-0 p-0 w-100">
-          <Col className="py-5 px-4">
+          <Col className="p-0 mb-5 pb-5">
             {/* MENU ITALIANO */}
             {LangInUse === "Ita" && (
               <>
                 <div className="d-flex flex-column">
                   <>
-                    <div className="d-flex flex-column notHover">
+                    <div className="d-flex flex-column notHover py-5">
                       <div className="fs-3">OPZIONI MENU DEGUSTAZIONE</div>
                       <div className="fs-5 mb-5">
                         Scegli il numero desiderato di portate e seleziona
@@ -253,9 +253,9 @@ const PrivateChefPage = () => {
               <>
                 <div className="d-flex flex-column notHover">
                   <>
-                    <div className="d-flex flex-column mb-5">
+                    <div className="d-flex flex-column py-5">
                       <div className="fs-3">OPCIONES DE MENÚ DEGUSTACIÓN</div>
-                      <div className="fs-6">
+                      <div className="fs-6 mb-5">
                         Elije la cantidad deseada de platos y selecciona los que
                         más te gusten
                       </div>
@@ -362,7 +362,7 @@ const PrivateChefPage = () => {
               <>
                 <div className="d-flex flex-column">
                   <>
-                    <div className="d-flex flex-column notHover">
+                    <div className="d-flex flex-column notHover py-5">
                       <div className="fs-3">TASTING MENU OPTIONS</div>
                       <div className="fs-5 mb-5">
                         Choose the desired number of courses and select your
