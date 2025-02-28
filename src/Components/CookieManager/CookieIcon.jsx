@@ -15,7 +15,7 @@ const CookieIcon = () => {
       onMouseLeave={() => {
         setIsHover(false);
       }}
-      className="p-4"
+      className=""
     >
       <Cookie
         onClick={() => dispatch(SetCookieAction("waitingToBeAccepted"))}
