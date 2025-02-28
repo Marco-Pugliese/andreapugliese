@@ -165,7 +165,7 @@ const AboutMePage = () => {
           </Row>
         </div>
         <div className="p-5 ">
-          <Row className="py-4">
+          <Row className="">
             <Col className="col-12 col-xl-6 d-flex d-xl-none text-center align-items-center justify-content-center">
               <a
                 href="https://www.instagram.com/andreapugliesecocina?igsh=cXM2d2xxOXMzMW1p"

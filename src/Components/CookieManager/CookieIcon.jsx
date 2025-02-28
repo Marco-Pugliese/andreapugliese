@@ -15,12 +15,13 @@ const CookieIcon = () => {
       onMouseLeave={() => {
         setIsHover(false);
       }}
+      className="p-4"
     >
       <Cookie
         onClick={() => dispatch(SetCookieAction("waitingToBeAccepted"))}
         className={
           isHover === false
-            ? "display-5 bg-cookie rounded-5 jump"
+            ? "display-5 bg-cookie rounded-5 jump "
             : "display-5 bg-cookie rounded-5 rotate"
         }
       />
