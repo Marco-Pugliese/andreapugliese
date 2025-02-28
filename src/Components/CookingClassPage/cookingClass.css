@@ -100,6 +100,7 @@
 .bg-menu > div > div > div:first-of-type:hover {
   color: var(--lightDark) !important;
   background: whitesmoke;
+  scale: 1 !important;
 }
 .firstDiv * :hover {
   color: var(--light) !important;
