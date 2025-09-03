@@ -13,32 +13,14 @@
   cursor: pointer !important;
   font-weight: bolder !important;
 }
-.flags:hover {
-  font-size: 1.8em;
-  cursor: pointer;
-  font-weight: bolder !important;
-}
 
 .fs-small {
   font-size: 0.8em;
 }
 
-.hamburger,
-#hamburger {
-  transition: all 0.4s !important;
-  color: var(--dark) !important;
-}
-
-.hamburger:hover,
-#hamburger:hover {
-  color: var(--contrast) !important;
-  cursor: pointer;
-  user-select: none !important;
-}
-
 #img-logo {
   transition: all 0.8s;
-  width: 200px !important;
+  width: 275px !important;
 }
 .bg-smoke {
   background: whitesmoke;

@@ -1,9 +1,9 @@
 #CookieModal {
   display: flex;
-  margin: 30vh auto;
-  margin-top: 30vh;
-  min-height: 25vh;
-  width: 66vw;
+
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
   font-size: 0.85em;
 }
 .nav-privacy-link {
@@ -11,11 +11,8 @@
   text-decoration: none;
   font-size: 0.8em;
 }
-.list {
-  list-style-type: none;
-  margin: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.modal-dialog {
+  margin: 0px !important;
 }
 #CookieIcon {
   position: fixed;

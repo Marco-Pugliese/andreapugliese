@@ -3,7 +3,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import Logo from "./Logo";
 import { List, X } from "react-bootstrap-icons";
 import { useDispatch, useSelector } from "react-redux";
-import { SetPageAction, setLangAction } from "../Redux/Actions";
+import { SetPageAction } from "../Redux/Actions";
+// import { setLangAction } from "../Redux/Actions";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -40,8 +41,8 @@ const Header = () => {
 
   return (
     <Container fluid className="text-Dark p-0" id="generalheader">
-      <Row className="fs-4 d-flex align-items-center mh-10">
-        <Col className="col-4 col-xl-5 ms-3">
+      <Row className="fs-4 d-flex justify-content-around align-items-center w-100 mh-10">
+        <Col className="col-4 col-xl-5 ms-auto">
           <Link
             to={"/"}
             onClick={() => {
@@ -55,19 +56,19 @@ const Header = () => {
                   : null;
               }
             }}
-            className="nav-link w-100"
+            className="nav-link w-100 ms-auto"
           >
             <Logo />
           </Link>
         </Col>
-        <Col className="d-none d-lg-flex col-5 offset-1 justify-content-between">
+        <Col className="d-none d-lg-flex col-6 justify-content-around">
           <Row
             className="w-100 fs-small d-flex align-items-center justify-content-center text-center"
             id="headermenu"
           >
             {/* FISARMONICA */}
             <>
-              {LangInUse === "Eng" ? (
+              {/* {LangInUse === "Eng" ? (
                 <>
                   <Col>
                     <Link
@@ -130,7 +131,7 @@ const Header = () => {
                     </Link>
                   </Col>
                 </>
-              ) : null}
+              ) : null} */}
               {LangInUse === "Esp" ? (
                 <>
                   <Col>
@@ -149,7 +150,7 @@ const Header = () => {
                       }}
                       className="nav-link"
                     >
-                      Sobre me
+                      Sobre mì
                     </Link>
                   </Col>
                   <Col>
@@ -168,7 +169,26 @@ const Header = () => {
                       }}
                       className="nav-link"
                     >
-                      Clases de Cocina Y Chef Privado
+                      Servicios
+                    </Link>
+                  </Col>
+                  <Col>
+                    <Link
+                      to={"/colab"}
+                      onClick={() => {
+                        dispatch(SetPageAction("Colab"));
+                        {
+                          openNav === true
+                            ? () => {
+                                setOpenNav(!openNav);
+                                setIsClosed(!isClosed);
+                              }
+                            : null;
+                        }
+                      }}
+                      className="nav-link"
+                    >
+                      +Colaboraciones
                     </Link>
                   </Col>
                   <Col>
@@ -187,12 +207,12 @@ const Header = () => {
                       }}
                       className="nav-link"
                     >
-                      Info & Contacto
+                      Contacto
                     </Link>
                   </Col>
                 </>
               ) : null}
-              {LangInUse === "Ita" ? (
+              {/* {LangInUse === "Ita" ? (
                 <>
                   <Col>
                     <Link
@@ -253,7 +273,7 @@ const Header = () => {
                     </Link>
                   </Col>
                 </>
-              ) : null}
+              ) : null} */}
             </>
           </Row>
         </Col>
@@ -264,11 +284,11 @@ const Header = () => {
 
             console.log("is hamburger closed? " + isClosed);
           }}
-          className="d-block d-lg-none col-5 offset-1 fw-bold"
+          className="d-block d-lg-none col-6 fw-bold"
         >
           <div
             id="hamburger"
-            className="position-relative d-flex align-items-center mb-2 me-3"
+            className="position-relative d-flex align-items-center mb-2"
           >
             <span
               className={
@@ -303,8 +323,9 @@ const Header = () => {
           </div>
         </Col>
         {/* HAMBURGER */}
+
         {/* FLAGS */}
-        <Col className="d-flex flex-column align-items-center fs-6">
+        {/* <Col className="d-flex flex-column align-items-center fs-6">
           <span
             onClick={() => dispatch(setLangAction("Eng"))}
             className="flags"
@@ -323,7 +344,7 @@ const Header = () => {
           >
             🇮🇹
           </span>
-        </Col>
+        </Col> */}
         {/* FLAGS */}
       </Row>
       <div
@@ -335,7 +356,7 @@ const Header = () => {
       >
         {/* FISARMONICA */}
         <Row className={hide === false ? "d-none" : "h-100"}>
-          {LangInUse === "Eng" && (
+          {/* {LangInUse === "Eng" && (
             <>
               <Col
                 className={
@@ -396,7 +417,7 @@ const Header = () => {
                 </Link>
               </Col>
             </>
-          )}
+          )} */}
           {LangInUse === "Esp" && (
             <>
               <Col className="d-flex align-items-center justify-content-center col-12 text-center">
@@ -409,7 +430,7 @@ const Header = () => {
                   }}
                   className="nav-link"
                 >
-                  Sobre me
+                  Sobre mì
                 </Link>
               </Col>
               <Col className="d-flex align-items-center justify-content-center col-12 text-center">
@@ -422,10 +443,22 @@ const Header = () => {
                   }}
                   className="nav-link"
                 >
-                  Clases de Cocina Y Chef Privado
+                  Servicios
                 </Link>
               </Col>
-
+              <Col className="d-flex align-items-center justify-content-center col-12 text-center">
+                <Link
+                  to={"/colab"}
+                  onClick={() => {
+                    dispatch(SetPageAction("Colab"));
+                    setOpenNav(!openNav);
+                    setIsClosed(!isClosed);
+                  }}
+                  className="nav-link"
+                >
+                  +Colaboraciones
+                </Link>
+              </Col>{" "}
               <Col className="d-flex align-items-center justify-content-center col-12 text-center">
                 <Link
                   to={"/contacts"}
@@ -436,13 +469,13 @@ const Header = () => {
                   }}
                   className="nav-link"
                 >
-                  Info & Contacto
+                  Contacto
                 </Link>
               </Col>
             </>
           )}
 
-          {LangInUse === "Ita" && (
+          {/* {LangInUse === "Ita" && (
             <>
               <Col className="d-flex align-items-center justify-content-center col-12 text-center">
                 <Link
@@ -485,7 +518,7 @@ const Header = () => {
                 </Link>
               </Col>
             </>
-          )}
+          )} */}
         </Row>
         {/* FISARMONICA */}
       </div>

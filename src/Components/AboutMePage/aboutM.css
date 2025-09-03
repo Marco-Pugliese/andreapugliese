@@ -1,5 +1,5 @@
 #aboutMe {
-  min-height: 90vh;
+  min-height: 50vh;
   /* background-image: url("../../../public/assets/andreapugliese/andreap.jpeg"); */
   background-image: url("../../../public/assets/andreapugliese/bg/bg-chef1.jpeg");
   background-size: cover;
@@ -9,7 +9,7 @@
 }
 .filterdark2 {
   transition: all 0.8s;
-  min-height: 90vh;
+  min-height: 50vh;
   background: rgba(0, 0, 0, 0.65);
 }
 

@@ -1,17 +1,24 @@
 #loader {
-  position: absolute;
-  top: 0;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
-  /* background: var(--light); */
-  background: url("../../../public/assets/andreapugliese/bg/img-bg-andrea.jpg");
+  background: whitesmoke;
+  background-image: url("../../../public/assets/andreapugliese/bg/img-bg-andrea.jpg");
   background-size: cover;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: top;
 }
-#loader > div {
-  transform: translateX(50%);
-  color: white;
+
+#loaderanimation {
+  animation: darker 4.5s ease-in forwards;
+  min-height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+@keyframes darker {
+  0% {
+    background: transparent;
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.571);
+  }
 }

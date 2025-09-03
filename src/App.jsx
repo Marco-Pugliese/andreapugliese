@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Header from "./Components/1-Navbar/Header";
+// import Header from "./Components/1-Navbar/Header";
 import LandingPage from "./Components/LandingPage/LandingPage";
 import Footer from "./Components/Z-Footer/Footer";
 import AboutMePage from "./Components/AboutMePage/AboutMePage";
@@ -11,6 +11,8 @@ import ContactPage from "./Components/ContactPage/ContactPage";
 import { useSelector } from "react-redux";
 import CookieManager from "./Components/CookieManager/CookieManager";
 import CookieIcon from "./Components/CookieManager/CookieIcon";
+
+import Header from "./Components/1-Navbar/Header";
 
 function App() {
   const [loaded, setIsLoaded] = useState(false);

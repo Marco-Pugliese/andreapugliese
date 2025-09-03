@@ -1,8 +1,6 @@
 #ContactPage {
   background-image: url("../../../public/assets/andreapugliese/piatti/piatto4.jpg");
-
   background-size: cover;
-
   background-position: center;
   min-height: 90vh;
 }
@@ -12,10 +10,15 @@
 
 #ContactPage > div {
   transition: all 0.8s;
-  background: rgba(0, 0, 0, 0.75) !important;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.83) !important;
 }
 #ContactPage > div:hover {
-  background: rgba(0, 0, 0, 0.9) !important;
+  background: rgba(0, 0, 0, 0.93) !important;
+}
+#ContactPage > div > div {
+  padding: 20px !important;
 }
 
 .minh10 {
